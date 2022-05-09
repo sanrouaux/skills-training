@@ -1,0 +1,31 @@
+uuid: ea1b2bb9-fe23-4154-8c71-3e74b63aa707
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.opigno_activity.activity
+    - field.field.opigno_activity.opigno_scorm.opigno_scorm_package
+    - opigno_module.opigno_activity_type.opigno_scorm
+  module:
+    - opigno_scorm
+_core:
+  default_config_hash: q2-DzBC_4u9aWsAddld0_degSz_hpk6e8eSJTJeHQZA
+id: opigno_activity.opigno_scorm.activity
+targetEntityType: opigno_activity
+bundle: opigno_scorm
+mode: activity
+content:
+  opigno_scorm_package:
+    type: opigno_scorm_field_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  name: true
+  search_api_excerpt: true
+  uid: true

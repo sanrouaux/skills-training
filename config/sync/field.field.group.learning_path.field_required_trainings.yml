@@ -1,0 +1,29 @@
+uuid: 7a23841e-2a12-4880-95ef-3140c5002122
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_required_trainings
+    - group.type.learning_path
+_core:
+  default_config_hash: DY3ehzn85RfJVrN5SxJfSIwczg7C8iZhMZHFu8rS8CQ
+id: group.learning_path.field_required_trainings
+field_name: field_required_trainings
+entity_type: group
+bundle: learning_path
+label: 'Required Trainings'
+description: 'You can specify the list of trainings that the user must complete before starting this training. You can choose one or more trainings (separated by comma).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      learning_path: learning_path
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

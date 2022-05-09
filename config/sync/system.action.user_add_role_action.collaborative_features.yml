@@ -1,0 +1,14 @@
+uuid: b76cea99-183c-4118-bba5-7b9ed192bd97
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.collaborative_features
+  module:
+    - user
+id: user_add_role_action.collaborative_features
+label: 'Add the Live meeting manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: collaborative_features

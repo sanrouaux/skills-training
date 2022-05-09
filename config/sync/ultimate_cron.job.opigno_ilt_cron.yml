@@ -1,0 +1,31 @@
+uuid: 57532a30-082c-41d8-9404-a3f633eadc9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_ilt
+_core:
+  default_config_hash: YqJQo0dTvRxacgZH3qY4skHL83nYOEpMYohWx0ZMPZo
+title: 'Opigno ilt notifications'
+id: opigno_ilt_cron
+weight: 0
+module: opigno_ilt
+callback: opigno_ilt_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ */3 * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

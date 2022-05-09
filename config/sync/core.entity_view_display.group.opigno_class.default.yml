@@ -1,0 +1,47 @@
+uuid: 21ee485b-03ac-4f3c-b639-562f3f6d45ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.opigno_class.field_class_description
+    - group.type.opigno_class
+  module:
+    - text
+_core:
+  default_config_hash: dB11JpDzSAydAVbLxR9Cq0cRtLijarqGbA-ntZ9r_Qs
+id: group.opigno_class.default
+targetEntityType: group
+bundle: opigno_class
+mode: default
+content:
+  field_class_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_class_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  changed: true
+  created: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  uid: true

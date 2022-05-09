@@ -1,0 +1,23 @@
+uuid: f239e507-facf-4c13-91bd-daa1de7cc2f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: uY_-60QOtpPR0dSTuMs2NAxrtMDdtZzHUi91tnDHkbA
+id: private_message_thread.field_pm_subject
+field_name: field_pm_subject
+entity_type: private_message_thread
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

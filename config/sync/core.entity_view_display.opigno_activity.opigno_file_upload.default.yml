@@ -1,0 +1,34 @@
+uuid: 5903952c-ba3f-4f6f-a22c-f2f2ca24d10d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_activity.opigno_file_upload.opigno_allowed_extension
+    - field.field.opigno_activity.opigno_file_upload.opigno_body
+    - field.field.opigno_activity.opigno_file_upload.opigno_evaluation_method
+    - opigno_module.opigno_activity_type.opigno_file_upload
+  module:
+    - text
+_core:
+  default_config_hash: ZUWxUMhJVDDo6GzLY-GEuy3kV8mMHa6EHz0w0DJYLTA
+id: opigno_activity.opigno_file_upload.default
+targetEntityType: opigno_activity
+bundle: opigno_file_upload
+mode: default
+content:
+  opigno_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  name: true
+  opigno_allowed_extension: true
+  opigno_evaluation_method: true
+  search_api_excerpt: true
+  uid: true

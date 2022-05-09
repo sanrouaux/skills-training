@@ -1,0 +1,28 @@
+uuid: a7811d50-f324-4ca3-8aae-0d31ea97341c
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - media
+  enforced:
+    module:
+      - media
+_core:
+  default_config_hash: 0N0w31-opvCUGV82sLZYZ4HrvjRvN1dGxvwuWZenEaQ
+id: media.tft_file
+field_name: tft_file
+entity_type: media
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: private
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

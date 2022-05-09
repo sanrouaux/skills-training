@@ -1,0 +1,31 @@
+uuid: 1c6881b9-b69f-483d-9c10-14140e08e527
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_moxtra
+_core:
+  default_config_hash: kwWTxvlORxrzTR39O-Ej39WLNh8SA2jw0KA76FLl0Og
+title: 'Opigno moxtra meeting notification'
+id: opigno_moxtra_meeting_notification
+weight: 0
+module: opigno_moxtra
+callback: opigno_moxtra_cronjob_meeting_notification
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ */3 * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

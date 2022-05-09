@@ -1,0 +1,28 @@
+uuid: 94bd8d7c-9672-4aa1-82a7-ba72061d1dfd
+langcode: en
+status: true
+dependencies:
+  module:
+    - token_filter
+_core:
+  default_config_hash: DBsKOwjKm7qfR5pKGo0bljujYdJSlKAgE0aoSq_COKE
+name: 'Certificate WYSIWYG'
+format: opigno_certificate_wysiwyg
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid style> <a href hreflang data-entity-type data-entity-uuid> <p> <h1> <pre> <span>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: true
+    weight: 0
+    settings:
+      replace_empty: false

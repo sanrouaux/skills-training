@@ -1,0 +1,36 @@
+uuid: 77962512-7196-4d10-8b67-8b3980d59714
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_social
+    - system
+    - user
+  theme:
+    - aristotle
+_core:
+  default_config_hash: 59ZspbfLkEh6vTliYfflXk90W7YADE_lt1WJ4Y3vxzs
+id: opignosocialwallblock
+theme: aristotle
+region: content
+weight: 0
+provider: null
+plugin: opigno_social_wall_block
+settings:
+  id: opigno_social_wall_block
+  label: 'Opigno social wall block'
+  label_display: '0'
+  provider: opigno_social
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

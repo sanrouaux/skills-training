@@ -1,0 +1,30 @@
+uuid: 7c5222f7-3c74-4ed3-aea5-6a931d8f3186
+langcode: en
+status: true
+dependencies:
+  module:
+    - h5p
+    - h5p
+title: 'Default cron handler'
+id: h5p_cron
+weight: 0
+module: h5p
+callback: h5p_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ */3 * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

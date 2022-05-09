@@ -1,0 +1,43 @@
+uuid: 66a09cb9-f1bc-47d7-a5ad-e402dfda98a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_created_by
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_private_profile
+    - field.field.user.user.user_picture
+    - image.style.user_compact_image
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: 1EUlNvjsYoa7W4tHMldm8rQ2uKorHyNDIA3flEKJ6Ck
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: user_compact_image
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_created_by: true
+  field_first_name: true
+  field_last_name: true
+  field_private_profile: true
+  linked_username: true
+  member_for: true
+  private_message_link: true
+  search_api_excerpt: true

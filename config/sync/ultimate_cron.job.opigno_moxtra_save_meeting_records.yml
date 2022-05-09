@@ -1,0 +1,31 @@
+uuid: a4207fa8-dac1-4830-834a-dd33b60ed7b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_moxtra
+_core:
+  default_config_hash: pyIhenC9QCxWUvlIDOlnf8Yet9Km92OWZdt3SIv2SsI
+title: 'Opigno moxtra save meeting records'
+id: opigno_moxtra_save_meeting_records
+weight: 0
+module: opigno_moxtra
+callback: opigno_moxtra_cronjob_save_meeting_records
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ */12 * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

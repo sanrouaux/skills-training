@@ -1,0 +1,31 @@
+uuid: affa8430-2b04-4ea3-839e-72ce0250078e
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_learning_path
+_core:
+  default_config_hash: Qp3cPKjm3A7R9Joka6rLy0fq9gy6ZAnCTBV7sEBjL6o
+title: 'Sends email notifications about training expired certification'
+id: opigno_learning_path_cron
+weight: 0
+module: opigno_learning_path
+callback: opigno_learning_path_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ 0 * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

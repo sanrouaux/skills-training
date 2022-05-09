@@ -1,0 +1,10 @@
+uuid: 18e6fbe6-2fa6-4c17-9bf7-acdc743f8d36
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1Z1VKL9lZ4Q3cRVfh5cXSD4l0qd-eETerx7TIWviEL8
+id: certificate_date
+label: 'Certificate date'
+locked: false
+pattern: d.m.Y

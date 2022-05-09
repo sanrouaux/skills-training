@@ -1,0 +1,64 @@
+uuid: 700cb7d6-dc93-4f8c-afde-8f149d0d23ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_calendar_event.ilt_calendar_event.field_calendar_event_members
+    - field.field.opigno_calendar_event.ilt_calendar_event.field_ilt
+    - opigno_calendar_event.type.ilt_calendar_event
+  module:
+    - datetime_range
+    - text
+_core:
+  default_config_hash: 4EzOno3-GSA3uF2mZksfmNfG19WW3lsE_S3n6870gag
+id: opigno_calendar_event.ilt_calendar_event.default
+targetEntityType: opigno_calendar_event
+bundle: ilt_calendar_event
+mode: default
+content:
+  date_daterange:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: post_date
+      separator: '-'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_calendar_event_members:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_ilt:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true

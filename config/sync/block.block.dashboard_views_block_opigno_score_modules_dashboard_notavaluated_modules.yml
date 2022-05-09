@@ -1,0 +1,32 @@
+uuid: 9163bf51-edec-4f73-a0ad-b40b12548bd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opigno_score_modules
+  module:
+    - system
+    - views
+  theme:
+    - aristotle
+_core:
+  default_config_hash: lbARl4l25LqduMCYY2cVNpcoqKVvIWaG9riVpsIfKiU
+id: dashboard_views_block_opigno_score_modules_dashboard_notavaluated_modules
+theme: aristotle
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:opigno_score_modules-dashboard_notavaluated_modules'
+settings:
+  id: 'views_block:opigno_score_modules-dashboard_notavaluated_modules'
+  label: 'Dashboard: Opigno: not evalueated modules'
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

@@ -1,0 +1,17 @@
+uuid: 6f8c442b-3fa0-4f2c-9533-2fc1fb93d844
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Pt83mVYbmNqyExyTCug7R4TMKItDbYr_aQPerXAhvko
+name: user_compact_image
+label: 'User compact image (48x48)'
+effects:
+  be12ce01-0f92-4afb-a294-9877a281adb4:
+    uuid: be12ce01-0f92-4afb-a294-9877a281adb4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 48
+      height: 48
+      anchor: center-center

@@ -1,0 +1,22 @@
+uuid: 7e81c521-1cad-4825-8882-70d338947ce1
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_class
+  enforced:
+    config:
+      - user.role.user_manager
+_core:
+  default_config_hash: xTeWzEolImOxsLoCPm17PdxZwaPEoIL2rD_mtjlChE0
+id: opigno_class-b2b679d24
+label: 'User manager'
+weight: 4
+internal: true
+audience: outsider
+group_type: opigno_class
+permissions_ui: false
+permissions:
+  - 'administer members'
+  - 'view group'
+  - 'view group_membership content'

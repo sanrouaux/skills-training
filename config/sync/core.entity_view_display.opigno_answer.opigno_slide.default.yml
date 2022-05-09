@@ -1,0 +1,20 @@
+uuid: 17974d1e-92bd-4ead-a9da-3c5295267f85
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_answer_type.opigno_slide
+_core:
+  default_config_hash: s40mTW3y4LA9KbOG2ytkOlYTsY72sV6P5lK1G7Mspd0
+id: opigno_answer.opigno_slide.default
+targetEntityType: opigno_answer
+bundle: opigno_slide
+mode: default
+content: {  }
+hidden:
+  activity: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  module: true
+  search_api_excerpt: true

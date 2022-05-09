@@ -1,0 +1,67 @@
+uuid: dc5bbbd4-c4cf-4380-a4bb-5ba11e661fd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_activity.opigno_video.field_external_video
+    - field.field.opigno_activity.opigno_video.field_video
+    - opigno_module.opigno_activity_type.opigno_video
+  module:
+    - video
+_core:
+  default_config_hash: W2WwmoghOlEO7BoOJdQKkx9xA09hQyJY9hdKLxpGRxg
+id: opigno_activity.opigno_video.default
+targetEntityType: opigno_activity
+bundle: opigno_video
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_external_video:
+    type: video_embed
+    weight: 3
+    region: content
+    settings:
+      allowed_providers:
+        youtube: youtube
+        vimeo: vimeo
+        facebook: 0
+        instagram: 0
+        dailymotion: 0
+        vine: 0
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      uri_scheme: public
+    third_party_settings: {  }
+  field_video:
+    type: video_upload
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      file_extensions: 'mp4 ogv webm'
+      max_filesize: ''
+      uri_scheme: public
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

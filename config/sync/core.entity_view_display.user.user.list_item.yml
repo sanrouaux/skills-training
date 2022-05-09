@@ -1,0 +1,46 @@
+uuid: ed5f0b0c-5e26-4f0d-8aef-8b1518d23819
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.list_item
+    - field.field.user.user.field_created_by
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_private_profile
+    - field.field.user.user.user_picture
+    - image.style.user_list_item
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: '-8RzhQ7uqAJYiL-xSixaYBHr66X7Sp3zdVvzsBJgRBg'
+id: user.user.list_item
+targetEntityType: user
+bundle: user
+mode: list_item
+content:
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: user_list_item
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  commerce_remote_id: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_created_by: true
+  field_first_name: true
+  field_last_name: true
+  field_private_profile: true
+  linked_username: true
+  member_for: true
+  private_message_link: true
+  profile_customer: true
+  search_api_excerpt: true
+  user_connection_links: true

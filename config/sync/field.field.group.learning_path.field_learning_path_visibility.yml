@@ -1,0 +1,25 @@
+uuid: 6f5a23a0-4f62-4297-b186-aca6af0cdf24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_learning_path_visibility
+    - group.type.learning_path
+  module:
+    - options
+_core:
+  default_config_hash: oNtMDP8XiT0OPgnvtailQ9mGX2NsZplDYvsiQQRAr-w
+id: group.learning_path.field_learning_path_visibility
+field_name: field_learning_path_visibility
+entity_type: group
+bundle: learning_path
+label: Visibility
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: semiprivate
+default_value_callback: ''
+settings: {  }
+field_type: list_string

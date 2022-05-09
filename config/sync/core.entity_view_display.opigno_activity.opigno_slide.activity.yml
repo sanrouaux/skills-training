@@ -1,0 +1,41 @@
+uuid: 8f1c189f-04aa-4ae8-942e-ea83c0a97429
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.opigno_activity.activity
+    - field.field.opigno_activity.opigno_slide.opigno_body
+    - field.field.opigno_activity.opigno_slide.opigno_slide_pdf
+    - opigno_module.opigno_activity_type.opigno_slide
+  module:
+    - text
+_core:
+  default_config_hash: U2nmTrsYFULAiZdv43mOeWtW-Y2Uv6I27ATfUIYH-p8
+id: opigno_activity.opigno_slide.activity
+targetEntityType: opigno_activity
+bundle: opigno_slide
+mode: activity
+content:
+  opigno_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  opigno_slide_pdf:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: embedded_display
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  name: true
+  search_api_excerpt: true
+  uid: true

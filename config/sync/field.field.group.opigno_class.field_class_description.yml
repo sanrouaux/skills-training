@@ -1,0 +1,23 @@
+uuid: ed88193d-3935-4233-8905-240c8a95409d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_class_description
+    - group.type.opigno_class
+  module:
+    - text
+_core:
+  default_config_hash: dhjsPzjID2WjwGdoCFK1da3Wq2VGL2lT6YK_s0AL4xo
+id: group.opigno_class.field_class_description
+field_name: field_class_description
+entity_type: group
+bundle: opigno_class
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

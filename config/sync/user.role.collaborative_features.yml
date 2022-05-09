@@ -1,0 +1,18 @@
+uuid: 80904d11-01a7-4007-900d-f4b6cfb9faa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_moxtra
+_core:
+  default_config_hash: Ni0QQX_IIJXR6xNIf43KY-t6-QuqG6-msq1-oGIIdGc
+id: collaborative_features
+label: 'Live meeting manager'
+weight: -8
+is_admin: null
+permissions:
+  - 'add workspace entities'
+  - 'score meeting'
+  - 'start meeting'
+  - 'view meeting entities'
+  - 'view workspace entities'

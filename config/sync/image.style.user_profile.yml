@@ -1,0 +1,17 @@
+uuid: 178cda3e-8189-464f-bf98-f874ae0912ad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btV7B8N818XIDdWDYN2SeLI8UuVvZa-LexxJ_qTjgXM
+name: user_profile
+label: 'User profile (166x166)'
+effects:
+  5865e4e3-9bce-41b4-97d9-ea07f96f9f49:
+    uuid: 5865e4e3-9bce-41b4-97d9-ea07f96f9f49
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 166
+      height: 166
+      anchor: center-center

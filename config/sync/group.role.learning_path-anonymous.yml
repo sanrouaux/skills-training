@@ -1,0 +1,17 @@
+uuid: 3adbafdf-6787-4da9-b005-63a1f267aed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+_core:
+  default_config_hash: IiY29-ZnBcdFK6lzTiDB0fQ6KPvl0c3RVs18VJguZjg
+id: learning_path-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: learning_path
+permissions_ui: true
+permissions:
+  - 'view group'

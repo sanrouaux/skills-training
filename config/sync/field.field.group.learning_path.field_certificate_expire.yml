@@ -1,0 +1,25 @@
+uuid: 44ec9c68-939a-402d-8274-80b1da13254e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_certificate_expire
+    - group.type.learning_path
+_core:
+  default_config_hash: gWd6IhjyvFsFlnGgNsch74CC8E7GRDzGxwGojdrRW-o
+id: group.learning_path.field_certificate_expire
+field_name: field_certificate_expire
+entity_type: group
+bundle: learning_path
+label: 'Automatically expire results for periodic re-certification'
+description: 'Automatically expire results for periodic re-certification.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

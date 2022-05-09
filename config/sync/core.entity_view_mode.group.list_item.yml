@@ -1,0 +1,12 @@
+uuid: 81528612-ce1b-4280-a635-41c10bd600fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: c9Hf_SehmVPKjHeXukSJB0cqVHr94cYvIJ1W5bX5LIE
+id: group.list_item
+label: 'List item'
+targetEntityType: group
+cache: true

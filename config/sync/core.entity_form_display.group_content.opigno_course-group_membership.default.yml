@@ -1,0 +1,38 @@
+uuid: 96d12a0a-93f4-4585-a2f2-463a59305cfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.opigno_course-group_membership.group_roles
+    - group.content_type.opigno_course-group_membership
+  module:
+    - path
+id: group_content.opigno_course-group_membership.default
+targetEntityType: group_content
+bundle: opigno_course-group_membership
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  group_roles:
+    type: options_buttons
+    weight: 31
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

@@ -1,0 +1,27 @@
+uuid: 0cf30df8-d367-4f09-b42d-db01afed120f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+_core:
+  default_config_hash: RkEZo8HcMYn84wH7oVpFrNeQJTbenwDEsfehXD-9YF4
+id: opigno_course-admin
+label: Admin
+weight: -9
+internal: false
+audience: member
+group_type: opigno_course
+permissions_ui: true
+permissions:
+  - 'access content overview'
+  - 'access group_node overview'
+  - 'access subgroup overview'
+  - 'administer group'
+  - 'administer members'
+  - 'delete group'
+  - 'edit group'
+  - 'leave group'
+  - 'update own group_membership content'
+  - 'view group'
+  - 'view group_membership content'

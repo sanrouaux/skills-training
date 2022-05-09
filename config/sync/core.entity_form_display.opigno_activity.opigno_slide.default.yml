@@ -1,0 +1,67 @@
+uuid: d7a5a37d-7738-4696-b163-eeefbf163020
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_entity_browser_file_pdf
+    - field.field.opigno_activity.opigno_slide.opigno_body
+    - field.field.opigno_activity.opigno_slide.opigno_slide_pdf
+    - opigno_module.opigno_activity_type.opigno_slide
+  module:
+    - entity_browser
+    - text
+_core:
+  default_config_hash: r6tmPBuOXoMRVv9Vj-_ImXK2ASpZqtaaeLSuy682qSU
+id: opigno_activity.opigno_slide.default
+targetEntityType: opigno_activity
+bundle: opigno_slide
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  opigno_body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  opigno_slide_pdf:
+    type: entity_browser_entity_reference
+    weight: 2
+    region: content
+    settings:
+      entity_browser: media_entity_browser_file_pdf
+      field_widget_display: rendered_entity
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings:
+        view_mode: embedded_display
+      selection_mode: selection_append
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

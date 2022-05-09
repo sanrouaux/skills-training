@@ -1,0 +1,21 @@
+uuid: 383e8d85-e708-44f9-baff-2dc7adf60446
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.opigno_answer.field_correct_response
+    - opigno_module.opigno_answer_type.opigno_h5p
+_core:
+  default_config_hash: eCBx8twrTJHM0MWXg5qqKvPWITYxS4kv4UoGKptwQF4
+id: opigno_answer.opigno_h5p.field_correct_response
+field_name: field_correct_response
+entity_type: opigno_answer
+bundle: opigno_h5p
+label: 'Correct response patterns'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

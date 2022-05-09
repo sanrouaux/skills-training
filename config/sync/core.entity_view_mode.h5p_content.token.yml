@@ -1,0 +1,12 @@
+uuid: 5b2febe6-e546-4934-96c4-42a2ad1a4702
+langcode: en
+status: true
+dependencies:
+  module:
+    - h5p
+_core:
+  default_config_hash: znNK5-RpcN5IYxM-GmeF9GKRsYuP50S5ny_lDv77qZo
+id: h5p_content.token
+label: Token
+targetEntityType: h5p_content
+cache: true

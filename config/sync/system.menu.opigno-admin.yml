@@ -1,0 +1,10 @@
+uuid: f910378a-266e-4015-8dee-6b63929ab8c5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CmfFOXpAms_EOw327iFVaxXew6yeY9eik6zhgPisuYk
+id: opigno-admin
+label: 'Opigno admin'
+description: ''
+locked: false

@@ -1,0 +1,17 @@
+uuid: ae752b22-34ed-42f9-abff-c6aec80db7ec
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FNJTcnCxmBg6M78tXFDxIdS9ufJIggFo57hFDrupqP8
+name: private_message_group_upload
+label: 'Private message group upload (133x100)'
+effects:
+  92c49016-1ec5-4cf6-9470-e51aa5053e16:
+    uuid: 92c49016-1ec5-4cf6-9470-e51aa5053e16
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 133
+      height: 100
+      anchor: center-center

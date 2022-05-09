@@ -1,0 +1,57 @@
+_core:
+  default_config_hash: IB1aZQWGsknFTypr-FjwUwPqUp0BUhHtG1bWbGU3N3c
+definitions:
+  contact__site_page:
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  standard__front_page:
+    menu_name: main
+    parent: ''
+    weight: -50
+    expanded: false
+    enabled: true
+  opigno_admin__dashboard_management:
+    menu_name: opigno-admin
+    parent: opigno_admin.global_settings
+    weight: -49
+    expanded: false
+    enabled: true
+  opigno_admin__global_settings:
+    menu_name: opigno-admin
+    parent: ''
+    weight: -50
+    expanded: true
+    enabled: true
+  opigno_admin__collaborative_features:
+    menu_name: opigno-admin
+    parent: ''
+    weight: -45
+    expanded: true
+    enabled: true
+  opigno_admin__training_contents:
+    menu_name: opigno-admin
+    parent: ''
+    weight: -42
+    expanded: true
+    enabled: true
+  opigno_admin__user_and_class_managments:
+    menu_name: opigno-admin
+    parent: ''
+    weight: -36
+    expanded: true
+    enabled: true
+  opigno_lms__home:
+    enabled: true
+    menu_name: main
+    parent: ''
+    expanded: false
+    weight: -10
+  opigno_lms__calendar:
+    enabled: true
+    menu_name: main
+    parent: ''
+    weight: -7
+    expanded: false

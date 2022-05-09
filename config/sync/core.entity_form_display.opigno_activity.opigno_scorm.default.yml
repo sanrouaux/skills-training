@@ -1,0 +1,47 @@
+uuid: 1f39c847-8371-47b6-9c62-9086853b7325
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_activity.opigno_scorm.opigno_scorm_package
+    - opigno_module.opigno_activity_type.opigno_scorm
+  module:
+    - file
+_core:
+  default_config_hash: borygQSA8jhOMxhlJY6Coi_TG9EK3B6LFz4Uz-kX_iQ
+id: opigno_activity.opigno_scorm.default
+targetEntityType: opigno_activity
+bundle: opigno_scorm
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  opigno_scorm_package:
+    type: file_generic
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

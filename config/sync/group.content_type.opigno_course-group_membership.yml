@@ -1,0 +1,19 @@
+uuid: 5e902cf7-7211-4a6e-a141-6417eb6ffa57
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+  module:
+    - user
+_core:
+  default_config_hash: IcNJ8NZF5jB48ea9qAjcCYLtVV7nzno8AMEGQ_PeUwU
+id: opigno_course-group_membership
+label: 'Course: Group membership'
+description: 'Adds users to groups as members.'
+group_type: opigno_course
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

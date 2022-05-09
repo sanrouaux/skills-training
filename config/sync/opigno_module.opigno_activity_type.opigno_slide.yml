@@ -1,0 +1,11 @@
+uuid: 014d7e05-8462-460d-858c-1c9960b01f8e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _QO0_fC5Q10WZxFKxFnHtgXIHNb36WqHP-1w5wD3BuI
+id: opigno_slide
+label: Slide
+description: 'This makes possible to create a slide, using the rich HTML editor.'
+summary: null
+image: null

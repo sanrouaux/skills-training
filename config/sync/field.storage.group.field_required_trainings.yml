@@ -1,0 +1,21 @@
+uuid: 54298a29-8e3d-4a06-84e3-f29575bf100b
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: D-4OsjX-CIf0fvkIA8BVEfWVnyZx0V6334IrnwKUViY
+id: group.field_required_trainings
+field_name: field_required_trainings
+entity_type: group
+type: entity_reference
+settings:
+  target_type: group
+module: core
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

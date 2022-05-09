@@ -1,0 +1,20 @@
+uuid: 34c588c3-4163-4e59-8864-47c15efa5684
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: LcdUmxAD6Vp0Kbpl7Ry14V8ZOHIF4LOhCQ2gpEBskhY
+id: group.badge_active
+field_name: badge_active
+entity_type: group
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

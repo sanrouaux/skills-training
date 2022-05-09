@@ -1,0 +1,32 @@
+uuid: eb3b60eb-d433-42a5-bf3e-06b189203253
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.comments_recent
+  module:
+    - system
+    - views
+  theme:
+    - aristotle
+_core:
+  default_config_hash: JOkdlikOqENfOQQvkxaMTN6w7gN2J4rmE6Atjo1Ten0
+id: dashboard_views_block_comments_recent_block_1
+theme: aristotle
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:comments_recent-block_1'
+settings:
+  id: 'views_block:comments_recent-block_1'
+  label: 'Dashboard: Recent comments'
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

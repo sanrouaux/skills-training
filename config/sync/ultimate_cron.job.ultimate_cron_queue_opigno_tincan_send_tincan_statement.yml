@@ -1,0 +1,20 @@
+uuid: 734c3047-9249-41fd-87c6-66adab4995d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_tincan_api
+title: 'Queue: Send TinCan Statement via queue'
+id: ultimate_cron_queue_opigno_tincan_send_tincan_statement
+weight: 10
+module: opigno_tincan_api
+callback: 'ultimate_cron.queue_worker:queueCallback'
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '* * * * *'
+launcher:
+  id: serial
+logger:
+  id: database

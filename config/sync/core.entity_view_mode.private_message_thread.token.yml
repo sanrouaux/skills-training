@@ -1,0 +1,12 @@
+uuid: 0245b9a1-7e0f-478c-b80b-06eaf05bab16
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: AS4Q6cwOEkP_HLnPxILUxLh8qFjlXVCqu0aiJGGVcvM
+id: private_message_thread.token
+label: Token
+targetEntityType: private_message_thread
+cache: true

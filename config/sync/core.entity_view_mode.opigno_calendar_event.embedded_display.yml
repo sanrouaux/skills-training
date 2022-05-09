@@ -1,0 +1,12 @@
+uuid: d0af1b41-d5b1-4096-8ff0-e13d4f1e1b8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_calendar_event
+_core:
+  default_config_hash: pu_VNSn2lSes_2MEZUumeBIRbl3tMPSb2aAq6LcgHBE
+id: opigno_calendar_event.embedded_display
+label: 'Embedded display'
+targetEntityType: opigno_calendar_event
+cache: true

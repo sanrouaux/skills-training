@@ -1,0 +1,47 @@
+uuid: f5f3ad33-4493-47e7-af51-c5281371de7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_calendar_event.opigno_calendar_event.field_calendar_event_members
+    - opigno_calendar_event.type.opigno_calendar_event
+  module:
+    - datetime_range
+    - text
+_core:
+  default_config_hash: b3UhVCAJnbQLFdU7J3ncuA94P7KfYQOmTFFmokEt1Eg
+id: opigno_calendar_event.opigno_calendar_event.default
+targetEntityType: opigno_calendar_event
+bundle: opigno_calendar_event
+mode: default
+content:
+  date_daterange:
+    type: daterange_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_calendar_event_members:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  displayed: true

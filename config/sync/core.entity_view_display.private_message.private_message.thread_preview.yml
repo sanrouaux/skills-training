@@ -1,0 +1,46 @@
+uuid: 5d988c49-be86-4638-acf2-1e25a5b14895
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.private_message.thread_preview
+  module:
+    - private_message
+_core:
+  default_config_hash: sx9Q4a1HfRUxF8ZXLiyHT9tBcyqMGEvPhZ1IX0yOvNM
+id: private_message.private_message.thread_preview
+targetEntityType: private_message
+bundle: private_message
+mode: thread_preview
+content:
+  created:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: custom
+      custom_date_format: d/m/Y
+      timezone: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  owner:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: pm_thread_preview
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  timestamp:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  message: true
+  opigno_date: true
+  search_api_excerpt: true

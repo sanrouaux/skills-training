@@ -1,0 +1,19 @@
+uuid: c49967bd-109e-423b-b989-8b53af8f5470
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+  enforced:
+    config:
+      - user.role.user_manager
+_core:
+  default_config_hash: PficcVy0B1lpgCF8NPJrPX0zY2uyNqfWGIrutAP-UxM
+id: learning_path-b2b679d24
+label: 'User manager'
+weight: 4
+internal: true
+audience: outsider
+group_type: learning_path
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,23 @@
+uuid: ee0de069-eb98-47a3-b900-80944c6aef90
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+_core:
+  default_config_hash: ItM0ZZFZp6MPk8I1-wFcdQ9WX8LosumXBdq7uu1aX4U
+id: opigno_answer.field_response
+field_name: field_response
+entity_type: opigno_answer
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

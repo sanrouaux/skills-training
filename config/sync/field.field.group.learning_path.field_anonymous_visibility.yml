@@ -1,0 +1,25 @@
+uuid: 07e3f6fa-540e-4218-8fa8-c2cf34c09440
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_anonymous_visibility
+    - group.type.learning_path
+_core:
+  default_config_hash: q9CF0Tqjs4UrKvuQwPFphtxFFyZpikrP5laqLw95wFI
+id: group.learning_path.field_anonymous_visibility
+field_name: field_anonymous_visibility
+entity_type: group
+bundle: learning_path
+label: 'Hide for anonymous users'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

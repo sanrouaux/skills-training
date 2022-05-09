@@ -1,0 +1,23 @@
+uuid: 7c5dd2b2-6566-474c-9318-7257b7ad8587
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: B8cuyNxT7igAPiHF-yyV80LV_IdfxZKuzSiO8QfB8YI
+id: group.badge_name
+field_name: badge_name
+entity_type: group
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

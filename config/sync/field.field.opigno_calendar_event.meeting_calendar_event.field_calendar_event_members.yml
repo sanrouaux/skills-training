@@ -1,0 +1,39 @@
+uuid: f74d89e6-dbd0-49db-9092-574d2faee499
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.opigno_calendar_event.field_calendar_event_members
+    - opigno_calendar_event.type.meeting_calendar_event
+  module:
+    - opigno_calendar_event
+  enforced:
+    module:
+      - opigno_moxtra
+third_party_settings:
+  opigno_calendar_event:
+    embedded_widget: 0
+_core:
+  default_config_hash: U2nayXNlV91GyBO5Dcv_lFSQP7x7nVGQph2IESBprPg
+id: opigno_calendar_event.meeting_calendar_event.field_calendar_event_members
+field_name: field_calendar_event_members
+entity_type: opigno_calendar_event
+bundle: meeting_calendar_event
+label: Members
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

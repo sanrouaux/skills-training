@@ -1,0 +1,20 @@
+_core:
+  default_config_hash: wyu5Mlc7iseS4iaDGNnVRWOiAsAIfVR670i_vQwDAaM
+langcode: en
+description: ''
+availability_closed_message: 'This "[opigno_module:name]" module is closed.'
+availability_unavailable_message: 'This "[opigno_module:name]" module is not yet open.'
+disabled_h5p:
+  - H5P.Dialogcards
+  - H5P.MarkTheWords
+  - H5P.Audio
+  - H5P.Summary
+  - H5P.TwitterUserFeed
+  - H5P.AppearIn
+  - H5P.SingleChoiceSet
+  - H5P.Accordion
+  - H5P.Agamotto
+  - H5P.Collage
+  - H5P.ImageMultipleHotspotQuestion
+  - H5P.IFrameEmbed
+  - H5P.MemoryGame

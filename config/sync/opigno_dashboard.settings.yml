@@ -1,0 +1,325 @@
+blocks:
+  opigno_user_stats_block:
+    available: '1'
+    mandatory: 0
+  opigno_social_wall_block:
+    available: '1'
+    mandatory: 0
+  opigno_user_connections_block:
+    available: '1'
+    mandatory: 0
+  'views_block:comments_recent-block_1':
+    available: '1'
+    mandatory: 0
+  'views_block:latest_active_trainings-block':
+    available: '1'
+    mandatory: 0
+  'views_block:opigno_calendar-month_block':
+    available: '1'
+    mandatory: 0
+  'views_block:opigno_group_members-block_pending':
+    available: '1'
+    mandatory: 0
+  'views_block:opigno_notifications-block_unread_dashboard':
+    available: '1'
+    mandatory: 0
+  'views_block:opigno_score_modules-dashboard_notavaluated_modules':
+    available: '1'
+    mandatory: 0
+  'views_block:private_message-block_dashboard':
+    available: '1'
+    mandatory: 0
+  'views_block:who_s_new-block_1':
+    available: '1'
+    mandatory: 0
+  'views_block:who_s_online-who_s_online_block':
+    available: '1'
+    mandatory: 0
+  calendar_legend_block:
+    available: 0
+    mandatory: 0
+  'entity_view:block':
+    available: 0
+    mandatory: 0
+  'entity_view:block_content':
+    available: 0
+    mandatory: 0
+  'entity_view:comment':
+    available: 0
+    mandatory: 0
+  'entity_view:contact_message':
+    available: 0
+    mandatory: 0
+  'entity_view:entity_embed_fake_entity':
+    available: 0
+    mandatory: 0
+  'entity_view:file':
+    available: 0
+    mandatory: 0
+  'entity_view:group':
+    available: 0
+    mandatory: 0
+  'entity_view:group_content':
+    available: 0
+    mandatory: 0
+  'entity_view:h5p_content':
+    available: 0
+    mandatory: 0
+  'entity_view:media':
+    available: 0
+    mandatory: 0
+  'entity_view:menu_link_content':
+    available: 0
+    mandatory: 0
+  'entity_view:message_template':
+    available: 0
+    mandatory: 0
+  'entity_view:message':
+    available: 0
+    mandatory: 0
+  'entity_view:node':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_calendar_event':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_certificate':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_group_link':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_group_content':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_ilt':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_ilt_result':
+    available: 0
+    mandatory: 0
+  'entity_view:learning_path_content':
+    available: 0
+    mandatory: 0
+  'entity_view:learning_path_link':
+    available: 0
+    mandatory: 0
+  'entity_view:user_lp_status':
+    available: 0
+    mandatory: 0
+  'entity_view:lp_module_availability':
+    available: 0
+    mandatory: 0
+  'entity_view:learning_path_result':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_latest_group_activity':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_like':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_module':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_activity':
+    available: 0
+    mandatory: 0
+  'entity_view:user_module_status':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_answer':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_moxtra_meeting':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_moxtra_meeting_result':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_moxtra_workspace':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_notification':
+    available: 0
+    mandatory: 0
+  'entity_view:opigno_post':
+    available: 0
+    mandatory: 0
+  'entity_view:user_invitation':
+    available: 0
+    mandatory: 0
+  'entity_view:path_alias':
+    available: 0
+    mandatory: 0
+  'entity_view:pm_thread_delete_time':
+    available: 0
+    mandatory: 0
+  'entity_view:private_message_thread':
+    available: 0
+    mandatory: 0
+  'entity_view:private_message':
+    available: 0
+    mandatory: 0
+  'entity_view:search_api_task':
+    available: 0
+    mandatory: 0
+  'entity_view:shortcut':
+    available: 0
+    mandatory: 0
+  'entity_view:taxonomy_term':
+    available: 0
+    mandatory: 0
+  'entity_view:tour':
+    available: 0
+    mandatory: 0
+  'entity_view:user':
+    available: 0
+    mandatory: 0
+  print_links:
+    available: 0
+    mandatory: 0
+  group_operations:
+    available: 0
+    mandatory: 0
+  help_block:
+    available: 0
+    mandatory: 0
+  'language_block:language_interface':
+    available: 0
+    mandatory: 0
+  node_syndicate_block:
+    available: 0
+    mandatory: 0
+  opigno_user_header_block:
+    available: 0
+    mandatory: 0
+  lp_steps_block:
+    available: 0
+    mandatory: 0
+  group_operations_lp:
+    available: 0
+    mandatory: 0
+  opigno_module_learning_path_progress_block:
+    available: 0
+    mandatory: 0
+  opigno_social_comment_form_block:
+    available: 0
+    mandatory: 0
+  private_message_notification_block:
+    available: 0
+    mandatory: 0
+  private_message_inbox_block:
+    available: 0
+    mandatory: 0
+  private_message_actions_block:
+    available: 0
+    mandatory: 0
+  shortcuts:
+    available: 0
+    mandatory: 0
+  system_messages_block:
+    available: 0
+    mandatory: 0
+  system_branding_block:
+    available: 0
+    mandatory: 0
+  'system_menu_block:account':
+    available: 0
+    mandatory: 0
+  'system_menu_block:admin':
+    available: 0
+    mandatory: 0
+  'system_menu_block:footer':
+    available: 0
+    mandatory: 0
+  'system_menu_block:main':
+    available: 0
+    mandatory: 0
+  'system_menu_block:opigno-admin':
+    available: 0
+    mandatory: 0
+  'system_menu_block:tools':
+    available: 0
+    mandatory: 0
+  system_breadcrumb_block:
+    available: 0
+    mandatory: 0
+  system_powered_by_block:
+    available: 0
+    mandatory: 0
+  system_main_block:
+    available: 0
+    mandatory: 0
+  user_login_block:
+    available: 0
+    mandatory: 0
+  forum_new_block:
+    available: 0
+    mandatory: 0
+  forum_active_block:
+    available: 0
+    mandatory: 0
+  'views_exposed_filter_block:opigno_training_catalog-training_catalogue':
+    available: 0
+    mandatory: 0
+  'views_block:content_recent-block_1':
+    available: 0
+    mandatory: 0
+  'views_block:opigno_group_members_table-group_members_block':
+    available: 0
+    mandatory: 0
+  'views_block:opigno_notifications-block_all':
+    available: 0
+    mandatory: 0
+  'views_block:opigno_notifications-block_unread':
+    available: 0
+    mandatory: 0
+  'views_block:opigno_social_posts-posts':
+    available: 0
+    mandatory: 0
+  'views_block:post_sharing_badges-badges':
+    available: 0
+    mandatory: 0
+  'views_block:post_sharing_new_training-trainings':
+    available: 0
+    mandatory: 0
+  'views_block:post_sharing_trainings-certificates':
+    available: 0
+    mandatory: 0
+  'views_block:post_sharing_trainings-trainings':
+    available: 0
+    mandatory: 0
+  'views_block:private_message-block_all':
+    available: 0
+    mandatory: 0
+  'views_block:private_message-block_last':
+    available: 0
+    mandatory: 0
+  'views_block:search_content-block_1':
+    available: 0
+    mandatory: 0
+  'views_block:user_connections-pending':
+    available: 0
+    mandatory: 0
+  'views_block:user_invitations-network':
+    available: 0
+    mandatory: 0
+  'views_block:user_invitations-suggested':
+    available: 0
+    mandatory: 0
+  page_title_block:
+    available: 0
+    mandatory: 0
+  broken:
+    available: 0
+    mandatory: 0
+  local_tasks_block:
+    available: 0
+    mandatory: 0
+  local_actions_block:
+    available: 0
+    mandatory: 0
+theme: aristotle
+_core:
+  default_config_hash: XeEaGQLaVAyC7TiclL7MR_juZGoFrJ5CGaVBGmTe00E

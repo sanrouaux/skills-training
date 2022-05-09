@@ -1,0 +1,12 @@
+uuid: bb4750ec-d140-4fa2-9507-25134701b132
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+_core:
+  default_config_hash: Wpd_AfMnoQRM85J06Buojy4whxY3GOu2uQzlASTjWTw
+id: opigno_activity.token
+label: Token
+targetEntityType: opigno_activity
+cache: true

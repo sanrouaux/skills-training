@@ -1,0 +1,61 @@
+uuid: f29329be-c162-457a-ae67-3b69b4f2651c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.opigno_course.badge_active
+    - field.field.group.opigno_course.badge_criteria
+    - field.field.group.opigno_course.badge_description
+    - field.field.group.opigno_course.badge_media_image
+    - field.field.group.opigno_course.badge_name
+    - field.field.group.opigno_course.field_course_description
+    - field.field.group.opigno_course.field_course_media_image
+    - group.type.opigno_course
+    - image.style.catalog_thumbnail
+  module:
+    - media
+    - text
+_core:
+  default_config_hash: TDvLgJschUIpNECCGsJjbjBv0kzY_gU0lkFXWgsi-mY
+id: group.opigno_course.default
+targetEntityType: group
+bundle: opigno_course
+mode: default
+content:
+  field_course_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_course_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: catalog_thumbnail
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  badge_active: true
+  badge_criteria: true
+  badge_description: true
+  badge_media_image: true
+  badge_name: true
+  changed: true
+  created: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true
+  uid: true

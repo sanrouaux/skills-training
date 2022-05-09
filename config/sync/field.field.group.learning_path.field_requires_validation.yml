@@ -1,0 +1,25 @@
+uuid: 57bf5fc8-5b7d-4e7e-a5d8-51fc7dbf16b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_requires_validation
+    - group.type.learning_path
+_core:
+  default_config_hash: rH0JaQRJ3w1YfWw4Rn7z469Ua864LOv2DMh4B8gJ_6c
+id: group.learning_path.field_requires_validation
+field_name: field_requires_validation
+entity_type: group
+bundle: learning_path
+label: 'Requires validation'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

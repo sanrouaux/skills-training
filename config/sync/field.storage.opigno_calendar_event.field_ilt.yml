@@ -1,0 +1,22 @@
+uuid: c1f5f144-5ee3-43f8-ac66-d17951e86fcc
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_calendar_event
+    - opigno_ilt
+_core:
+  default_config_hash: XoyxgVkh2rVegF2QmKhfXyfk9xOCpmP9KGJiGC8sOUo
+id: opigno_calendar_event.field_ilt
+field_name: field_ilt
+entity_type: opigno_calendar_event
+type: entity_reference
+settings:
+  target_type: opigno_ilt
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

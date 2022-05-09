@@ -1,0 +1,20 @@
+uuid: 412cdb37-975d-4794-ae5c-dd10f43b642b
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: EFTKUneIRc9MBzf2iKGz6LA4G54EFA2S20CtJUuIsRU
+id: group.field_certificate_expire
+field_name: field_certificate_expire
+entity_type: group
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

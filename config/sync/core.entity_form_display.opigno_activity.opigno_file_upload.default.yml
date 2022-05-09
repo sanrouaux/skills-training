@@ -1,0 +1,66 @@
+uuid: f854e2b8-5064-42f9-b60a-45769188d8a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_activity.opigno_file_upload.opigno_allowed_extension
+    - field.field.opigno_activity.opigno_file_upload.opigno_body
+    - field.field.opigno_activity.opigno_file_upload.opigno_evaluation_method
+    - opigno_module.opigno_activity_type.opigno_file_upload
+  module:
+    - opigno_file_upload
+    - text
+_core:
+  default_config_hash: 036ep2oV_bMi5Eh0r53XzyEu6JWyileivuX3tknO0Uo
+id: opigno_activity.opigno_file_upload.default
+targetEntityType: opigno_activity
+bundle: opigno_file_upload
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  opigno_allowed_extension:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  opigno_body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  opigno_evaluation_method:
+    type: opigno_evaluation_method_widget
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

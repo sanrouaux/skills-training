@@ -1,0 +1,26 @@
+uuid: 93aba463-ec57-4923-bdfd-0278545bc9c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - opigno_module
+    - opigno_tincan_activity
+_core:
+  default_config_hash: yC_8eawQLQm9sjn5b6l-O3yVvUU0dUEI4EJEK-cR3Cw
+id: opigno_activity.opigno_tincan_package
+field_name: opigno_tincan_package
+entity_type: opigno_activity
+type: opigno_tincan_package
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: opigno_tincan_activity
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

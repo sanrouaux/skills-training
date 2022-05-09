@@ -1,0 +1,28 @@
+uuid: 548820e4-ef96-4012-97aa-b7d1d7d1a8f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.opigno_course-group_membership.group_roles
+    - group.content_type.opigno_course-group_membership
+_core:
+  default_config_hash: '-LPWc2SI8vpKx-gHzdl-4zqRDkO44uEMfWb6TP19f8w'
+id: group_content.opigno_course-group_membership.default
+targetEntityType: group_content
+bundle: opigno_course-group_membership
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  uid: true

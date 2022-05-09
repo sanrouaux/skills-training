@@ -1,0 +1,26 @@
+uuid: cfaf3345-c8bf-46d6-b940-2fac31659091
+langcode: en
+status: false
+dependencies:
+  module:
+    - opigno_social
+    - system
+  theme:
+    - aristotle
+id: dashboard_opigno_user_connections_block
+theme: aristotle
+region: help
+weight: 0
+provider: null
+plugin: opigno_user_connections_block
+settings:
+  id: opigno_user_connections_block
+  label: 'Dashboard: User connections'
+  label_display: ''
+  provider: opigno_social
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

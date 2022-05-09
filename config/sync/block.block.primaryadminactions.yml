@@ -1,0 +1,27 @@
+uuid: 18643622-460a-4612-8116-e582dab46f57
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aristotle
+_core:
+  default_config_hash: 5dMydvqYU9zH6jKww4861YTISyhovkEpa_pijz7WD40
+id: primaryadminactions
+theme: aristotle
+region: content
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: /catalogue

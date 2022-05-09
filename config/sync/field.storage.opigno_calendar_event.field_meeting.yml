@@ -1,0 +1,25 @@
+uuid: d7a97248-9a47-4386-8444-7c7a0d8e539e
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_calendar_event
+    - opigno_moxtra
+  enforced:
+    module:
+      - opigno_moxtra
+_core:
+  default_config_hash: FGD0c0MRw0yfuYGmVK2_T2X0idIrZEgIo_M4X7fuG2g
+id: opigno_calendar_event.field_meeting
+field_name: field_meeting
+entity_type: opigno_calendar_event
+type: entity_reference
+settings:
+  target_type: opigno_moxtra_meeting
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

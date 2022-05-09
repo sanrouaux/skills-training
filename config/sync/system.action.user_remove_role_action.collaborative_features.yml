@@ -1,0 +1,14 @@
+uuid: a5aa2420-9d4a-42df-9329-a3cb6bff43c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.collaborative_features
+  module:
+    - user
+id: user_remove_role_action.collaborative_features
+label: 'Remove the Live meeting manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: collaborative_features

@@ -1,0 +1,23 @@
+uuid: 301d30fd-28fd-40ad-b330-7d45e87207b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+_core:
+  default_config_hash: A8xkYoRdw1c3_tBgoH8lJVweVT0ACJ49jdDQe7hK-sc
+id: opigno_activity.opigno_allowed_extension
+field_name: opigno_allowed_extension
+entity_type: opigno_activity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

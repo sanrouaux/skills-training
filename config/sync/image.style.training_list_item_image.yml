@@ -1,0 +1,17 @@
+uuid: 128b5d6e-a824-4934-b6a5-0e1c5eeba15d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ybIDTvY-oV86Pz4GL853ysEHtNmu_QjNmoIcXK3vG-M
+name: training_list_item_image
+label: 'Training list item image (45x40)'
+effects:
+  4d308a00-4fca-49f3-9013-6065b2b022ea:
+    uuid: 4d308a00-4fca-49f3-9013-6065b2b022ea
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 45
+      height: 40
+      anchor: center-center

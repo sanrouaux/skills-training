@@ -1,0 +1,19 @@
+uuid: 636b16b8-e903-4f37-a186-8d13899fd35f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+  enforced:
+    config:
+      - user.role.content_manager
+_core:
+  default_config_hash: 89sxMESSVZViM_rVp9lb9nVt-hnnXnS00hnV89mChOE
+id: learning_path-1eb7047a7
+label: 'Content manager'
+weight: 3
+internal: true
+audience: outsider
+group_type: learning_path
+permissions_ui: false
+permissions: {  }

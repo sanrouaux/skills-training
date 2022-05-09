@@ -1,0 +1,31 @@
+uuid: 3c1f719c-8e51-4ed1-bc82-99c083f27916
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opigno_training_catalog
+  module:
+    - system
+    - views
+  theme:
+    - aristotle
+_core:
+  default_config_hash: oTJ60ukDuHNRK9tZH7K6X12QHZ_bgWjMOUANVpJyfqE
+id: opigno_training_catalog_filter
+theme: aristotle
+region: sidebar_first
+weight: -1
+provider: null
+plugin: 'views_exposed_filter_block:opigno_training_catalog-training_catalogue'
+settings:
+  id: 'views_exposed_filter_block:opigno_training_catalog-training_catalogue'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /catalogue

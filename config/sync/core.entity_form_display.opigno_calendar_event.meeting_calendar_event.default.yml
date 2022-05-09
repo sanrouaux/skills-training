@@ -1,0 +1,69 @@
+uuid: 5a70a3e5-3434-4020-9110-36761199b561
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_calendar_event.meeting_calendar_event.field_calendar_event_members
+    - field.field.opigno_calendar_event.meeting_calendar_event.field_meeting
+    - opigno_calendar_event.type.meeting_calendar_event
+  module:
+    - datetime_range
+    - text
+  enforced:
+    module:
+      - opigno_moxtra
+_core:
+  default_config_hash: Qdcmc-GY_oXfvOfTSKf_eZb8jirorVfSiO2fYxN-m4I
+id: opigno_calendar_event.meeting_calendar_event.default
+targetEntityType: opigno_calendar_event
+bundle: meeting_calendar_event
+mode: default
+content:
+  date_daterange:
+    type: daterange_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  displayed:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_calendar_event_members:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_meeting:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

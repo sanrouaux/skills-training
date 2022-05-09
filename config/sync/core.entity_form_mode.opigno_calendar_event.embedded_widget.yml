@@ -1,0 +1,12 @@
+uuid: 4b1e000a-78aa-4202-b9fa-2ad188b4841b
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_calendar_event
+_core:
+  default_config_hash: zieP50l5Fxlq1A9VRQrVmkJORODtfD-QFzgkOeFj_pM
+id: opigno_calendar_event.embedded_widget
+label: 'Show on calendar'
+targetEntityType: opigno_calendar_event
+cache: true

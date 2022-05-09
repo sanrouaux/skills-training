@@ -1,0 +1,88 @@
+uuid: 3246b381-5751-4002-a063-f1d60d3f3e05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.private_message_thread.private_message_thread.field_author
+    - field.field.private_message_thread.private_message_thread.field_create_group
+    - field.field.private_message_thread.private_message_thread.field_image
+    - field.field.private_message_thread.private_message_thread.field_pm_subject
+  module:
+    - private_message
+_core:
+  default_config_hash: UW70Shyu4Z_hAePqer7HsVOLh52E0vjLlb8dJaPT3hg
+id: private_message_thread.private_message_thread.default
+targetEntityType: private_message_thread
+bundle: private_message_thread
+mode: default
+content:
+  delete_link:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -100
+    region: content
+  field_pm_subject:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -99
+    region: content
+  members:
+    type: private_message_thread_member_formatter
+    label: hidden
+    settings:
+      display_type: entity
+      entity_display_mode: private_message_author
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  private_message_form:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  private_messages:
+    type: private_message_thread_message_formatter
+    label: hidden
+    settings:
+      message_count: 7
+      ajax_previous_load_count: 5
+      message_order: asc
+      ajax_refresh_rate: 20
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  thread_formatted_date:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  thread_picture:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  thread_text:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  thread_title:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_author: true
+  field_create_group: true
+  field_image: true
+  last_message: true
+  no_active_users: true
+  search_api_excerpt: true
+  thread_actions: true
+  thread_unread_count: true

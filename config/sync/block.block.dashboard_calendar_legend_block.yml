@@ -1,0 +1,29 @@
+uuid: 155592b5-f256-48bb-9cf4-003b271ac28c
+langcode: en
+status: true
+dependencies:
+  module:
+    - calendar
+    - system
+  theme:
+    - aristotle
+_core:
+  default_config_hash: Iv0CTAaAZTyDJr1yC3pJxMQe4hKiwLAHd5-NzKWgSkQ
+id: dashboard_calendar_legend_block
+theme: aristotle
+region: content
+weight: -3
+provider: null
+plugin: calendar_legend_block
+settings:
+  id: calendar_legend_block
+  label: 'Dashboard: Calendar legend'
+  label_display: visible
+  provider: calendar
+  calendar_legend_view_settings_view: 'opigno_calendar:month_block'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

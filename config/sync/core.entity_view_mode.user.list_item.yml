@@ -1,0 +1,12 @@
+uuid: c52f0955-a173-49cd-9c81-7d49f1f00c15
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: mHSeVJo1PGla6tVz_zneFwGzY-kOF1kvyCc8fSFOBM0
+id: user.list_item
+label: 'List item'
+targetEntityType: user
+cache: true

@@ -1,0 +1,31 @@
+uuid: 8fcd1fe2-9096-46ad-9864-b0b60d7e3bf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_learning_path_duration
+    - group.type.learning_path
+    - taxonomy.vocabulary.duration
+_core:
+  default_config_hash: tRU4PlHC5mK49FDQv3a46rYA-FwmOANFrWBBdetKlTw
+id: group.learning_path.field_learning_path_duration
+field_name: field_learning_path_duration
+entity_type: group
+bundle: learning_path
+label: Duration
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      duration: duration
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

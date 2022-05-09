@@ -1,0 +1,56 @@
+uuid: 05e1e392-c123-44ef-a72b-d392966d44a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.skills.field_level_names
+    - field.field.taxonomy_term.skills.field_minimum_count_of_answers
+    - field.field.taxonomy_term.skills.field_minimum_score
+    - taxonomy.vocabulary.skills
+  module:
+    - text
+_core:
+  default_config_hash: uadA5soi3oxxTfTsOfBeH9eYB2QAoe3RMA5QzXS73SE
+id: taxonomy_term.skills.default
+targetEntityType: taxonomy_term
+bundle: skills
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_level_names:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_minimum_count_of_answers:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_minimum_score:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true

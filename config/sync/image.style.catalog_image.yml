@@ -1,0 +1,17 @@
+uuid: 5a0faeb2-f8e6-4070-a6c0-c8d095095029
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ipag_hI40rGBsP9suAHd-Uq69rr1aeJso7lORIt8lik
+name: catalog_image
+label: 'Catalog image (318x318)'
+effects:
+  f7572463-ed40-4fc9-8495-4c24693fa9ce:
+    uuid: f7572463-ed40-4fc9-8495-4c24693fa9ce
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 318
+      height: 318
+      anchor: center-center

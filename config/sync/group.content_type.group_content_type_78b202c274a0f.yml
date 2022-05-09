@@ -1,0 +1,22 @@
+uuid: 3eeb36fe-138e-459c-bb1e-a61293419f8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+  module:
+    - opigno_moxtra
+  enforced:
+    module:
+      - opigno_moxtra
+_core:
+  default_config_hash: hG2sWLSV77lfWqAlDrW6gnyVkFhzR8kwKqa0_zYW8dg
+id: group_content_type_78b202c274a0f
+label: 'Learning Path: Live Meeting Group'
+description: 'Adds Live Meeting entity to groups.'
+group_type: learning_path
+content_plugin: opigno_moxtra_meeting_group
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: true

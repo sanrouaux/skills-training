@@ -1,0 +1,66 @@
+uuid: ded03597-cf23-416d-97c1-869400ff475a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_calendar_event.ilt_calendar_event.field_calendar_event_members
+    - field.field.opigno_calendar_event.ilt_calendar_event.field_ilt
+    - opigno_calendar_event.type.ilt_calendar_event
+  module:
+    - datetime_range
+    - text
+_core:
+  default_config_hash: 2lKczGJ2p6ZEmGP3Gmqcek7QHzWtJgcikCd9IFbWaz8
+id: opigno_calendar_event.ilt_calendar_event.default
+targetEntityType: opigno_calendar_event
+bundle: ilt_calendar_event
+mode: default
+content:
+  date_daterange:
+    type: daterange_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  displayed:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_calendar_event_members:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ilt:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

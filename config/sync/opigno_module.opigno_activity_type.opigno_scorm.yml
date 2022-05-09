@@ -1,0 +1,11 @@
+uuid: fe9c72a8-41aa-481e-8129-7ad5c51247c5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nv0NLi0EW-BhTiEzSzK0qOqDtok5g7CRbkcthovaV-Y
+id: opigno_scorm
+label: 'Scorm package'
+description: 'This makes possible to load a SCORM package developed outside Opigno, and containing an activity. Opigno is compliant with SCORM 1.2 and 2004.'
+summary: null
+image: null

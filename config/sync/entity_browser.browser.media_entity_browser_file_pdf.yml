@@ -1,0 +1,55 @@
+uuid: 77830d7d-49d6-4e6f-911a-3de6ecbc93c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.pdf_file
+    - views.view.media_browser_file_pdf
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+_core:
+  default_config_hash: 660k2MmqKHiL1x1f4CQlw9nmDVWC221Dl3PtNPcGZAs
+name: media_entity_browser_file_pdf
+label: 'Media Entity Browser File(PDF)'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '300'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: drop_down
+widget_selector_configuration: {  }
+widgets:
+  b18d7810-d58f-4dfb-8768-7752aaddbb89:
+    id: dropzonejs_media_entity
+    uuid: b18d7810-d58f-4dfb-8768-7752aaddbb89
+    label: 'Upload a new file'
+    weight: 1
+    settings:
+      submit_text: Upload
+      auto_select: false
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 64M
+      extensions: pdf
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      media_type: pdf_file
+  a515f457-e00a-469b-9eae-164b1f5e17d7:
+    id: view
+    uuid: a515f457-e00a-469b-9eae-164b1f5e17d7
+    label: 'Select an existing file'
+    weight: 2
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: media_browser_file_pdf
+      view_display: media_browser_all

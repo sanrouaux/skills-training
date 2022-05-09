@@ -1,0 +1,25 @@
+uuid: 0fa7536f-5f46-48c7-be4a-12133659b997
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_guided_navigation
+    - group.type.learning_path
+_core:
+  default_config_hash: IsmlxdUdifA6yH2tKh6gvdpDQSGsg7XFiPa2AgQLkXI
+id: group.learning_path.field_guided_navigation
+field_name: field_guided_navigation
+entity_type: group
+bundle: learning_path
+label: 'Guided Navigation'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

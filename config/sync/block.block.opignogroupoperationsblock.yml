@@ -1,0 +1,30 @@
+uuid: 3b39cdf8-691b-493f-b331-59a25b3013b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - opigno_learning_path
+  theme:
+    - aristotle
+_core:
+  default_config_hash: sba0MybDdP6bYhKYWM2eq2gLu2Dh1IYiJBmMq90_m38
+id: opignogroupoperationsblock
+theme: aristotle
+region: content
+weight: -1
+provider: null
+plugin: group_operations_lp
+settings:
+  id: group_operations_lp
+  label: 'Opigno Group Operations Block'
+  label_display: '0'
+  provider: opigno_learning_path
+visibility:
+  group_type:
+    id: group_type
+    group_types:
+      learning_path: learning_path
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

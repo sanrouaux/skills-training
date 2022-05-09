@@ -1,0 +1,40 @@
+uuid: 03936b6a-d1e2-499d-a772-8b286aaf6f11
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+    - text
+_core:
+  default_config_hash: bY60CRy-1iA05ELhvP1G7mki9KT4YbhNEoh-HzFbwAw
+id: private_message.private_message.default
+targetEntityType: private_message
+bundle: private_message
+mode: default
+content:
+  message:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  owner:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: private_message_author
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  timestamp:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  created: true

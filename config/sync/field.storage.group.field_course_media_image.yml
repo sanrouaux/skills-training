@@ -1,0 +1,22 @@
+uuid: 362bee0e-055e-4a4b-9169-b1a44898739b
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - media
+_core:
+  default_config_hash: uhcAZ2Xia2-xn0h5uJvxE5DS7NGMMj0k35oF4ptql2A
+id: group.field_course_media_image
+field_name: field_course_media_image
+entity_type: group
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

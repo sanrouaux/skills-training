@@ -1,0 +1,67 @@
+uuid: c435dd87-ff1e-46a7-9f90-b01191a0921f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.opigno_certificate_wysiwyg
+  module:
+    - ckeditor
+    - ckeditor_bgimage
+third_party_settings:
+  ckeditor_bgimage:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: 'png jpeg jpg'
+_core:
+  default_config_hash: UyK4EebrMbKWkgqPL1zUSNFTLtONpp767zAAGUN0E0w
+format: opigno_certificate_wysiwyg
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Format
+            - Bold
+            - Italic
+            - Font
+            - FontSize
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - bgimage
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

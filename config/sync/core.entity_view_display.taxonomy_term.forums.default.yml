@@ -1,0 +1,29 @@
+uuid: 7ba9bca9-40a3-42c3-a17e-d21ad8b85b1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.forums.forum_container
+    - taxonomy.vocabulary.forums
+  module:
+    - text
+_core:
+  default_config_hash: fEFqA0_1VTvfhDVWt2yXcjfTWwsOw9YoC1xg-SO8Tms
+id: taxonomy_term.forums.default
+targetEntityType: taxonomy_term
+bundle: forums
+mode: default
+content:
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  forum_container: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: 1d4c9945-b5de-4648-89cb-9b5feea83991
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - taxonomy
+_core:
+  default_config_hash: Da6e-2oTzGvykMWrg5z4X-fPPRWLiNkcPym9FGjMNrY
+id: group.field_learning_path_duration
+field_name: field_learning_path_duration
+entity_type: group
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

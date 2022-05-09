@@ -1,0 +1,103 @@
+uuid: 12c9bbe1-5e94-40ce-9deb-6c729ea2a309
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.catalog_item
+    - field.field.group.learning_path.field_anonymous_visibility
+    - field.field.group.learning_path.field_certificate
+    - field.field.group.learning_path.field_certificate_expire
+    - field.field.group.learning_path.field_certificate_expire_results
+    - field.field.group.learning_path.field_guided_navigation
+    - field.field.group.learning_path.field_learning_path_category
+    - field.field.group.learning_path.field_learning_path_description
+    - field.field.group.learning_path.field_learning_path_duration
+    - field.field.group.learning_path.field_learning_path_enable_forum
+    - field.field.group.learning_path.field_learning_path_folder
+    - field.field.group.learning_path.field_learning_path_forum
+    - field.field.group.learning_path.field_learning_path_media_image
+    - field.field.group.learning_path.field_learning_path_published
+    - field.field.group.learning_path.field_learning_path_visibility
+    - field.field.group.learning_path.field_required_trainings
+    - field.field.group.learning_path.field_requires_validation
+    - field.field.group.learning_path.field_workspace
+    - group.type.learning_path
+    - image.style.catalog_image
+  module:
+    - media
+    - text
+_core:
+  default_config_hash: PLp2-r3MkgXVRevfNWt62_-EOb02Cq7N9d6TSSQStSk
+id: group.learning_path.catalog_item
+targetEntityType: group
+bundle: learning_path
+mode: catalog_item
+content:
+  actions_dropdown:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_learning_path_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_learning_path_description:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_learning_path_duration:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_learning_path_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: catalog_image
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  changed: true
+  created: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_anonymous_visibility: true
+  field_certificate: true
+  field_certificate_expire: true
+  field_certificate_expire_results: true
+  field_guided_navigation: true
+  field_learning_path_enable_forum: true
+  field_learning_path_folder: true
+  field_learning_path_forum: true
+  field_learning_path_published: true
+  field_learning_path_visibility: true
+  field_lp_price: true
+  field_required_trainings: true
+  field_requires_validation: true
+  field_workspace: true
+  search_api_excerpt: true
+  uid: true

@@ -1,0 +1,17 @@
+uuid: 2aacf8dc-c82b-4280-a190-dc63e1aacbfa
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5DnyX-VmkbZJU13VHixwYeKmpyhrSsp7gylCfyu_XRs
+name: post_author_picture
+label: 'Post author picture (39x39)'
+effects:
+  4f2089de-a456-4543-a726-1e0887d01e61:
+    uuid: 4f2089de-a456-4543-a726-1e0887d01e61
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 39
+      height: 39
+      anchor: center-center

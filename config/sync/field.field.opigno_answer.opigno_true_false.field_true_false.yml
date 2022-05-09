@@ -1,0 +1,23 @@
+uuid: 9d0d932b-80ac-40ce-a2e4-5a82dcb253d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.opigno_answer.field_true_false
+    - opigno_module.opigno_answer_type.opigno_true_false
+  module:
+    - opigno_module
+_core:
+  default_config_hash: qECwnMou4p1pesQf2g3Ay8aa1tQT9-nzVBaBSRNDJR4
+id: opigno_answer.opigno_true_false.field_true_false
+field_name: field_true_false
+entity_type: opigno_answer
+bundle: opigno_true_false
+label: Answer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: opigno_true_false_field

@@ -1,0 +1,22 @@
+uuid: 9b3dcb98-924a-44fc-a3db-8a12bf81cd3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - media
+_core:
+  default_config_hash: Byp3myE6idvMQ1ETSErjOdGTFdUNXNfqfwI_LqMZCas
+id: group.badge_media_image
+field_name: badge_media_image
+entity_type: group
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

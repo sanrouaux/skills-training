@@ -1,0 +1,20 @@
+uuid: ccebf864-0a6e-42df-a6cb-66132e968507
+langcode: en
+status: true
+dependencies:
+  module:
+    - message
+title: 'Queue: Delete messages if an entity is referenced'
+id: ultimate_cron_queue_message_check_delete
+weight: 10
+module: message
+callback: 'ultimate_cron.queue_worker:queueCallback'
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '* * * * *'
+launcher:
+  id: serial
+logger:
+  id: database

@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: GUfxNBU0vAD9oYW6SIARRC6Sze11kFHFdH7jdgG2yG0
+theme: current
+defaults:
+  sender: php_mail
+  formatter: mime_mail

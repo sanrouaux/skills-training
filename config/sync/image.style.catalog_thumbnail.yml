@@ -1,0 +1,17 @@
+uuid: 454310a8-8a57-4f9f-b796-189b5c36693d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vlDV7p_WYOUoNzipk_KI7cVa29aiGVQ9NJv95XOdEO0
+name: catalog_thumbnail
+label: 'Catalog thumbnail'
+effects:
+  568d15d2-1a74-4925-acff-cea38f2e1aed:
+    uuid: 568d15d2-1a74-4925-acff-cea38f2e1aed
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 545
+      height: 340
+      anchor: center-center

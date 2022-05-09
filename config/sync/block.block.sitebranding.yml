@@ -1,0 +1,25 @@
+uuid: e26775c0-5fde-4235-a284-1f1011850e6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aristotle
+_core:
+  default_config_hash: CUE7G8l5ad2MJrKjY5EruYwWXwTgQ_wrfToc1AgQwzI
+id: sitebranding
+theme: aristotle
+region: branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

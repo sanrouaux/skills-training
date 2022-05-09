@@ -1,0 +1,32 @@
+uuid: 9fc3f0c2-2d0b-422b-b227-34d2d1679d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - system
+    - views
+  theme:
+    - aristotle
+_core:
+  default_config_hash: bHhK_baHHiGI6eiv46ULQHvcdOT-reV0M3EzAFw8wPg
+id: dashboard_views_block_who_s_online_who_s_online_block
+theme: aristotle
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: 'Dashboard: Who''s online'
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

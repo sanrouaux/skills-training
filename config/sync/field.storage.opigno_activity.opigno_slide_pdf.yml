@@ -1,0 +1,22 @@
+uuid: 5517d018-e285-494f-bfca-7573ca9457cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - opigno_module
+_core:
+  default_config_hash: RSLRynDIIv8hPK5pLx-FP8UTyrIMLUh20yfP2JeXgK8
+id: opigno_activity.opigno_slide_pdf
+field_name: opigno_slide_pdf
+entity_type: opigno_activity
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

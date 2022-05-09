@@ -1,0 +1,22 @@
+uuid: d3561908-682a-4d6e-97ca-fd8315bf0637
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.private_message_thread.field_pm_subject
+  module:
+    - private_message
+_core:
+  default_config_hash: VuPLpZ7QCOmkYBG3iDz6Usg0qto1afHjS37KRl-BGJ8
+id: private_message_thread.private_message_thread.field_pm_subject
+field_name: field_pm_subject
+entity_type: private_message_thread
+bundle: private_message_thread
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

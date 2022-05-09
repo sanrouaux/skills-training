@@ -1,0 +1,20 @@
+uuid: 3a1e3494-5fa9-4a6d-b8b3-906e5ca832f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_moxtra
+title: 'Queue: Save meeting records on CRON run'
+id: ultimate_cron_queue_opigno_moxtra_save_meeting_records
+weight: 10
+module: opigno_moxtra
+callback: 'ultimate_cron.queue_worker:queueCallback'
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '* * * * *'
+launcher:
+  id: serial
+logger:
+  id: database

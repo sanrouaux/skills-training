@@ -1,0 +1,39 @@
+uuid: d8809d3e-5741-4540-a19c-d66486f8b96e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+_core:
+  default_config_hash: jU2xxtD0IENIHBixuHQxD_-vlVtuIi8awe5k7n3gWtY
+id: learning_path-admin
+label: Admin
+weight: -7
+internal: false
+audience: member
+group_type: learning_path
+permissions_ui: true
+permissions:
+  - 'access content overview'
+  - 'access group_node overview'
+  - 'administer group'
+  - 'administer members'
+  - 'administer tft'
+  - 'delete all results'
+  - 'delete group'
+  - 'delete own results'
+  - 'edit all results'
+  - 'edit group'
+  - 'edit own results'
+  - 'leave group'
+  - 'tft access file tree'
+  - 'tft add a file to any term'
+  - 'tft add child terms'
+  - 'tft archive child terms'
+  - 'tft delete child terms'
+  - 'tft reorder terms'
+  - 'update own group_membership content'
+  - 'view all results'
+  - 'view group'
+  - 'view group_membership content'
+  - 'view own results'

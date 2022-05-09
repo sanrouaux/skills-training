@@ -1,0 +1,37 @@
+uuid: 5a2c0f8b-d8f7-4238-9591-3df051ee779d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.private_message_author
+    - field.field.user.user.field_created_by
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_private_profile
+    - field.field.user.user.user_picture
+  module:
+    - user
+_core:
+  default_config_hash: 5VkjdDDe_kM-giLC61z36ACn6Z2eMjaH63Rh6adWWpw
+id: user.user.private_message_author
+targetEntityType: user
+bundle: user
+mode: private_message_author
+content:
+  linked_username:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_created_by: true
+  field_first_name: true
+  field_last_name: true
+  field_private_profile: true
+  member_for: true
+  private_message_link: true
+  search_api_excerpt: true
+  user_picture: true

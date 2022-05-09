@@ -1,0 +1,71 @@
+uuid: 60a670e2-645f-4230-9031-e394084f4f37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.skills.field_level_names
+    - field.field.taxonomy_term.skills.field_minimum_count_of_answers
+    - field.field.taxonomy_term.skills.field_minimum_score
+    - taxonomy.vocabulary.skills
+  module:
+    - path
+    - text
+_core:
+  default_config_hash: 1k0xp8CiqoqUVdCGKagDg93elFm6I10m7-CSylSrZOU
+id: taxonomy_term.skills.default
+targetEntityType: taxonomy_term
+bundle: skills
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_level_names:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_minimum_count_of_answers:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_minimum_score:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

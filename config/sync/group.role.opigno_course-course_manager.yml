@@ -1,0 +1,20 @@
+uuid: 607a3e93-4bce-43c7-aa05-d489ade894d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+_core:
+  default_config_hash: Ubziq8HGcTBM_t7uMKkLPaLRkhe9QkanHydphqZ21wE
+id: opigno_course-course_manager
+label: 'Course manager'
+weight: -10
+internal: false
+audience: member
+group_type: opigno_course
+permissions_ui: true
+permissions:
+  - 'administer group'
+  - 'administer members'
+  - 'view group'
+  - 'view group_membership content'

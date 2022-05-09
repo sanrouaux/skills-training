@@ -1,0 +1,8 @@
+uuid: ddd41236-8227-4db6-8912-57fed9280d21
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: TEOaL6wxi6pCny8vmzzIJjSJWyBrWiZ7OHKFifoDtXQ
+id: opigno_h5p
+label: 'Interactive content'

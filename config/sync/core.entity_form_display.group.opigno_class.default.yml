@@ -1,0 +1,50 @@
+uuid: 2d66f6ee-bb9b-4830-9410-da1c39358621
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.opigno_class.field_class_description
+    - group.type.opigno_class
+  module:
+    - text
+_core:
+  default_config_hash: u3_iV09rMjZGnCa1249qgi2xrFQTEctq848CbqsUYCY
+id: group.opigno_class.default
+targetEntityType: group
+bundle: opigno_class
+mode: default
+content:
+  field_class_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_class_media_image:
+    type: entity_browser_entity_reference
+    weight: 2
+    region: content
+    settings:
+      entity_browser: media_entity_browser_groups
+      field_widget_display: rendered_entity
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings:
+        view_mode: image_only
+      selection_mode: selection_append
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  path: true
+  uid: true

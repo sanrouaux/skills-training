@@ -1,0 +1,19 @@
+uuid: 6d04c5de-926b-4cb1-82d8-a0ce0f47ed71
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_class
+  enforced:
+    config:
+      - user.role.statistics_reader
+_core:
+  default_config_hash: Wx2G5YElxyfUWUvfJCFeKyxGfthrK1iSwmQIHsIDjWc
+id: opigno_class-9b4c10f4d
+label: 'Statistics manager'
+weight: 5
+internal: true
+audience: outsider
+group_type: opigno_class
+permissions_ui: false
+permissions: {  }

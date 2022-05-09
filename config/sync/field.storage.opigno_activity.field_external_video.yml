@@ -1,0 +1,29 @@
+uuid: 30fe0cdc-48f0-4f63-8b84-8effdcc4ce81
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - opigno_module
+    - video
+_core:
+  default_config_hash: A3oukq4b3IeeASetzyT2cXW6LBK2CS4l1I9mY_UhuAw
+id: opigno_activity.field_external_video
+field_name: field_external_video
+entity_type: opigno_activity
+type: video
+settings:
+  default_video:
+    uuid: null
+    data: null
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: video
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

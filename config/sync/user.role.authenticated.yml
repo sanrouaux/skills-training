@@ -1,0 +1,60 @@
+uuid: c371881b-442c-47dc-875a-26b346157f84
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.forum
+  module:
+    - comment
+    - contact
+    - dropzonejs
+    - filter
+    - h5peditor
+    - media
+    - node
+    - opigno_calendar_event
+    - opigno_dashboard
+    - opigno_ilt
+    - opigno_module
+    - opigno_moxtra
+    - private_message
+    - shortcut
+    - system
+    - userprotect
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access editor'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'add members to calendar event'
+  - 'create forum content'
+  - 'create opigno_calendar_event'
+  - 'delete own forum content'
+  - 'delete own opigno calendar event'
+  - 'dropzone upload files'
+  - 'edit own forum content'
+  - 'opigno dashboard layout access'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'take modules'
+  - 'update own opigno calendar event'
+  - 'use private messaging system'
+  - 'use text format basic_html'
+  - userprotect.account.edit
+  - userprotect.mail.edit
+  - userprotect.pass.edit
+  - 'view ilt entities'
+  - 'view media'
+  - 'view meeting entities'
+  - 'view own module results'
+  - 'view own opigno calendar event'
+  - 'view published module entities'

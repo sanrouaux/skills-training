@@ -1,0 +1,20 @@
+uuid: 4333cd5b-d6d9-4fa3-a480-516d6b324e4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: IpysqWegjC2dW3ZIsF_v_b15XUYdJPAs9RbYq-21nEE
+id: group.field_anonymous_visibility
+field_name: field_anonymous_visibility
+entity_type: group
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

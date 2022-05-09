@@ -1,0 +1,8 @@
+uuid: 9fca951f-5862-4c9d-bec5-99f4cdc10038
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FOx02wcK8pqY0ZmRk1QVEq_65sHiR9j9itBbahf4Ghw
+id: opigno_slide
+label: Slide

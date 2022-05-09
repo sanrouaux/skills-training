@@ -1,0 +1,29 @@
+uuid: 8c74268f-cf89-4bf3-8c6c-4851a46f8bba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.opigno_answer.opigno_file
+    - opigno_module.opigno_answer_type.opigno_file_upload
+  module:
+    - file
+_core:
+  default_config_hash: tV4U4leBU6d5Wom1DQqdlkQv0_HGVNAAewekxSq1ViE
+id: opigno_answer.opigno_file_upload.opigno_file
+field_name: opigno_file
+entity_type: opigno_answer
+bundle: opigno_file_upload
+label: Upload
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx xls xlsx ppt pptx pdf odt ods odp'
+  max_filesize: ''
+  description_field: false
+field_type: file

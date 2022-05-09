@@ -1,0 +1,25 @@
+uuid: b48afe8c-dcbb-4cdb-86ba-c1f450574027
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.opigno_moxtra_recording_link
+    - media.type.tft_file
+  module:
+    - link
+_core:
+  default_config_hash: BADdJhvI9UE9BuW6dWRVSPpHvFbPVP401bdCJohms-o
+id: media.tft_file.opigno_moxtra_recording_link
+field_name: opigno_moxtra_recording_link
+entity_type: media
+bundle: tft_file
+label: 'Moxtra Live Meeting Recording Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

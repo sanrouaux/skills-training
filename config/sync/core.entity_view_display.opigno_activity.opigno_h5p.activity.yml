@@ -1,0 +1,31 @@
+uuid: 92e55ee3-db4e-4a05-aba3-ec100eaf1d69
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.opigno_activity.activity
+    - field.field.opigno_activity.opigno_h5p.opigno_h5p
+    - opigno_module.opigno_activity_type.opigno_h5p
+  module:
+    - opigno_h5p
+_core:
+  default_config_hash: 2SrJiDEVsJa-uxNwFN_cLWtBktoxDKuggSeVt0WX7XU
+id: opigno_activity.opigno_h5p.activity
+targetEntityType: opigno_activity
+bundle: opigno_h5p
+mode: activity
+content:
+  opigno_h5p:
+    type: h5p_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  name: true
+  search_api_excerpt: true
+  uid: true

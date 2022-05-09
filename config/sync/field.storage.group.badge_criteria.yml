@@ -1,0 +1,29 @@
+uuid: aef8e4ed-483b-4a5c-afaf-7be7f38a5436
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - options
+_core:
+  default_config_hash: DEWG80F0FENSoPCqNt83xKoOKxETgqL2Jw3tOBuWgHk
+id: group.badge_criteria
+field_name: badge_criteria
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: finished
+      label: Finished
+    -
+      value: success
+      label: Success
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

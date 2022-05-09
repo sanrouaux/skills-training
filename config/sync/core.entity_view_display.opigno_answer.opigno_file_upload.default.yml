@@ -1,0 +1,30 @@
+uuid: 817f5132-d928-4f5b-9c99-e5bd76ec0eb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_answer.opigno_file_upload.opigno_file
+    - opigno_module.opigno_answer_type.opigno_file_upload
+  module:
+    - file
+_core:
+  default_config_hash: uSTEdGG098WYETSOjlwF1XP1Plv5iB2h7-eolsgmZzI
+id: opigno_answer.opigno_file_upload.default
+targetEntityType: opigno_answer
+bundle: opigno_file_upload
+mode: default
+content:
+  opigno_file:
+    type: file_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -3
+    region: content
+hidden:
+  activity: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  module: true
+  search_api_excerpt: true

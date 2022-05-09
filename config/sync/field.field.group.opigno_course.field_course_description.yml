@@ -1,0 +1,23 @@
+uuid: de8f084e-954b-4547-8861-1546770d60dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_course_description
+    - group.type.opigno_course
+  module:
+    - text
+_core:
+  default_config_hash: vVEotqZfwnx_ZRFYCuAOE_-fvQ--wRIIEWUWZgZZ3YM
+id: group.opigno_course.field_course_description
+field_name: field_course_description
+entity_type: group
+bundle: opigno_course
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

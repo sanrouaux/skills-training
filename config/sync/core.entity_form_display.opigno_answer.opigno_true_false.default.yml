@@ -1,0 +1,40 @@
+uuid: ccd409da-5864-42d6-b4ed-3bc1f412f881
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_answer.opigno_true_false.field_true_false
+    - opigno_module.opigno_answer_type.opigno_true_false
+  module:
+    - opigno_module
+_core:
+  default_config_hash: 7DBt3YIV-Nv7D1SpVSDPpdiBiVZxvzq3797CBlJxQD4
+id: opigno_answer.opigno_true_false.default
+targetEntityType: opigno_answer
+bundle: opigno_true_false
+mode: default
+content:
+  field_true_false:
+    type: opigno_true_false_widget_type
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

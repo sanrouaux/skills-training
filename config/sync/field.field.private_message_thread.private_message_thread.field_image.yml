@@ -1,0 +1,40 @@
+uuid: ec3ec57d-35f7-4043-bf7e-847068afb763
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.private_message_thread.field_image
+  module:
+    - image
+    - private_message
+_core:
+  default_config_hash: v_QpJ603ZSNoOPnmTd38Nq8GE9SNLbLeB2zjpcvMLXE
+id: private_message_thread.private_message_thread.field_image
+field_name: field_image
+entity_type: private_message_thread
+bundle: private_message_thread
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image
