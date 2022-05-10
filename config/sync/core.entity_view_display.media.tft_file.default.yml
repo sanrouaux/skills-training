@@ -1,4 +1,4 @@
-uuid: e69dd60d-cc28-471a-9871-6b47874fe496
+uuid: a82652da-4bdc-4534-b641-ae73af8d4811
 langcode: en
 status: true
 dependencies:
@@ -18,13 +18,13 @@ bundle: tft_file
 mode: default
 content:
   tft_file:
-    type: opigno_tft_formatter
+    weight: 0
     label: hidden
     settings:
       width: 220
       height: 220
     third_party_settings: {  }
-    weight: 0
+    type: opigno_tft_formatter
     region: content
 hidden:
   created: true

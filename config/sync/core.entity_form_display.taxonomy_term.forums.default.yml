@@ -1,4 +1,4 @@
-uuid: 8cf39d87-f339-4547-b6fd-301d235c8bde
+uuid: 384c6ee1-bc8b-478f-a4f4-097bbdd74776
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - path
     - text
 _core:
-  default_config_hash: mU2NdwT__RNNX2Q8mnbejB5pneyBjb2SLCw5edlGe2U
+  default_config_hash: Pz0jtV2VqHKzGIFCCdSe_OhjD1JVpfzVwtkKl_-vTcE
 id: taxonomy_term.forums.default
 targetEntityType: taxonomy_term
 bundle: forums

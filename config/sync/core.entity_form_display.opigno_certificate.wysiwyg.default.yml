@@ -1,4 +1,4 @@
-uuid: 01f07473-9adf-43bc-a202-e3030c3178f1
+uuid: 7faa24fb-144c-41b2-9c29-4ee2912614b1
 langcode: en
 status: true
 dependencies:
@@ -36,18 +36,18 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
-    region: content
     settings:
       display_label: true
+    weight: 11
+    region: content
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    region: content
     third_party_settings: {  }
 hidden: {  }

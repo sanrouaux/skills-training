@@ -1,4 +1,4 @@
-uuid: 67645ab6-324e-4050-87fb-d866e63e728a
+uuid: c27b71bb-4a43-48b9-9eef-8cb34711b251
 langcode: en
 status: true
 dependencies:
@@ -24,5 +24,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    negate: true
     pages: "/group/*\r\n/user/*/edit\r\n/user/*\r\n/opigno/calendar\r\n/opigno/calendar/*"
+    negate: true

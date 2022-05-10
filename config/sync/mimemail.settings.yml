@@ -1,6 +1,6 @@
 _core:
   default_config_hash: orYfEqGwg750z2o1JMsVnIgjGCcIF-BFo_Apcu9EN5E
+format: full_html
 name: ''
 mail: ''
-linkonly: false
-format: full_html
+linkonly: 0

@@ -1,4 +1,4 @@
-uuid: 0229e4b9-23e2-45c2-9005-fbdc0aa0b6c2
+uuid: 271e5565-2d3c-48ed-adce-81ebb3c6a21d
 langcode: en
 status: true
 dependencies:
@@ -18,39 +18,39 @@ bundle: pdf_file
 mode: default
 content:
   created:
-    type: timestamp
     label: hidden
+    type: timestamp
+    weight: 0
+    region: content
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    weight: 0
-    region: content
   field_media_file:
-    type: file_default
+    weight: 6
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 6
+    type: file_default
     region: content
   thumbnail:
     type: image
+    weight: 5
     label: hidden
     settings:
-      image_link: ''
       image_style: thumbnail
-    third_party_settings: {  }
-    weight: 5
+      image_link: ''
     region: content
-  uid:
-    type: author
-    label: hidden
-    settings: {  }
     third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

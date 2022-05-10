@@ -1,4 +1,4 @@
-uuid: c3dde98e-d7fb-46ff-b222-06c3c07e2070
+uuid: 7891cf97-51c5-4b95-ac7c-ed3168793d66
 langcode: en
 status: true
 dependencies:
@@ -15,23 +15,23 @@ bundle: opigno_h5p
 mode: default
 content:
   activity:
-    type: entity_reference_entity_view
     label: above
+    type: entity_reference_entity_view
+    weight: -4
+    region: content
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: -4
-    region: content
   module:
-    type: entity_reference_entity_view
     label: above
+    type: entity_reference_entity_view
+    weight: -4
+    region: content
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: -4
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

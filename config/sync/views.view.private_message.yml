@@ -1,4 +1,4 @@
-uuid: 2cf8eb99-4931-460e-acce-8becc89d5841
+uuid: 926a34cf-f3ea-4dc0-aacd-3c52f626d7bf
 langcode: en
 status: true
 dependencies:
@@ -20,12 +20,67 @@ base_table: private_message_threads
 base_field: id
 display:
   default:
+    display_plugin: default
     id: default
     display_title: Master
-    display_plugin: default
     position: 0
     display_options:
-      title: 'Private Message'
+      access:
+        type: perm
+        options:
+          perm: 'use private messaging system'
+      cache:
+        type: none
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: infinite_scroll
+        options:
+          items_per_page: 5
+          offset: 0
+          id: 1
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'
+            automatically_load_content: false
+            initially_load_all_pages: false
+      style:
+        type: default
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: true
       fields:
         rendered_entity:
           id: rendered_entity
@@ -34,8 +89,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: private_message_thread
-          plugin_id: rendered_entity
           label: ''
           exclude: false
           alter:
@@ -78,46 +131,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           view_mode: preview
-      pager:
-        type: infinite_scroll
-        options:
-          offset: 0
-          items_per_page: 5
-          total_pages: null
-          id: 1
-          tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          views_infinite_scroll:
-            button_text: 'Load more'
-            automatically_load_content: false
-            initially_load_all_pages: false
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      access:
-        type: perm
-        options:
-          perm: 'use private messaging system'
-      cache:
-        type: none
-        options: {  }
-      empty: {  }
+          entity_type: private_message_thread
+          plugin_id: rendered_entity
+      filters: {  }
       sorts:
         updated:
           id: updated
@@ -126,15 +142,20 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: private_message_thread
-          entity_field: updated
-          plugin_id: date
           order: DESC
+          exposed: false
           expose:
             label: ''
             field_identifier: updated
-          exposed: false
           granularity: second
+          entity_type: private_message_thread
+          entity_field: updated
+          plugin_id: date
+      title: 'Private Message'
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships: {  }
       arguments:
         members_target_id:
           id: members_target_id
@@ -143,9 +164,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: private_message_thread
-          entity_field: members
-          plugin_id: numeric
           default_action: default
           exception:
             value: all
@@ -159,8 +177,8 @@ display:
           summary_options:
             base_path: ''
             count: true
-            override: false
             items_per_page: 25
+            override: false
           summary:
             sort_order: asc
             number_of_records: 0
@@ -172,30 +190,12 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
-      filters: {  }
-      style:
-        type: default
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: true
-      query:
-        type: views_query
-        options:
-          query_comment: ''
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_tags: {  }
-      relationships: {  }
+          entity_type: private_message_thread
+          entity_field: members
+          plugin_id: numeric
+      display_extenders: {  }
       use_ajax: true
       group_by: false
-      header: {  }
-      footer: {  }
-      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -209,102 +209,30 @@ display:
         - 'config:core.entity_view_display.private_message_thread.private_message_thread.inbox'
         - 'config:core.entity_view_display.private_message_thread.private_message_thread.preview'
   block_all:
+    display_plugin: block
     id: block_all
     display_title: 'All Threads'
-    display_plugin: block
     position: 2
     display_options:
+      display_extenders: {  }
+      defaults:
+        style: true
+        row: true
+        group_by: true
+        query: false
+        relationships: false
+        fields: false
+        title: false
+        filters: false
+        filter_groups: false
+        pager: false
+        exposed_form: true
+        arguments: false
+        sorts: false
+      display_description: ''
+      allow:
+        items_per_page: false
       title: ''
-      fields:
-        rendered_entity:
-          id: rendered_entity
-          table: private_message_threads
-          field: rendered_entity
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: private_message_thread
-          plugin_id: rendered_entity
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: '{{ view_private_message_thread }}'
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: true
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: true
-          empty_zero: false
-          hide_alter_empty: true
-          view_mode: preview
-      pager:
-        type: infinite_scroll
-        options:
-          offset: 0
-          items_per_page: 6
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          views_infinite_scroll:
-            button_text: 'Load more'
-            automatically_load_content: false
-            initially_load_all_pages: false
-      sorts:
-        current_thread_first:
-          id: current_thread_first
-          table: private_message_threads
-          field: current_thread_first
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: private_message_thread
-          plugin_id: current_thread_first
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: current_thread_first
-          exposed: false
-      arguments: {  }
       filters:
         opigno_pm_thread_name:
           id: opigno_pm_thread_name
@@ -313,8 +241,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: private_message_thread
-          plugin_id: opigno_pm_thread_name
           operator: contains
           value: ''
           group: 1
@@ -352,6 +278,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          entity_type: private_message_thread
+          plugin_id: opigno_pm_thread_name
         opigno_pm_thread_ids:
           id: opigno_pm_thread_ids
           table: private_message_threads
@@ -359,8 +287,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: private_message_thread
-          plugin_id: opigno_available_thread_ids
           operator: '='
           value: ''
           group: 1
@@ -391,6 +317,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          entity_type: private_message_thread
+          plugin_id: opigno_available_thread_ids
         private_messages_target_id:
           id: private_messages_target_id
           table: private_message_thread__private_messages
@@ -398,9 +326,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: private_message_thread
-          entity_field: private_messages
-          plugin_id: numeric
           operator: '>'
           value:
             min: ''
@@ -422,9 +347,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
-            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -437,36 +362,111 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          entity_type: private_message_thread
+          entity_field: private_messages
+          plugin_id: numeric
       filter_groups:
         operator: AND
         groups: {  }
+      relationships: {  }
+      fields:
+        rendered_entity:
+          id: rendered_entity
+          table: private_message_threads
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: '{{ view_private_message_thread }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: true
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: preview
+          entity_type: private_message_thread
+          plugin_id: rendered_entity
+      pager:
+        type: infinite_scroll
+        options:
+          items_per_page: 6
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'
+            automatically_load_content: false
+            initially_load_all_pages: false
+      arguments: {  }
       query:
         type: views_query
         options:
-          query_comment: ''
           disable_sql_rewrite: false
           distinct: true
           replica: false
+          query_comment: ''
           query_tags: {  }
-      defaults:
-        query: false
-        title: false
-        pager: false
-        exposed_form: true
-        group_by: true
-        style: true
-        row: true
-        relationships: false
-        fields: false
-        sorts: false
-        arguments: false
-        filters: false
-        filter_groups: false
-      relationships: {  }
-      display_description: ''
-      display_extenders: {  }
-      allow:
-        items_per_page: false
+      sorts:
+        current_thread_first:
+          id: current_thread_first
+          table: private_message_threads
+          field: current_thread_first
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+            field_identifier: current_thread_first
+          entity_type: private_message_thread
+          plugin_id: current_thread_first
     cache_metadata:
       max-age: -1
       contexts:
@@ -479,11 +479,33 @@ display:
         - 'config:core.entity_view_display.private_message_thread.private_message_thread.inbox'
         - 'config:core.entity_view_display.private_message_thread.private_message_thread.preview'
   block_dashboard:
+    display_plugin: block
     id: block_dashboard
     display_title: 'Dashboard - Last Threads'
-    display_plugin: block
     position: 2
     display_options:
+      display_extenders: {  }
+      defaults:
+        style: false
+        row: false
+        group_by: true
+        query: true
+        relationships: true
+        fields: false
+        pager: false
+        header: false
+        title: false
+        use_ajax: false
+        css_class: false
+      display_description: ''
+      allow:
+        items_per_page: false
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
+      header: {  }
       title: 'Last Messages'
       fields:
         view_private_message_thread:
@@ -493,8 +515,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: private_message_thread
-          plugin_id: entity_link
           label: ''
           exclude: true
           alter:
@@ -539,6 +559,8 @@ display:
           text: view
           output_url_as_text: true
           absolute: false
+          entity_type: private_message_thread
+          plugin_id: entity_link
         rendered_entity:
           id: rendered_entity
           table: private_message_threads
@@ -546,8 +568,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: private_message_thread
-          plugin_id: rendered_entity
           label: ''
           exclude: false
           alter:
@@ -590,11 +610,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           view_mode: preview
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 3
+          entity_type: private_message_thread
+          plugin_id: rendered_entity
       style:
         type: html_list
         options:
@@ -611,25 +628,8 @@ display:
           inline: {  }
           separator: ''
           hide_empty: true
-      defaults:
-        query: true
-        title: false
-        css_class: false
-        use_ajax: false
-        pager: false
-        group_by: true
-        style: false
-        row: false
-        relationships: true
-        fields: false
-        header: false
-      css_class: content-box
       use_ajax: false
-      display_description: ''
-      header: {  }
-      display_extenders: {  }
-      allow:
-        items_per_page: false
+      css_class: content-box
     cache_metadata:
       max-age: -1
       contexts:

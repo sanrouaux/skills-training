@@ -1,3 +1,4 @@
+uuid: 00abf4b9-14e1-4039-a916-03853a5e8bf8
 langcode: en
 status: true
 dependencies:
@@ -5,8 +6,11 @@ dependencies:
     - system.menu.footer
   module:
     - system
+    - user
   theme:
     - aristotle
+_core:
+  default_config_hash: JN26450h9L-khGunWqzNl9-i3vV-J9iTF3VmtqNc1Zs
 id: footer
 theme: aristotle
 region: footer
@@ -24,8 +28,8 @@ settings:
 visibility:
   user_role:
     id: user_role
+    roles:
+      authenticated: authenticated
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-    roles:
-      authenticated: authenticated

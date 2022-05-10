@@ -1,4 +1,4 @@
-uuid: ccd409da-5864-42d6-b4ed-3bc1f412f881
+uuid: e2ecca00-2416-463c-8c9c-4d37297b7cf3
 langcode: en
 status: true
 dependencies:
@@ -15,11 +15,11 @@ bundle: opigno_true_false
 mode: default
 content:
   field_true_false:
-    type: opigno_true_false_widget_type
     weight: 26
-    region: content
     settings: {  }
     third_party_settings: {  }
+    type: opigno_true_false_widget_type
+    region: content
   name:
     type: string_textfield
     weight: -4
@@ -31,10 +31,10 @@ content:
   user_id:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    region: content
     third_party_settings: {  }
 hidden: {  }

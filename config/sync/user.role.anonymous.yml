@@ -1,4 +1,4 @@
-uuid: 2346114c-0b19-455c-8d80-70860d457084
+uuid: 4bf5ac9e-52de-4f97-89d5-caec53e21019
 langcode: en
 status: true
 dependencies:
@@ -23,6 +23,8 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'opigno dashboard layout access'
+  - 'restful post color_rest_resource'
+  - 'search content'
   - 'take modules'
   - 'use text format restricted_html'
   - 'view media'

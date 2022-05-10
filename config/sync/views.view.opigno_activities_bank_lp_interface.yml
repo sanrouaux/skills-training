@@ -396,7 +396,6 @@ display:
           order: ASC
           expose:
             label: Name
-            field_identifier: name
           exposed: false
       arguments: {  }
       filters:
@@ -433,8 +432,6 @@ display:
               content_manager: '0'
               administrator: '0'
             placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -480,8 +477,6 @@ display:
               content_manager: '0'
               administrator: '0'
             placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -586,3 +581,4 @@ display:
         - url
         - url.query_args
       tags: {  }
+core: 8.x

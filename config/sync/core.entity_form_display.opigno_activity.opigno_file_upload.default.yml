@@ -1,4 +1,4 @@
-uuid: f854e2b8-5064-42f9-b60a-45769188d8a1
+uuid: a44b3564-e776-49c5-99d6-641256a4cc5e
 langcode: en
 status: true
 dependencies:
@@ -32,35 +32,35 @@ content:
       placeholder: ''
     third_party_settings: {  }
   opigno_allowed_extension:
-    type: string_textfield
     weight: 27
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  opigno_body:
-    type: text_textarea_with_summary
-    weight: 26
+    type: string_textfield
     region: content
+  opigno_body:
+    weight: 26
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-  opigno_evaluation_method:
-    type: opigno_evaluation_method_widget
-    weight: 28
+    type: text_textarea_with_summary
     region: content
+  opigno_evaluation_method:
+    weight: 28
     settings: {  }
     third_party_settings: {  }
+    type: opigno_evaluation_method_widget
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    region: content
     third_party_settings: {  }
 hidden: {  }

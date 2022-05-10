@@ -1,4 +1,4 @@
-uuid: 5903952c-ba3f-4f6f-a22c-f2f2ca24d10d
+uuid: bae41da7-d9a4-4b7c-a1b4-9ee9337a9333
 langcode: en
 status: true
 dependencies:
@@ -17,11 +17,11 @@ bundle: opigno_file_upload
 mode: default
 content:
   opigno_body:
-    type: text_default
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    type: text_default
     region: content
 hidden:
   entity_print_view_epub: true

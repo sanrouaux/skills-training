@@ -1,4 +1,4 @@
-uuid: 99ba3241-290a-42fd-a184-57d738a97c41
+uuid: 0dcb39b9-9270-4d09-8860-5150540ed072
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ entity_type: taxonomy_term
 type: string
 settings:
   max_length: 255
-  case_sensitive: false
   is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: -1

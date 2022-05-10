@@ -1,4 +1,4 @@
-uuid: 21ee485b-03ac-4f3c-b639-562f3f6d45ed
+uuid: 534b298b-70b2-4d66-9051-8aa4e6729b8e
 langcode: en
 status: true
 dependencies:
@@ -15,29 +15,29 @@ bundle: opigno_class
 mode: default
 content:
   field_class_description:
-    type: text_default
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: text_default
     region: content
   field_class_media_image:
     type: media_thumbnail
+    weight: 2
     label: hidden
     settings:
-      image_link: ''
       image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    weight: 2
     region: content
   label:
-    type: string
     label: hidden
+    type: string
+    weight: 0
+    region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   changed: true
   created: true

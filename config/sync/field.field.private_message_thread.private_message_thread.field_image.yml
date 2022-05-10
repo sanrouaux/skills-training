@@ -1,4 +1,4 @@
-uuid: ec3ec57d-35f7-4043-bf7e-847068afb763
+uuid: f114602c-5a0d-4093-baa3-5e308607796a
 langcode: en
 status: true
 dependencies:
@@ -20,8 +20,6 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
@@ -37,4 +35,6 @@ settings:
     title: ''
     width: null
     height: null
+  handler: 'default:file'
+  handler_settings: {  }
 field_type: image

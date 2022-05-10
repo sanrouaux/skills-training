@@ -1,4 +1,4 @@
-uuid: 84b94292-8234-41b1-abb9-f73106e0a85a
+uuid: aea8cf3b-052c-4eb9-be94-40a25e5605fe
 langcode: en
 status: true
 dependencies:
@@ -15,27 +15,27 @@ bundle: opigno_true_false
 mode: default
 content:
   field_true_false:
-    type: opigno_true_false_formatter_type
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: opigno_true_false_formatter_type
     region: content
   name:
-    type: string
     label: above
+    type: string
+    weight: -4
+    region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -4
-    region: content
   user_id:
-    type: author
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    type: author
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   activity: true
   entity_print_view_epub: true

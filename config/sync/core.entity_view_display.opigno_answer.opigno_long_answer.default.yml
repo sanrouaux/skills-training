@@ -1,4 +1,4 @@
-uuid: 5149f873-0fe2-4394-afb4-fd7a4d6a6b38
+uuid: bc841ee2-25d5-4526-b79f-0b63b25f06eb
 langcode: en
 status: true
 dependencies:
@@ -15,11 +15,11 @@ bundle: opigno_long_answer
 mode: default
 content:
   opigno_body:
-    type: text_default
+    weight: -3
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: -3
+    type: text_default
     region: content
 hidden:
   activity: true

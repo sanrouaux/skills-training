@@ -1,4 +1,4 @@
-uuid: 60a670e2-645f-4230-9031-e394084f4f37
+uuid: f7ae9306-e24a-4abd-a68b-9eb7a6a04539
 langcode: en
 status: true
 dependencies:
@@ -22,31 +22,31 @@ content:
     weight: 1
     region: content
     settings:
-      rows: 5
       placeholder: ''
+      rows: 5
     third_party_settings: {  }
   field_level_names:
-    type: string_textfield
     weight: 4
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_minimum_count_of_answers:
-    type: number
     weight: 3
-    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-  field_minimum_score:
     type: number
-    weight: 2
     region: content
+  field_minimum_score:
+    weight: 2
     settings:
       placeholder: ''
     third_party_settings: {  }
+    type: number
+    region: content
   name:
     type: string_textfield
     weight: 0
@@ -63,9 +63,9 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 100
-    region: content
     settings:
       display_label: true
+    weight: 100
+    region: content
     third_party_settings: {  }
 hidden: {  }

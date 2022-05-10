@@ -1,4 +1,4 @@
-uuid: 3373ff68-e3da-46f1-9bde-8bf178e88739
+uuid: ef05baca-8127-4a50-8ab6-d9e5b54bfb8b
 langcode: en
 status: true
 dependencies:
@@ -20,40 +20,40 @@ bundle: user
 mode: default
 content:
   field_first_name:
-    type: string
+    weight: 2
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    type: string
     region: content
   field_last_name:
-    type: string
+    weight: 3
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    type: string
     region: content
   field_private_profile:
-    type: boolean
+    weight: 1
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 1
+    type: boolean
     region: content
   user_picture:
     type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: user_compact_image
-    third_party_settings: {  }
     weight: 0
     region: content
+    settings:
+      image_style: user_compact_image
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
 hidden:
   commerce_remote_id: true
   entity_print_view_epub: true

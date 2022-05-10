@@ -1,4 +1,4 @@
-uuid: 397b62ff-00b3-4e8f-8505-09667d3d1f00
+uuid: c48854da-c88d-40f4-9595-855b62787931
 langcode: en
 status: true
 dependencies:
@@ -15,32 +15,32 @@ bundle: private_message
 mode: inbox
 content:
   created:
-    type: timestamp
     label: hidden
+    weight: 0
+    region: content
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    weight: 0
-    region: content
+    type: timestamp
   message:
-    type: text_trimmed
     label: visually_hidden
+    type: text_trimmed
+    weight: 2
+    region: content
     settings:
       trim_length: 200
     third_party_settings: {  }
-    weight: 2
-    region: content
   owner:
-    type: entity_reference_entity_view
     label: inline
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
     settings:
       view_mode: private_message_author
       link: false
     third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

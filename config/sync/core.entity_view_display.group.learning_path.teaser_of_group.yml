@@ -1,4 +1,4 @@
-uuid: 55de3830-2e24-4fca-b52b-8b7b7ea8b602
+uuid: bfb4f37a-ccb7-4309-bb13-c48d08a52a5d
 langcode: en
 status: true
 dependencies:
@@ -33,53 +33,53 @@ bundle: learning_path
 mode: teaser_of_group
 content:
   field_certificate:
-    type: entity_reference_label
+    weight: 5
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 5
+    type: entity_reference_label
     region: content
   field_learning_path_category:
-    type: entity_reference_label
+    weight: 3
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    type: entity_reference_label
     region: content
   field_learning_path_description:
-    type: text_default
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: text_default
     region: content
   field_learning_path_folder:
-    type: entity_reference_label
+    weight: 4
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
+    type: entity_reference_label
     region: content
   field_learning_path_media_image:
     type: media_thumbnail
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: ''
-    third_party_settings: {  }
     weight: 2
     region: content
-  label:
-    type: string
     label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  label:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   actions_dropdown: true
   changed: true

@@ -1,4 +1,4 @@
-uuid: 05e1e392-c123-44ef-a72b-d392966d44a8
+uuid: ea5baaf2-f65d-4932-b5f4-00e00bbe5457
 langcode: en
 status: true
 dependencies:
@@ -17,37 +17,37 @@ bundle: skills
 mode: default
 content:
   description:
-    type: text_default
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    type: text_default
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_level_names:
-    type: string
+    weight: 3
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    type: string
     region: content
   field_minimum_count_of_answers:
-    type: number_integer
+    weight: 1
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 1
+    type: number_integer
     region: content
   field_minimum_score:
-    type: number_integer
+    weight: 2
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 2
+    type: number_integer
     region: content
 hidden:
   entity_print_view_epub: true

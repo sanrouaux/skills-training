@@ -1,4 +1,4 @@
-uuid: 77962512-7196-4d10-8b67-8b3980d59714
+uuid: 39b69910-4be6-457d-8dc1-a146d6a1bc81
 langcode: en
 status: true
 dependencies:
@@ -24,13 +24,13 @@ settings:
 visibility:
   request_path:
     id: request_path
+    pages: '<front>'
     negate: false
     context_mapping: {  }
-    pages: '<front>'
   user_role:
     id: user_role
+    roles:
+      authenticated: authenticated
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-    roles:
-      authenticated: authenticated

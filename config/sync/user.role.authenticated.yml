@@ -1,4 +1,4 @@
-uuid: c371881b-442c-47dc-875a-26b346157f84
+uuid: d8e12fa5-8f23-43e8-a5ef-db85bedc7976
 langcode: en
 status: true
 dependencies:
@@ -29,6 +29,7 @@ label: 'Authenticated user'
 weight: -9
 is_admin: false
 permissions:
+  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'access editor'
@@ -42,8 +43,22 @@ permissions:
   - 'delete own opigno calendar event'
   - 'dropzone upload files'
   - 'edit own forum content'
+  - 'manage own commerce_payment_method'
   - 'opigno dashboard layout access'
   - 'post comments'
+  - 'restful get achievements_resource'
+  - 'restful get opigno_calendar_events_resource'
+  - 'restful get opigno_notification_resource'
+  - 'restful get private_message_last_for_threads_resource'
+  - 'restful get private_message_resource'
+  - 'restful get private_message_threads_resource'
+  - 'restful get private_messages_resource'
+  - 'restful get trainings_catalogue_resource'
+  - 'restful patch opigno_notification_resource'
+  - 'restful patch private_message_thread_update_resource'
+  - 'restful post color_rest_resource'
+  - 'restful post token_rest_resource'
+  - 'search content'
   - 'skip comment approval'
   - 'take modules'
   - 'update own opigno calendar event'
@@ -52,9 +67,11 @@ permissions:
   - userprotect.account.edit
   - userprotect.mail.edit
   - userprotect.pass.edit
+  - 'view commerce_product'
   - 'view ilt entities'
   - 'view media'
   - 'view meeting entities'
+  - 'view own commerce_order'
   - 'view own module results'
   - 'view own opigno calendar event'
   - 'view published module entities'

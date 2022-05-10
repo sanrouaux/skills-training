@@ -1,4 +1,4 @@
-uuid: 27ca9826-5729-4a4b-9c15-a57b5b6eacc0
+uuid: fbfb3cdf-4be6-47a2-9e9b-d9f078c8016c
 langcode: en
 status: true
 dependencies:
@@ -15,18 +15,18 @@ content:
   entity_id:
     type: entity_reference_autocomplete
     weight: 0
-    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    region: content
     third_party_settings: {  }
   group_roles:
     type: options_buttons
     weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   path: true
   uid: true

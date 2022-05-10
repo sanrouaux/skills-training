@@ -1,4 +1,4 @@
-uuid: 1398ea32-acce-4982-b141-a080cdfe5247
+uuid: 041d85f7-6154-439e-90e3-93b5af38f0d0
 langcode: en
 status: true
 dependencies:
@@ -20,9 +20,9 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
   handler: 'default:file'
   handler_settings: {  }
-  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
-  file_extensions: ''
-  max_filesize: ''
 field_type: video

@@ -1,4 +1,4 @@
-uuid: ea319c14-1846-48bc-8fa4-3d66e86b2cf0
+uuid: d777e2bd-39ff-4a6e-8a0f-4af5d14cef1b
 langcode: en
 status: true
 dependencies:
@@ -17,18 +17,18 @@ content:
   entity_id:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    region: content
     third_party_settings: {  }
   group_roles:
     type: options_buttons
     weight: 31
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30

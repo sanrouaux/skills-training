@@ -1,4 +1,4 @@
-uuid: 6967e4bc-f9f6-4754-85ad-ff3c769ad616
+uuid: ebabd1a7-eeca-4baa-8f96-8ff480e26371
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: TM_8DV1XKUAtF-wGxTBLOtg_GTtF5CX9WLrADxG7Xm4
+  default_config_hash: ipzVP57UiuSE3ixt_lV1XzR2l-hqw_tGClp8eHN7zbw
 id: node.forum.default
 targetEntityType: node
 bundle: forum

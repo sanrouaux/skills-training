@@ -1,4 +1,4 @@
-uuid: 92e55ee3-db4e-4a05-aba3-ec100eaf1d69
+uuid: 937194ec-8d9a-40e3-b136-eb5d4292747c
 langcode: en
 status: true
 dependencies:
@@ -17,11 +17,11 @@ mode: activity
 content:
   opigno_h5p:
     type: h5p_default
+    weight: 0
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

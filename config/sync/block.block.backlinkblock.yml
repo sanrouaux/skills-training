@@ -1,4 +1,4 @@
-uuid: 5d2a4e80-5040-499c-8e4c-5f36c9dc7994
+uuid: 7389ebb0-fc1b-4a3f-98b4-3eb17d2e65e7
 langcode: en
 status: true
 dependencies:
@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
+    pages: "<front>\r\n/user/password\r\n/user/register\r\n/user/login"
     negate: true
     context_mapping: {  }
-    pages: "<front>\r\n/user/password\r\n/user/register\r\n/user/login"

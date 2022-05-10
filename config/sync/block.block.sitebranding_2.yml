@@ -1,10 +1,14 @@
+uuid: a39ead0e-ec56-4666-9139-228be1341d9c
 langcode: en
 status: true
 dependencies:
   module:
     - system
+    - user
   theme:
     - aristotle
+_core:
+  default_config_hash: hcSIlz8MGs_iclNtCbWbRSgnkgLpEkDJIZRmsHFk6H4
 id: sitebranding_2
 theme: aristotle
 region: footer
@@ -22,8 +26,8 @@ settings:
 visibility:
   user_role:
     id: user_role
+    roles:
+      authenticated: authenticated
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-    roles:
-      authenticated: authenticated

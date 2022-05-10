@@ -1,4 +1,4 @@
-uuid: 700cb7d6-dc93-4f8c-afde-8f149d0d23ce
+uuid: c46384cb-61e8-4d26-9b02-e2e801e2e55b
 langcode: en
 status: true
 dependencies:
@@ -18,45 +18,45 @@ mode: default
 content:
   date_daterange:
     type: daterange_default
+    weight: 0
+    region: content
     label: above
     settings:
       timezone_override: ''
       format_type: post_date
       separator: '-'
     third_party_settings: {  }
-    weight: 0
-    region: content
   description:
-    type: text_default
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    type: text_default
     weight: 1
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_calendar_event_members:
-    type: entity_reference_label
+    weight: 2
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    type: entity_reference_label
     region: content
   field_ilt:
-    type: entity_reference_label
+    weight: 3
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    type: entity_reference_label
     region: content
   title:
     type: string
+    weight: 4
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 4
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

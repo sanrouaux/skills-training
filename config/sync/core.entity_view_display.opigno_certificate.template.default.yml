@@ -1,4 +1,4 @@
-uuid: decd7cf0-503c-4798-aa09-1a7de76c9a2e
+uuid: 47fe3f88-d04b-4eaf-aac9-3ee56a3b3441
 langcode: en
 status: true
 dependencies:
@@ -13,30 +13,30 @@ bundle: template
 mode: default
 content:
   created:
-    type: timestamp
     label: hidden
+    type: timestamp
+    weight: 0
+    region: content
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    weight: 0
-    region: content
   label:
-    type: string
     label: hidden
+    type: string
+    weight: -5
+    region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -5
-    region: content
   uid:
-    type: author
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    type: author
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   search_api_excerpt: true
   status: true

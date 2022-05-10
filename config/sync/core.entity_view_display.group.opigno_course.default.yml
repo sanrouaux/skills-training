@@ -1,4 +1,4 @@
-uuid: f29329be-c162-457a-ae67-3b69b4f2651c
+uuid: 383d1ec4-055e-41fa-a9a3-c844e72afa84
 langcode: en
 status: true
 dependencies:
@@ -23,29 +23,29 @@ bundle: opigno_course
 mode: default
 content:
   field_course_description:
-    type: text_default
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: text_default
     region: content
   field_course_media_image:
     type: media_thumbnail
+    weight: 2
     label: hidden
     settings:
-      image_link: ''
       image_style: catalog_thumbnail
+      image_link: ''
     third_party_settings: {  }
-    weight: 2
     region: content
   label:
-    type: string
     label: hidden
+    type: string
+    weight: 0
+    region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   badge_active: true
   badge_criteria: true

@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: XeEaGQLaVAyC7TiclL7MR_juZGoFrJ5CGaVBGmTe00E
 blocks:
   opigno_user_stats_block:
     available: '1'
@@ -321,5 +323,3 @@ blocks:
     available: 0
     mandatory: 0
 theme: aristotle
-_core:
-  default_config_hash: XeEaGQLaVAyC7TiclL7MR_juZGoFrJ5CGaVBGmTe00E

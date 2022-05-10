@@ -1,4 +1,4 @@
-uuid: 92f7271d-242a-4a1c-9700-07b06c6c8fb1
+uuid: 06af1623-808b-4f9b-afd2-a66f8ac2233a
 langcode: en
 status: true
 dependencies:
@@ -16,28 +16,28 @@ bundle: opigno_video
 mode: default
 content:
   field_external_video:
-    type: video_embed_player
+    weight: 2
     label: hidden
     settings:
-      autoplay: true
       width: '854'
       height: '480'
+      autoplay: true
     third_party_settings: {  }
-    weight: 2
+    type: video_embed_player
     region: content
   field_video:
-    type: video_player_list
+    weight: 3
     label: hidden
     settings:
-      controls: true
-      autoplay: true
-      loop: false
-      muted: false
       width: '854'
       height: '480'
+      controls: true
+      autoplay: true
       preload: none
+      loop: false
+      muted: false
     third_party_settings: {  }
-    weight: 3
+    type: video_player_list
     region: content
 hidden:
   entity_print_view_epub: true

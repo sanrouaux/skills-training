@@ -1,4 +1,4 @@
-uuid: 677f1fd1-d1a7-432f-90d4-27528e67f934
+uuid: e1cc1f6e-c576-4206-96f5-07a429e73b49
 langcode: en
 status: true
 dependencies:
@@ -34,34 +34,34 @@ bundle: learning_path
 mode: preview
 content:
   actions_dropdown:
+    weight: 0
     settings: {  }
     third_party_settings: {  }
-    weight: 0
     region: content
   field_learning_path_description:
-    type: text_default
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: text_default
     region: content
   field_learning_path_media_image:
     type: media_thumbnail
+    weight: 2
     label: hidden
     settings:
-      image_link: ''
       image_style: training_preview_image
+      image_link: ''
     third_party_settings: {  }
-    weight: 2
     region: content
   label:
-    type: string
     label: hidden
+    type: string
+    weight: 0
+    region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   changed: true
   created: true

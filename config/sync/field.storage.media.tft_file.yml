@@ -1,4 +1,4 @@
-uuid: a7811d50-f324-4ca3-8aae-0d31ea97341c
+uuid: fb6c639e-46fd-46e7-ab80-8c3cf90926bf
 langcode: en
 status: true
 dependencies:
@@ -15,10 +15,10 @@ field_name: tft_file
 entity_type: media
 type: file
 settings:
+  uri_scheme: private
   target_type: file
   display_field: false
   display_default: false
-  uri_scheme: private
 module: file
 locked: false
 cardinality: 1

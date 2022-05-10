@@ -1,4 +1,4 @@
-uuid: ea1b2bb9-fe23-4154-8c71-3e74b63aa707
+uuid: 2a33f65d-da6e-4c17-bb34-19dc37ecf883
 langcode: en
 status: true
 dependencies:
@@ -16,11 +16,11 @@ bundle: opigno_scorm
 mode: activity
 content:
   opigno_scorm_package:
-    type: opigno_scorm_field_formatter
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    type: opigno_scorm_field_formatter
     region: content
 hidden:
   entity_print_view_epub: true

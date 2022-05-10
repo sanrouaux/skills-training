@@ -1,4 +1,4 @@
-uuid: a9c57c93-2faa-4859-be35-4df00ff45e17
+uuid: 2caa54b3-d963-4416-8f31-7933a6f190d4
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: pdf_file
 mode: embedded_display
 content:
   field_media_file:
-    type: pdf_default
+    weight: 0
     label: hidden
     settings:
       keep_pdfjs: '1'
@@ -27,7 +27,7 @@ content:
       custom_zoom: ''
       pagemode: ''
     third_party_settings: {  }
-    weight: 0
+    type: pdf_default
     region: content
 hidden:
   created: true

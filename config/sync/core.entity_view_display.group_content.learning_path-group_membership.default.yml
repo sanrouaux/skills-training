@@ -1,4 +1,4 @@
-uuid: 8b7f1737-596b-4795-b7f1-bb04aa642e18
+uuid: f2f15e88-3ac3-47a2-b716-cb2b438b64bf
 langcode: en
 status: true
 dependencies:
@@ -13,12 +13,12 @@ bundle: learning_path-group_membership
 mode: default
 content:
   group_roles:
-    type: entity_reference_label
     label: above
+    type: entity_reference_label
     settings:
       link: false
-    third_party_settings: {  }
     weight: -4
+    third_party_settings: {  }
     region: content
 hidden:
   entity_id: true

@@ -1,4 +1,4 @@
-uuid: d8b7b086-edea-4c70-9250-b739a4bf1775
+uuid: a973bb06-c7f9-4574-9485-661180d838fa
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,12 @@ dependencies:
     - field.storage.group.field_learning_path_category
     - field.storage.group.field_learning_path_description
     - group.type.learning_path
+    - taxonomy.vocabulary.duration
+    - taxonomy.vocabulary.learning_path_category
   module:
     - better_exposed_filters
     - group
+    - opigno_catalog
     - opigno_learning_path
     - taxonomy
     - text
@@ -25,277 +28,25 @@ base_table: groups_field_data
 base_field: id
 display:
   default:
+    display_plugin: default
     id: default
     display_title: Master
-    display_plugin: default
     position: 0
     display_options:
-      title: 'Training catalogue'
-      fields:
-        label_1:
-          id: label_1
-          table: groups_field_data
-          field: label
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: group
-          entity_field: label
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_learning_path_category:
-          id: field_learning_path_category
-          table: group__field_learning_path_category
-          field: field_learning_path_category
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_learning_path_description:
-          id: field_learning_path_description
-          table: group__field_learning_path_description
-          field: field_learning_path_description
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_trimmed
-          settings:
-            trim_length: 200
-          group_column: entity_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        rendered_entity:
-          id: rendered_entity
-          table: groups
-          field: rendered_entity
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: group
-          plugin_id: rendered_entity
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          view_mode: catalog_item
-      pager:
-        type: infinite_scroll
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
         options:
-          offset: 0
-          items_per_page: 6
-          total_pages: null
-          id: 0
-          tags:
-            next: ››
-            previous: ‹‹
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          views_infinite_scroll:
-            button_text: 'Load more'
-            automatically_load_content: false
-            initially_load_all_pages: false
+          disable_sql_rewrite: true
+          distinct: true
+          replica: false
+          query_comment: ''
+          query_tags: {  }
       exposed_form:
         type: bef
         options:
@@ -306,7 +57,6 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          input_required: false
           text_input_required: 'Select any filter and click on Apply to see results'
           text_input_required_format: basic_html
           bef:
@@ -379,93 +129,29 @@ display:
                 select_all_none: false
                 select_all_none_nested: false
                 display_inline: false
-      access:
-        type: none
-        options: {  }
-      cache:
-        type: tag
-        options: {  }
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: "<h2>No training matches found from your search criteria.</h2>\r\n<p>Try changing your filters or try another search term.</p>"
-            format: basic_html
-          tokenize: false
-          roles_fieldset:
-            roles:
-              anonymous: 0
-              authenticated: 0
-              collaborative_features: 0
-              statistics_reader: 0
-              user_manager: 0
-              content_manager: 0
-              administrator: 0
-      sorts: {  }
-      arguments: {  }
-      filters:
-        type:
-          id: type
-          table: groups_field_data
-          field: type
-          entity_type: group
-          entity_field: type
-          plugin_id: bundle
-          value:
-            learning_path: learning_path
-          group: 1
+          input_required: false
+      pager:
+        type: infinite_scroll
+        options:
+          items_per_page: 6
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
-            operator_limit_selection: false
-            operator_list: {  }
-        field_learning_path_published_value:
-          id: field_learning_path_published_value
-          table: group__field_learning_path_published
-          field: field_learning_path_published_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: boolean
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'
+            automatically_load_content: false
+            initially_load_all_pages: false
       style:
         type: default
         options:
@@ -479,14 +165,632 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
-      query:
-        type: views_query
-        options:
-          query_comment: ''
-          disable_sql_rewrite: true
-          distinct: true
-          replica: false
-          query_tags: {  }
+      fields:
+        label_1:
+          id: label_1
+          table: groups_field_data
+          field: label
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: group
+          entity_field: label
+          plugin_id: field
+        field_learning_path_category:
+          id: field_learning_path_category
+          table: group__field_learning_path_category
+          field: field_learning_path_category
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_learning_path_description:
+          id: field_learning_path_description
+          table: group__field_learning_path_description
+          field: field_learning_path_description
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_trimmed
+          settings:
+            trim_length: 200
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        rendered_entity:
+          id: rendered_entity
+          table: groups
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: catalog_item
+          entity_type: group
+          plugin_id: rendered_entity
+      filters:
+        type:
+          id: type
+          table: groups_field_data
+          field: type
+          value:
+            learning_path: learning_path
+          entity_type: group
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_learning_path_published_value:
+          id: field_learning_path_published_value
+          table: group__field_learning_path_published
+          field: field_learning_path_published_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
+        combine:
+          id: combine
+          table: views
+          field: combine
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: word
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: combine_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: combine_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              collaborative_features: '0'
+              statistics_reader: '0'
+              user_manager: '0'
+              content_manager: '0'
+              administrator: '0'
+            placeholder: Search
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          fields:
+            label_1: label_1
+            field_learning_path_category: field_learning_path_category
+            field_learning_path_description: field_learning_path_description
+          plugin_id: combine
+        opigno_group_membership:
+          id: opigno_group_membership
+          table: groups_field_data
+          field: opigno_group_membership
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: Visibility
+            description: ''
+            use_operator: false
+            operator: opigno_group_membership_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: opigno_group_membership
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              collaborative_features: '0'
+              statistics_reader: '0'
+              user_manager: '0'
+              content_manager: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: group
+          plugin_id: opigno_group_membership_boolean
+        field_learning_path_category_target_id:
+          id: field_learning_path_category_target_id
+          table: group__field_learning_path_category
+          field: field_learning_path_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_learning_path_category_target_id_op
+            label: Categories
+            description: ''
+            use_operator: false
+            operator: field_learning_path_category_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_learning_path_category_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              collaborative_features: '0'
+              statistics_reader: '0'
+              user_manager: '0'
+              content_manager: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: learning_path_category
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_learning_path_duration_target_id:
+          id: field_learning_path_duration_target_id
+          table: group__field_learning_path_duration
+          field: field_learning_path_duration_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_learning_path_duration_target_id_op
+            label: Duration
+            description: ''
+            use_operator: false
+            operator: field_learning_path_duration_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_learning_path_duration_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              collaborative_features: '0'
+              statistics_reader: '0'
+              user_manager: '0'
+              content_manager: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: duration
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        status:
+          id: status
+          table: user_lp_status
+          field: status
+          relationship: user_lp_status
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 2
+          exposed: true
+          expose:
+            operator_id: status_op
+            label: Status
+            description: null
+            use_operator: false
+            operator: status_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: status
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+          is_grouped: true
+          group_info:
+            label: Status
+            description: ''
+            identifier: status
+            optional: true
+            widget: radios
+            multiple: true
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: Finished
+                operator: word
+                value: 'passed failed'
+              2:
+                title: 'In progress'
+                operator: '='
+                value: 'in progress'
+              3:
+                title: 'To start'
+                operator: empty
+                value: 'null'
+              4:
+                title: Passed
+                operator: '='
+                value: passed
+              5:
+                title: Failed
+                operator: '='
+                value: failed
+          current_user: 1
+          entity_type: user_lp_status
+          entity_field: status
+          plugin_id: string
+      sorts:
+        created:
+          id: created
+          table: groups_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: 'Created on'
+            field_identifier: created
+          granularity: second
+          entity_type: group
+          entity_field: created
+          plugin_id: date
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
+          relationship: field_learning_path_duration
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: Weight
+            field_identifier: weight
+          entity_type: taxonomy_term
+          entity_field: weight
+          plugin_id: standard
+        label:
+          id: label
+          table: groups_field_data
+          field: label
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: Title
+            field_identifier: label
+          entity_type: group
+          entity_field: label
+          plugin_id: standard
+      title: 'Training catalogue'
+      header: {  }
+      footer: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h2>No training matches found from your search criteria.</h2>\r\n<p>Try changing your filters or try another search term.</p>"
+            format: basic_html
+          roles_fieldset:
+            roles:
+              anonymous: 0
+              authenticated: 0
+              collaborative_features: 0
+              statistics_reader: 0
+              user_manager: 0
+              content_manager: 0
+              administrator: 0
+          plugin_id: text
       relationships:
         opigno_group_membership:
           id: opigno_group_membership
@@ -495,9 +799,9 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Membership relation'
+          required: false
           entity_type: group
           plugin_id: standard
-          required: false
         field_learning_path_duration:
           id: field_learning_path_duration
           table: group__field_learning_path_duration
@@ -505,8 +809,8 @@ display:
           relationship: none
           group_type: group
           admin_label: Duration
-          plugin_id: standard
           required: false
+          plugin_id: standard
         user_lp_status:
           id: user_lp_status
           table: groups
@@ -514,20 +818,28 @@ display:
           relationship: none
           group_type: group
           admin_label: 'User Learning Path status relation'
+          required: false
           entity_type: group
           plugin_id: standard
-          required: false
-      use_ajax: true
-      group_by: true
-      header: {  }
-      footer: {  }
+      arguments: {  }
       display_extenders: {  }
+      group_by: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+          2: OR
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
+        - user
       tags:
         - 'config:core.entity_view_display.group.learning_path.catalog_item'
         - 'config:core.entity_view_display.group.learning_path.default'
@@ -539,21 +851,25 @@ display:
         - 'config:field.storage.group.field_learning_path_category'
         - 'config:field.storage.group.field_learning_path_description'
   training_catalogue:
+    display_plugin: page
     id: training_catalogue
     display_title: 'Training catalogue'
-    display_plugin: page
     position: 1
     display_options:
-      display_description: ''
-      rendering_language: '***LANGUAGE_language_interface***'
-      exposed_block: true
       display_extenders: {  }
       path: catalogue
+      display_description: ''
+      exposed_block: true
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
+        - user
       tags:
         - 'config:core.entity_view_display.group.learning_path.catalog_item'
         - 'config:core.entity_view_display.group.learning_path.default'

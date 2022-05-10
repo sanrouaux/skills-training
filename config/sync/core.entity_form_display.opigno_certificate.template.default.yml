@@ -1,4 +1,4 @@
-uuid: ab361cef-584b-4fe7-bfa0-8939800d3e04
+uuid: 07f27a2f-a560-4357-8e0d-454e842b1cc7
 langcode: en
 status: true
 dependencies:
@@ -27,19 +27,19 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
-    region: content
     settings:
       display_label: true
+    weight: 11
+    region: content
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    region: content
     third_party_settings: {  }
   view_mode:
     type: opigno_certificate_view_mode_selector_select

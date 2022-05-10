@@ -1,4 +1,4 @@
-uuid: 984da60a-c98a-4229-87b2-5765192802bb
+uuid: 6fb0df10-61e2-49df-98a2-e5ea087deda7
 langcode: en
 status: true
 dependencies:
@@ -18,14 +18,14 @@ mode: embedded_display
 content:
   date_daterange:
     type: daterange_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-      separator: '-'
-    third_party_settings: {  }
     weight: 0
     region: content
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
 hidden:
   description: true
   entity_print_view_epub: true

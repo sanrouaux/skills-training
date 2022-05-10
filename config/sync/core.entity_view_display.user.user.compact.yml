@@ -1,4 +1,4 @@
-uuid: 66a09cb9-f1bc-47d7-a5ad-e402dfda98a5
+uuid: 187c4ff4-68d1-4817-a98f-d688f75e1797
 langcode: en
 status: true
 dependencies:
@@ -22,13 +22,13 @@ mode: compact
 content:
   user_picture:
     type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: user_compact_image
-    third_party_settings: {  }
     weight: 0
     region: content
+    settings:
+      image_style: user_compact_image
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

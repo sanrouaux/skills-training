@@ -1,4 +1,4 @@
-uuid: b0aee773-0364-4afe-9b94-b1c69b38b1e3
+uuid: 780a39e4-0775-4c3c-8970-17a0e5e2f9a2
 langcode: en
 status: true
 dependencies:
@@ -34,21 +34,21 @@ mode: list_item
 content:
   field_learning_path_media_image:
     type: media_thumbnail
+    weight: 0
     label: hidden
     settings:
-      image_link: ''
       image_style: training_list_item_image
+      image_link: ''
     third_party_settings: {  }
-    weight: 0
     region: content
   label:
-    type: string
     label: hidden
+    type: string
+    weight: 1
+    region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   actions_dropdown: true
   changed: true

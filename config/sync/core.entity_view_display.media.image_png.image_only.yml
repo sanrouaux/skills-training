@@ -1,4 +1,4 @@
-uuid: 9e35b5e8-1772-49a3-bb92-3ea0efd564e7
+uuid: 1b1fd7d9-2a83-4b2d-999f-45a0eee41d6a
 langcode: en
 status: true
 dependencies:
@@ -18,13 +18,13 @@ mode: image_only
 content:
   thumbnail:
     type: image
+    weight: 0
     label: hidden
     settings:
-      image_link: ''
       image_style: thumbnail
-    third_party_settings: {  }
-    weight: 0
+      image_link: ''
     region: content
+    third_party_settings: {  }
 hidden:
   created: true
   entity_print_view_epub: true

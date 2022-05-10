@@ -1,4 +1,4 @@
-uuid: 77830d7d-49d6-4e6f-911a-3de6ecbc93c9
+uuid: 84983084-6947-41aa-9a52-8270ce6c9444
 langcode: en
 status: true
 dependencies:
@@ -25,13 +25,8 @@ widget_selector: drop_down
 widget_selector_configuration: {  }
 widgets:
   b18d7810-d58f-4dfb-8768-7752aaddbb89:
-    id: dropzonejs_media_entity
-    uuid: b18d7810-d58f-4dfb-8768-7752aaddbb89
-    label: 'Upload a new file'
-    weight: 1
     settings:
-      submit_text: Upload
-      auto_select: false
+      media_type: pdf_file
       upload_location: 'public://[date:custom:Y]-[date:custom:m]'
       dropzone_description: 'Drop files here to upload them'
       max_filesize: 64M
@@ -42,14 +37,19 @@ widgets:
       resize_quality: !!float 1
       resize_method: contain
       thumbnail_method: contain
-      media_type: pdf_file
-  a515f457-e00a-469b-9eae-164b1f5e17d7:
-    id: view
-    uuid: a515f457-e00a-469b-9eae-164b1f5e17d7
-    label: 'Select an existing file'
-    weight: 2
-    settings:
-      submit_text: Select
+      submit_text: Upload
       auto_select: false
+    uuid: b18d7810-d58f-4dfb-8768-7752aaddbb89
+    weight: 1
+    label: 'Upload a new file'
+    id: dropzonejs_media_entity
+  a515f457-e00a-469b-9eae-164b1f5e17d7:
+    settings:
       view: media_browser_file_pdf
       view_display: media_browser_all
+      submit_text: Select
+      auto_select: false
+    uuid: a515f457-e00a-469b-9eae-164b1f5e17d7
+    weight: 2
+    label: 'Select an existing file'
+    id: view

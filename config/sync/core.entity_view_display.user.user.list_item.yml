@@ -1,4 +1,4 @@
-uuid: ed5f0b0c-5e26-4f0d-8aef-8b1518d23819
+uuid: 154a909b-829a-49ba-9313-9815532190d5
 langcode: en
 status: true
 dependencies:
@@ -22,13 +22,13 @@ mode: list_item
 content:
   user_picture:
     type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: user_list_item
-    third_party_settings: {  }
     weight: 0
     region: content
+    settings:
+      image_style: user_list_item
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
 hidden:
   commerce_remote_id: true
   entity_print_view_epub: true

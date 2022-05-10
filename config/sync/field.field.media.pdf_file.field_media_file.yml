@@ -1,4 +1,4 @@
-uuid: 22ce8dd0-0a1d-4bc4-a7dd-6dd747bcd494
+uuid: b9071436-1a9c-4908-8da9-9de3ae59995b
 langcode: en
 status: true
 dependencies:
@@ -20,10 +20,10 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: pdf
   max_filesize: ''
   description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
 field_type: file

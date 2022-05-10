@@ -1,4 +1,4 @@
-uuid: 68c1adb4-a378-4563-8358-6068b3f11dfc
+uuid: f159f677-6d36-4459-86a0-83bd339d567b
 langcode: en
 status: true
 dependencies:
@@ -16,11 +16,11 @@ bundle: opigno_tincan
 mode: activity
 content:
   opigno_tincan_package:
-    type: opigno_tincan_field_formatter
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    type: opigno_tincan_field_formatter
     region: content
 hidden:
   entity_print_view_epub: true

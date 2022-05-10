@@ -1,4 +1,4 @@
-uuid: 85b97ccd-45de-48fc-92cc-b4500119c811
+uuid: b95647ac-fbef-480f-88c5-ca17db2b8844
 langcode: en
 status: true
 dependencies:
@@ -15,10 +15,10 @@ bundle: opigno_file_upload
 mode: default
 content:
   opigno_file:
-    type: file_generic
     weight: 3
-    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
+    type: file_generic
+    region: content
 hidden: {  }

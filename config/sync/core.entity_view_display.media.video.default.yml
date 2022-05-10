@@ -1,4 +1,4 @@
-uuid: 3f78a799-e098-42e4-8b26-e1b033996e21
+uuid: 62d7c579-f8a8-43e3-a658-6034e97c52eb
 langcode: en
 status: true
 dependencies:
@@ -16,17 +16,17 @@ mode: default
 content:
   field_media_video_file:
     type: file_video
+    weight: 0
     label: visually_hidden
     settings:
+      muted: false
+      width: 640
+      height: 480
       controls: true
       autoplay: false
       loop: false
       multiple_file_display_type: tags
-      muted: false
-      width: 640
-      height: 480
     third_party_settings: {  }
-    weight: 0
     region: content
 hidden:
   created: true

@@ -1,4 +1,4 @@
-uuid: 925967ef-5974-4c9d-8f2b-d7771b740f38
+uuid: c6a4fee1-fef4-4ec8-b223-6d2c7cc06946
 langcode: en
 status: true
 dependencies:
@@ -14,21 +14,21 @@ bundle: opigno_slide
 mode: default
 content:
   name:
-    type: string
     label: above
+    type: string
+    weight: 0
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
     region: content
   opigno_slide_pdf:
     type: entity_reference_entity_view
+    weight: 1
     label: above
     settings:
       view_mode: embedded_display
       link: false
     third_party_settings: {  }
-    weight: 1
     region: content
 hidden:
   entity_print_view_epub: true

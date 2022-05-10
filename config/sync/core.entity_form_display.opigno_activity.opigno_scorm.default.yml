@@ -1,4 +1,4 @@
-uuid: 1f39c847-8371-47b6-9c62-9086853b7325
+uuid: 6ce99ca1-e5dd-4ce5-80b0-102acb94fb6c
 langcode: en
 status: true
 dependencies:
@@ -29,19 +29,19 @@ content:
       placeholder: ''
     third_party_settings: {  }
   opigno_scorm_package:
-    type: file_generic
     weight: 26
-    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
+    type: file_generic
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    region: content
     third_party_settings: {  }
 hidden: {  }

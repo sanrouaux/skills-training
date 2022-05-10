@@ -1,4 +1,4 @@
-uuid: 5b041ec1-823c-425d-b78e-643ace8723c2
+uuid: f37e61f1-9087-40cc-aa62-d2550fd720f6
 langcode: en
 status: true
 dependencies:
@@ -14,15 +14,15 @@ bundle: private_message_notification
 mode: default
 content:
   partial_0:
-    settings: {  }
-    third_party_settings: {  }
     weight: 0
     region: content
-  partial_1:
     settings: {  }
     third_party_settings: {  }
+  partial_1:
     weight: 1
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

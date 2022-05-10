@@ -1,4 +1,4 @@
-uuid: 817f5132-d928-4f5b-9c99-e5bd76ec0eb8
+uuid: f05d49f7-20ad-47ce-89f6-0d7db9e1fa94
 langcode: en
 status: true
 dependencies:
@@ -15,11 +15,11 @@ bundle: opigno_file_upload
 mode: default
 content:
   opigno_file:
-    type: file_default
+    weight: -3
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: -3
+    type: file_default
     region: content
 hidden:
   activity: true

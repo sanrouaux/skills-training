@@ -1,4 +1,4 @@
-uuid: 4c5b8a2d-7baf-4be2-8f63-802941e39cdd
+uuid: 06be0090-bd12-4b5d-a0c6-1f4130282045
 langcode: en
 status: true
 dependencies:
@@ -17,29 +17,29 @@ mode: default
 content:
   date_daterange:
     type: daterange_default
+    weight: 0
+    region: content
     label: hidden
     settings:
       timezone_override: ''
       format_type: post_date
       separator: '-'
     third_party_settings: {  }
-    weight: 0
-    region: content
   description:
-    type: text_default
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    type: text_default
     weight: 1
     region: content
+    settings: {  }
+    third_party_settings: {  }
   title:
     type: string
+    weight: 2
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

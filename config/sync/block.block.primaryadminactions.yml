@@ -1,4 +1,4 @@
-uuid: 18643622-460a-4612-8116-e582dab46f57
+uuid: a01323b8-a316-4407-8440-9054e1793ff5
 langcode: en
 status: true
 dependencies:
@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
+    pages: /catalogue
     negate: true
     context_mapping: {  }
-    pages: /catalogue

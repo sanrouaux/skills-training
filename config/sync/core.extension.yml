@@ -1,7 +1,6 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
-  admin_toolbar: 0
   better_exposed_filters: 0
   block: 0
   block_content: 0
@@ -17,7 +16,6 @@ module:
   config_rewrite: 0
   contact: 0
   contextual: 0
-  css_editor: 0
   ctools: 0
   datetime: 0
   datetime_range: 0

@@ -1,8 +1,8 @@
 _core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
 langcode: en
-uuid: 6369566a-d7ff-45f3-b88e-de74eebab94f
-name: Opigno
+uuid: 561a3388-def3-47ef-94e1-de443f805d9a
+name: 'Entrenamiento en habilidades'
 mail: sanrouaux@gmail.com
 slogan: ''
 page:

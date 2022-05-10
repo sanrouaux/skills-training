@@ -1,4 +1,4 @@
-uuid: dc5bbbd4-c4cf-4380-a4bb-5ba11e661fd3
+uuid: 13d11cc4-7c8f-4590-bf4a-7eafe741c03c
 langcode: en
 status: true
 dependencies:
@@ -22,9 +22,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_external_video:
-    type: video_embed
     weight: 3
-    region: content
     settings:
       allowed_providers:
         youtube: youtube
@@ -36,17 +34,19 @@ content:
       file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
       uri_scheme: public
     third_party_settings: {  }
-  field_video:
-    type: video_upload
-    weight: 4
+    type: video_embed
     region: content
+  field_video:
+    weight: 4
     settings:
-      progress_indicator: throbber
-      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
       file_extensions: 'mp4 ogv webm'
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
       max_filesize: ''
       uri_scheme: public
+      progress_indicator: throbber
     third_party_settings: {  }
+    type: video_upload
+    region: content
   name:
     type: string_textfield
     weight: 0
@@ -58,10 +58,10 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 1
-    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    region: content
     third_party_settings: {  }
 hidden: {  }

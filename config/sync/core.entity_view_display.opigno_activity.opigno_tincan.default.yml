@@ -1,4 +1,4 @@
-uuid: d0fe7a31-9903-4eba-be7f-0b3fe490b4fb
+uuid: 29c68ecb-1204-47a1-93e1-5b536860b539
 langcode: en
 status: true
 dependencies:
@@ -15,19 +15,19 @@ bundle: opigno_tincan
 mode: default
 content:
   name:
-    type: string
     label: above
+    type: string
+    weight: 0
+    region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
-    region: content
   opigno_tincan_package:
-    type: opigno_tincan_field_formatter
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: opigno_tincan_field_formatter
     region: content
 hidden:
   entity_print_view_epub: true

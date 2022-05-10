@@ -1,4 +1,4 @@
-uuid: c30ae9ca-926e-481b-8c36-8ceb99ab3f23
+uuid: 83bd1d86-6291-458c-9184-8e2b7aece25f
 langcode: en
 status: true
 dependencies:
@@ -22,31 +22,31 @@ third_party_settings:
       children:
         - badge_active
         - group_badges_params
-      label: 'Badges settings'
       parent_name: ''
       weight: 5
       format_type: details
       format_settings:
-        classes: ''
         id: ''
+        classes: ''
         open: true
         required_fields: true
+      label: 'Badges settings'
     group_badges_params:
       children:
         - badge_name
         - badge_description
         - badge_criteria
         - badge_media_image
-      label: 'Badge params'
       parent_name: group_badges_settings
       weight: 1
       format_type: fieldset
       format_settings:
         label: 'Badge params'
-        classes: ''
-        id: edit-opigno-badges-settings-group
         description: ''
         required_fields: true
+        id: edit-opigno-badges-settings-group
+        classes: ''
+      label: 'Badge params'
 _core:
   default_config_hash: UFTqsuMPrlmDUJSHe9GYLO6rATcZTnyGCctzUwvRWiI
 id: group.opigno_course.default
@@ -55,72 +55,72 @@ bundle: opigno_course
 mode: default
 content:
   badge_active:
-    type: boolean_checkbox
     weight: 0
-    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-  badge_criteria:
-    type: options_buttons
-    weight: 2
+    type: boolean_checkbox
     region: content
+  badge_criteria:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
-  badge_description:
-    type: string_textarea
-    weight: 1
+    type: options_buttons
     region: content
+  badge_description:
+    weight: 1
     settings:
       rows: 3
       placeholder: ''
     third_party_settings: {  }
-  badge_media_image:
-    type: entity_browser_entity_reference
-    weight: 3
+    type: string_textarea
     region: content
+  badge_media_image:
+    weight: 3
     settings:
       entity_browser: media_entity_browser_badge_images
       field_widget_display: rendered_entity
-      field_widget_edit: false
       field_widget_remove: true
-      field_widget_replace: false
       open: true
+      selection_mode: selection_append
       field_widget_display_settings:
         view_mode: image_only
-      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_replace: false
     third_party_settings: {  }
-  badge_name:
-    type: string_textfield
-    weight: 0
+    type: entity_browser_entity_reference
     region: content
+  badge_name:
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_course_description:
-    type: text_textarea
-    weight: 1
+    type: string_textfield
     region: content
+  field_course_description:
+    weight: 1
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_course_media_image:
-    type: entity_browser_entity_reference
-    weight: 2
+    type: text_textarea
     region: content
+  field_course_media_image:
+    weight: 2
     settings:
       entity_browser: media_entity_browser_groups
       field_widget_display: rendered_entity
-      field_widget_edit: false
       field_widget_remove: true
-      field_widget_replace: false
-      open: false
+      selection_mode: selection_append
       field_widget_display_settings:
         view_mode: image_only
-      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_replace: false
+      open: false
     third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   label:
     type: string_textfield
     weight: 0

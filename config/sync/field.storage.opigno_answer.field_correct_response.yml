@@ -1,4 +1,4 @@
-uuid: 1d57898a-1b2f-4d75-87b4-3f5fd5ff927d
+uuid: 3577af50-116b-4338-9d3c-3046ad845023
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ entity_type: opigno_answer
 type: string
 settings:
   max_length: 255
-  case_sensitive: false
   is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1
