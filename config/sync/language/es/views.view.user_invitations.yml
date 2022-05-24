@@ -1,0 +1,62 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Buscar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
+          bef:
+            general:
+              secondary_label: 'Opciones avanzadas'
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Siguiente >'
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+      fields:
+        name:
+          separator: ', '
+        field_first_name:
+          separator: ', '
+        field_last_name:
+          separator: ', '
+        mail:
+          separator: ', '
+  network:
+    display_options:
+      filters:
+        combine:
+          expose:
+            placeholder: Buscar
+  suggested:
+    display_options:
+      fields:
+        name_1:
+          separator: ', '
+        field_first_name:
+          separator: ', '
+        field_last_name:
+          separator: ', '
+      filters:
+        combine:
+          expose:
+            placeholder: Buscar
+      exposed_form:
+        options:
+          submit_button: Buscar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
+          bef:
+            general:
+              secondary_label: 'Opciones avanzadas'

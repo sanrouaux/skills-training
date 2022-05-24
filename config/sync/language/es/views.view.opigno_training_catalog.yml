@@ -1,0 +1,50 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
+          bef:
+            general:
+              secondary_label: 'Opciones avanzadas'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+      fields:
+        label_1:
+          separator: ', '
+        field_learning_path_category:
+          separator: ', '
+        field_learning_path_description:
+          separator: ', '
+      filters:
+        combine:
+          expose:
+            placeholder: Buscar
+        opigno_group_membership:
+          expose:
+            label: Visibilidad
+        field_learning_path_duration_target_id:
+          expose:
+            label: Duración
+        status:
+          expose:
+            label: Estado
+          group_info:
+            label: Estado
+      sorts:
+        weight:
+          expose:
+            label: Peso
+        label:
+          expose:
+            label: Título

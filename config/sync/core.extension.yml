@@ -16,6 +16,7 @@ module:
   comment: 0
   config: 0
   config_rewrite: 0
+  config_translation: 0
   contact: 0
   contextual: 0
   ctools: 0
@@ -51,7 +52,9 @@ module:
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
+  language: 0
   link: 0
+  locale: 0
   mailsystem: 0
   media: 0
   media_entity_browser: 0
@@ -135,6 +138,7 @@ module:
   views_templates: 0
   views_ui: 0
   forum: 1
+  content_translation: 10
   views: 10
   opigno_lms: 1000
 theme:

@@ -1,0 +1,59 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+      fields:
+        id_1:
+          separator: ', '
+        label:
+          label: Nombre
+          separator: ', '
+        type:
+          label: Tipo
+          separator: ', '
+        name:
+          label: Propietario
+          separator: ', '
+        operations:
+          label: 'Enlaces de operación'
+      filters:
+        label:
+          expose:
+            label: Nombre
+      title: Grupos
+  courses_list:
+    display_options:
+      filters:
+        label:
+          expose:
+            label: Nombre
+  page_1:
+    display_title: Grupos
+    display_options:
+      filters:
+        label:
+          expose:
+            label: Nombre
+  trainings_list:
+    display_options:
+      filters:
+        label:
+          expose:
+            label: Nombre

@@ -1,0 +1,63 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        title:
+          separator: ', '
+        date_daterange:
+          separator: ', '
+      use_more_text: más
+  month_block:
+    display_options:
+      arguments:
+        date_daterange_value_year_month:
+          exception:
+            title: Todo(s)
+      fields:
+        id:
+          separator: ', '
+        title:
+          separator: ', '
+        date_daterange:
+          separator: ', '
+  page_day:
+    display_title: Día
+    display_options:
+      menu:
+        title: Día
+      arguments:
+        date_daterange_value_full_date:
+          exception:
+            title: Todo(s)
+  page_month:
+    display_title: Mes
+    display_options:
+      menu:
+        title: Mes
+      arguments:
+        date_daterange_value_year_month:
+          exception:
+            title: Todo(s)
+      use_more_text: más
+  page_week:
+    display_options:
+      arguments:
+        date_daterange_value_year_week:
+          exception:
+            title: Todo(s)
+  page_year:
+    display_title: Año
+    display_options:
+      arguments:
+        date_daterange_value_year:
+          exception:
+            title: Todo(s)
+      menu:
+        title: Año

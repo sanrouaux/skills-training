@@ -39,4 +39,5 @@ hidden:
   field_correct_response: true
   field_response: true
   field_xapidata: true
+  langcode: true
   search_api_excerpt: true

@@ -14,6 +14,13 @@ targetEntityType: opigno_answer
 bundle: opigno_file_upload
 mode: default
 content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   opigno_file:
     type: file_generic
     weight: 3

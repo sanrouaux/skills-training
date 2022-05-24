@@ -100,5 +100,6 @@ hidden:
   field_required_trainings: true
   field_requires_validation: true
   field_workspace: true
+  langcode: true
   search_api_excerpt: true
   uid: true

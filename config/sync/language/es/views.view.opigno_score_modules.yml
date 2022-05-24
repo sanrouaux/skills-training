@@ -1,0 +1,69 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        id_1:
+          separator: ', '
+        name_1:
+          label: Usuario
+          separator: ', '
+        finished:
+          separator: ', '
+        id:
+          separator: ', '
+        name:
+          separator: ', '
+  dashboard_notavaluated_modules:
+    display_options:
+      fields:
+        id:
+          separator: ', '
+        name:
+          separator: ', '
+        name_1:
+          separator: ', '
+        id_1:
+          separator: ', '
+  opigno_not_evaluated:
+    display_options:
+      fields:
+        id:
+          separator: ', '
+        id_1:
+          separator: ', '
+        name:
+          separator: ', '
+        name_1:
+          label: Usuario
+          separator: ', '
+        started:
+          separator: ', '
+        finished:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento

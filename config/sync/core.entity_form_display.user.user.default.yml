@@ -78,3 +78,4 @@ content:
 hidden:
   commerce_remote_id: true
   field_created_by: true
+  langcode: true

@@ -60,6 +60,7 @@ hidden:
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   field_created_by: true
+  langcode: true
   linked_username: true
   member_for: true
   private_message_link: true

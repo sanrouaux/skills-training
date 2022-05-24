@@ -37,6 +37,7 @@ hidden:
   field_first_name: true
   field_last_name: true
   field_private_profile: true
+  langcode: true
   linked_username: true
   member_for: true
   private_message_link: true

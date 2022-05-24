@@ -1,0 +1,46 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Buscar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
+          bef:
+            general:
+              secondary_label: 'Opciones avanzadas'
+      fields:
+        id:
+          separator: ', '
+        training:
+          separator: ', '
+      filters:
+        label:
+          expose:
+            placeholder: Buscar
+        status:
+          expose:
+            label: Estado
+      arguments:
+        uid:
+          exception:
+            title: Todo(s)
+  certificates:
+    display_options:
+      filters:
+        label:
+          expose:
+            placeholder: Buscar
+        status:
+          expose:
+            label: Estado
+          group_info:
+            label: Estado
+      fields:
+        id:
+          separator: ', '
+        label:
+          separator: ', '

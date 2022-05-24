@@ -1,0 +1,49 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Siguiente >'
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+      fields:
+        bundle:
+          separator: ', '
+        entity_browser_select:
+          label: Operaciones
+        field_media_image:
+          label: Imagen
+          separator: ', '
+        name:
+          label: Nombre
+          separator: ', '
+      filters:
+        status:
+          expose:
+            label: Verdad
+          group_info:
+            label: 'Estado de publicación'
+            group_items:
+              1:
+                title: Publicado
+              2:
+                title: 'Sin publicar'
+        bundle:
+          expose:
+            label: Proveedor
+        name:
+          expose:
+            label: 'Nombre del elemento multimedia'
