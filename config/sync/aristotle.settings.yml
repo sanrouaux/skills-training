@@ -23,5 +23,5 @@ aristotle_home_page_settings:
       aristotle_home_page_image_upload: {  }
     actions: {  }
 aristotle_menu_source: main
-aristotle_menu_show_for_anonymous: true
+aristotle_menu_show_for_anonymous: false
 browser_sync: 0
