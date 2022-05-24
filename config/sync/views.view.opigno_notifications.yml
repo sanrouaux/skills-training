@@ -16,49 +16,12 @@ base_table: opigno_notification
 base_field: id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: none
-        options: {  }
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: some
-        options:
-          items_per_page: 5
-          offset: 0
-      style:
-        type: default
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+      title: Notifications
       fields:
         id:
           id: id
@@ -67,6 +30,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: id
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -123,9 +89,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: id
-          plugin_id: field
         url:
           id: url
           table: opigno_notification
@@ -133,6 +96,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: url
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -188,9 +154,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: url
-          plugin_id: field
         has_read:
           id: has_read
           table: opigno_notification
@@ -198,6 +161,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: has_read
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -243,8 +209,8 @@ display:
           type: boolean
           settings:
             format: boolean
-            format_custom_true: ''
             format_custom_false: ''
+            format_custom_true: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -255,9 +221,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: has_read
-          plugin_id: field
         message:
           id: message
           table: opigno_notification
@@ -265,6 +228,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: message
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -320,10 +286,28 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: message
-          plugin_id: field
-      filters: {  }
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 5
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
       sorts:
         created:
           id: created
@@ -332,20 +316,15 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: 'Creation time'
-            field_identifier: created
-          granularity: second
           entity_type: opigno_notification
           entity_field: created
           plugin_id: date
-      title: Notifications
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships: {  }
+          order: DESC
+          expose:
+            label: 'Creation time'
+            field_identifier: created
+          exposed: false
+          granularity: second
       arguments:
         uid:
           id: uid
@@ -354,6 +333,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: uid
+          plugin_id: numeric
           default_action: default
           exception:
             value: all
@@ -367,8 +349,8 @@ display:
           summary_options:
             base_path: ''
             count: true
-            items_per_page: 25
             override: false
+            items_per_page: 25
           summary:
             sort_order: asc
             number_of_records: 0
@@ -380,11 +362,29 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
-          entity_type: opigno_notification
-          entity_field: uid
-          plugin_id: numeric
-      display_extenders: {  }
+      filters: {  }
+      style:
+        type: default
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
       use_ajax: true
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -394,15 +394,281 @@ display:
         - user
       tags: {  }
   block_unread_dashboard:
-    display_plugin: block
     id: block_unread_dashboard
     display_title: 'Dashboard - Unread Notifications'
+    display_plugin: block
     position: 1
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      allow:
-        items_per_page: false
+      title: 'Unread Notifications'
+      fields:
+        id:
+          id: id
+          table: opigno_notification
+          field: id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: opigno_notification
+          entity_field: id
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        url:
+          id: url
+          table: opigno_notification
+          field: url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: opigno_notification
+          entity_field: url
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        has_read:
+          id: has_read
+          table: opigno_notification
+          field: has_read
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: opigno_notification
+          entity_field: has_read
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: boolean
+            format_custom_false: ''
+            format_custom_true: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        message:
+          id: message
+          table: opigno_notification
+          field: message
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: opigno_notification
+          entity_field: message
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<div class="notification" data-id="{{ id }}" data-read="{{ has_read }}><a href="{{ url }}">{{ message }}</a></div>'
+            make_link: false
+            path: /notifications
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: 'dropdown-item notification'
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 8
       filters:
         has_read:
           id: has_read
@@ -411,6 +677,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: has_read
+          plugin_id: boolean
           operator: '='
           value: '0'
           group: 1
@@ -421,14 +690,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -441,25 +710,10 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: opigno_notification
-          entity_field: has_read
-          plugin_id: boolean
-      defaults:
-        filters: false
-        filter_groups: false
-        title: false
-        style: false
-        row: false
-        fields: false
-        use_ajax: false
-        pager: false
-        footer: false
-        css_class: false
       filter_groups:
         operator: AND
         groups:
           1: AND
-      title: 'Unread Notifications'
       style:
         type: html_list
         options:
@@ -476,12 +730,20 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
+      defaults:
+        title: false
+        css_class: false
+        use_ajax: false
+        pager: false
+        style: false
+        row: false
+        fields: false
+        filters: false
+        filter_groups: false
+        footer: false
+      css_class: content-box
       use_ajax: false
-      pager:
-        type: some
-        options:
-          items_per_page: 8
-          offset: 0
+      display_description: ''
       footer:
         area_text_custom:
           id: area_text_custom
@@ -490,275 +752,13 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
-          tokenize: true
-          content: "<a class=\"see-more primary text-center\" href=\"{{ url('<front>') }}/notifications\">\r\n<span>{{ 'see more'|t }}</span>\r\n</a>"
           plugin_id: text_custom
-      css_class: content-box
-      fields:
-        id:
-          id: id
-          table: opigno_notification
-          field: id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: number_integer
-          settings:
-            thousand_separator: ''
-            prefix_suffix: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: id
-          plugin_id: field
-        url:
-          id: url
-          table: opigno_notification
-          field: url
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: url
-          plugin_id: field
-        has_read:
-          id: has_read
-          table: opigno_notification
-          field: has_read
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: boolean
-          settings:
-            format: boolean
-            format_custom_true: ''
-            format_custom_false: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: has_read
-          plugin_id: field
-        message:
-          id: message
-          table: opigno_notification
-          field: message
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: '<div class="notification" data-id="{{ id }}" data-read="{{ has_read }}><a href="{{ url }}">{{ message }}</a></div>'
-            make_link: false
-            path: /notifications
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: 'dropdown-item notification'
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: true
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: message
-          plugin_id: field
+          empty: false
+          content: "<a class=\"see-more primary text-center\" href=\"{{ url('<front>') }}/notifications\">\r\n<span>{{ 'see more'|t }}</span>\r\n</a>"
+          tokenize: true
+      display_extenders: {  }
+      allow:
+        items_per_page: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -768,82 +768,11 @@ display:
         - user
       tags: {  }
   page_all:
-    display_plugin: page
     id: page_all
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      path: notifications
-      style:
-        type: table
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            id: id
-            url: url
-            created: created
-            message: message
-            has_read: has_read
-          info:
-            id:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            url:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            created:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            message:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            has_read:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: '-1'
-          empty_table: false
-      defaults:
-        style: false
-        row: false
-        fields: false
-        sorts: false
-        pager: false
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
       fields:
         id:
           id: id
@@ -852,6 +781,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: id
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -908,9 +840,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: id
-          plugin_id: field
         url:
           id: url
           table: opigno_notification
@@ -918,6 +847,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: url
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -973,9 +905,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: url
-          plugin_id: field
         created:
           id: created
           table: opigno_notification
@@ -983,6 +912,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: created
+          plugin_id: field
           label: Date
           exclude: false
           alter:
@@ -1040,9 +972,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: created
-          plugin_id: field
         message:
           id: message
           table: opigno_notification
@@ -1050,6 +979,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: message
+          plugin_id: field
           label: Message
           exclude: false
           alter:
@@ -1105,9 +1037,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: message
-          plugin_id: field
         has_read:
           id: has_read
           table: opigno_notification
@@ -1115,6 +1044,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: opigno_notification
+          entity_field: has_read
+          plugin_id: field
           label: 'Marked as read'
           exclude: false
           alter:
@@ -1160,8 +1092,8 @@ display:
           type: boolean
           settings:
             format: yes-no
-            format_custom_true: ''
             format_custom_false: ''
+            format_custom_true: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1172,36 +1104,16 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: opigno_notification
-          entity_field: has_read
-          plugin_id: field
-      sorts:
-        created:
-          id: created
-          table: opigno_notification
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: 'Creation time'
-            field_identifier: created
-          granularity: second
-          entity_type: opigno_notification
-          entity_field: created
-          plugin_id: date
       pager:
         type: infinite_scroll
         options:
-          items_per_page: 20
           offset: 0
-          id: 0
+          items_per_page: 20
           total_pages: null
+          id: 0
           tags:
-            previous: '‹ Previous'
             next: 'Next ›'
+            previous: '‹ Previous'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -1214,6 +1126,94 @@ display:
             button_text: 'Load more'
             automatically_load_content: false
             initially_load_all_pages: false
+      sorts:
+        created:
+          id: created
+          table: opigno_notification
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: opigno_notification
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: 'Creation time'
+            field_identifier: created
+          exposed: false
+          granularity: second
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          columns:
+            id: id
+            url: url
+            created: created
+            message: message
+            has_read: has_read
+          default: '-1'
+          info:
+            id:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            url:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            created:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            message:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            has_read:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        pager: false
+        style: false
+        row: false
+        fields: false
+        sorts: false
+      display_description: ''
+      display_extenders: {  }
+      path: notifications
     cache_metadata:
       max-age: -1
       contexts:

@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /catalogue
     negate: true
     context_mapping: {  }
+    pages: /catalogue

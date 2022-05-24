@@ -17,11 +17,11 @@ bundle: opigno_file_upload
 mode: default
 content:
   opigno_body:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
 hidden:
   entity_print_view_epub: true

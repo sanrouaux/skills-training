@@ -15,33 +15,35 @@ bundle: private_message
 mode: inbox
 content:
   created:
+    type: timestamp
     label: hidden
-    weight: 0
-    region: content
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    type: timestamp
-  message:
-    label: visually_hidden
-    type: text_trimmed
-    weight: 2
+    weight: 0
     region: content
+  message:
+    type: text_trimmed
+    label: visually_hidden
     settings:
       trim_length: 200
     third_party_settings: {  }
-  owner:
-    label: inline
-    type: entity_reference_entity_view
-    weight: 1
+    weight: 2
     region: content
+  owner:
+    type: entity_reference_entity_view
+    label: inline
     settings:
       view_mode: private_message_author
       link: false
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  opigno_date: true
+  search_api_excerpt: true

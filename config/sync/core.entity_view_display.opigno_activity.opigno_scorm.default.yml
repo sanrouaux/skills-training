@@ -15,19 +15,19 @@ bundle: opigno_scorm
 mode: default
 content:
   name:
-    label: above
     type: string
-    weight: 0
-    region: content
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
   opigno_scorm_package:
-    weight: 1
+    type: opigno_scorm_field_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: opigno_scorm_field_formatter
+    weight: 1
     region: content
 hidden:
   entity_print_view_epub: true

@@ -18,20 +18,20 @@ mode: activity
 content:
   opigno_body:
     type: text_default
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   opigno_slide_pdf:
     type: entity_reference_entity_view
-    weight: 1
-    region: content
     label: hidden
     settings:
       view_mode: embedded_display
       link: false
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

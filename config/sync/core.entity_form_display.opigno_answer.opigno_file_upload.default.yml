@@ -15,10 +15,10 @@ bundle: opigno_file_upload
 mode: default
 content:
   opigno_file:
+    type: file_generic
     weight: 3
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
 hidden: {  }

@@ -396,6 +396,7 @@ display:
           order: ASC
           expose:
             label: Name
+            field_identifier: name
           exposed: false
       arguments: {  }
       filters:
@@ -419,6 +420,8 @@ display:
             description: ''
             use_operator: false
             operator: name_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: name
             required: false
             remember: false
@@ -464,6 +467,8 @@ display:
             description: ''
             use_operator: false
             operator: name_1_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: name_1
             required: false
             remember: false
@@ -581,4 +586,3 @@ display:
         - url
         - url.query_args
       tags: {  }
-core: 8.x

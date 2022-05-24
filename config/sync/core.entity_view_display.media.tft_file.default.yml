@@ -18,13 +18,13 @@ bundle: tft_file
 mode: default
 content:
   tft_file:
-    weight: 0
+    type: opigno_tft_formatter
     label: hidden
     settings:
       width: 220
       height: 220
     third_party_settings: {  }
-    type: opigno_tft_formatter
+    weight: 0
     region: content
 hidden:
   created: true

@@ -26,3 +26,4 @@ hidden:
   field_message_pm_thread: true
   field_message_private_message: true
   partial_1: true
+  search_api_excerpt: true

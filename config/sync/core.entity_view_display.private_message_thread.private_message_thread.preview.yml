@@ -18,30 +18,30 @@ bundle: private_message_thread
 mode: preview
 content:
   last_message_thread_preview:
-    weight: 2
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   thread_formatted_date:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
+  thread_picture:
     settings: {  }
     third_party_settings: {  }
-  thread_picture:
     weight: 0
     region: content
+  thread_text:
     settings: {  }
     third_party_settings: {  }
-  thread_text:
     weight: 3
     region: content
+  thread_title:
     settings: {  }
     third_party_settings: {  }
-  thread_title:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   delete_link: true
   entity_print_view_epub: true

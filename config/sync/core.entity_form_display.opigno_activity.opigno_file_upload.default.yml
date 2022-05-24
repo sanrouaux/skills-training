@@ -32,35 +32,35 @@ content:
       placeholder: ''
     third_party_settings: {  }
   opigno_allowed_extension:
+    type: string_textfield
     weight: 27
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   opigno_body:
+    type: text_textarea_with_summary
     weight: 26
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea_with_summary
-    region: content
   opigno_evaluation_method:
+    type: opigno_evaluation_method_widget
     weight: 28
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: opigno_evaluation_method_widget
-    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-    region: content
     third_party_settings: {  }
 hidden: {  }

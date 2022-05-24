@@ -15,11 +15,11 @@ bundle: opigno_long_answer
 mode: default
 content:
   opigno_body:
-    weight: -3
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: -3
     region: content
 hidden:
   activity: true

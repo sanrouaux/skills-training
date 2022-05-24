@@ -1,3 +1,4 @@
+uuid: null
 langcode: en
 status: true
 dependencies:
@@ -648,6 +649,7 @@ display:
           order: DESC
           expose:
             label: ''
+            field_identifier: created
           exposed: false
           granularity: second
       filters:

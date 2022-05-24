@@ -16,11 +16,11 @@ bundle: opigno_tincan
 mode: activity
 content:
   opigno_tincan_package:
-    weight: 0
+    type: opigno_tincan_field_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: opigno_tincan_field_formatter
+    weight: 0
     region: content
 hidden:
   entity_print_view_epub: true

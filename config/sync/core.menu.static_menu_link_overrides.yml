@@ -2,17 +2,17 @@ _core:
   default_config_hash: IB1aZQWGsknFTypr-FjwUwPqUp0BUhHtG1bWbGU3N3c
 definitions:
   contact__site_page:
-    enabled: true
     menu_name: footer
     parent: ''
     weight: 0
     expanded: false
+    enabled: true
   standard__front_page:
-    weight: -50
     menu_name: main
     parent: ''
-    enabled: true
+    weight: -50
     expanded: false
+    enabled: true
   opigno_admin__dashboard_management:
     menu_name: opigno-admin
     parent: opigno_admin.global_settings

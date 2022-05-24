@@ -1,5 +1,20 @@
 _core:
   default_config_hash: A3C7pWYCRUVebEEkwRop4kDsrMgLZ2Qwdf4QyqcUXr4
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: false
+logo:
+  path: themes/contrib/aristotle/assets/Logo-Opigno-white.svg
+  use_default: false
+logo_path_anonymous: Logo-Opigno-3-dark.svg
+aristotle_use_header_background: false
+aristotle_header_image_path: ''
+aristotle_header_image_upload: {  }
+mobile_app_premium_logo: 0
 aristotle_home_page_settings:
   aristotle_use_home_page_markup: 1
   aristotle_home_page_slides:
@@ -8,20 +23,5 @@ aristotle_home_page_settings:
       aristotle_home_page_image_upload: {  }
     actions: {  }
 aristotle_menu_source: main
-aristotle_menu_show_for_anonymous: 1
-logo:
-  path: themes/contrib/aristotle/assets/Logo-Opigno-white.svg
-  use_default: 0
-logo_path_anonymous: Logo-Opigno-3-dark.svg
-features:
-  node_user_picture: 0
-  comment_user_picture: 1
-  comment_user_verification: 1
-  favicon: 1
-favicon:
-  use_default: 1
-aristotle_use_header_background: 0
-aristotle_header_image_path: ''
-aristotle_header_image_upload: {  }
-mobile_app_premium_logo: 0
+aristotle_menu_show_for_anonymous: true
 browser_sync: 0

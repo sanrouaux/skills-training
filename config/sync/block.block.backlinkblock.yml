@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/user/password\r\n/user/register\r\n/user/login"
     negate: true
     context_mapping: {  }
+    pages: "<front>\r\n/user/password\r\n/user/register\r\n/user/login"

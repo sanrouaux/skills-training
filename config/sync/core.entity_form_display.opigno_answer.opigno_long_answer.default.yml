@@ -15,11 +15,11 @@ bundle: opigno_long_answer
 mode: default
 content:
   opigno_body:
+    type: text_textarea
     weight: 3
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
 hidden: {  }

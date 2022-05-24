@@ -24,5 +24,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/group/*\r\n/user/*/edit\r\n/user/*\r\n/opigno/calendar\r\n/opigno/calendar/*"
     negate: true
+    pages: "/group/*\r\n/user/*/edit\r\n/user/*\r\n/opigno/calendar\r\n/opigno/calendar/*"

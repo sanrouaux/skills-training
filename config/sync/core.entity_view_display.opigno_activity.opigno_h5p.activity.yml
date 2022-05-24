@@ -17,11 +17,11 @@ mode: activity
 content:
   opigno_h5p:
     type: h5p_default
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

@@ -15,11 +15,11 @@ bundle: opigno_h5p
 mode: default
 content:
   opigno_h5p:
-    weight: 0
+    type: h5p_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: h5p_default
+    weight: 0
     region: content
 hidden:
   entity_print_view_epub: true

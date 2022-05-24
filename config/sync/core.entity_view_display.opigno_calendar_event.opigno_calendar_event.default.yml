@@ -17,29 +17,29 @@ mode: default
 content:
   date_daterange:
     type: daterange_default
-    weight: 0
-    region: content
     label: hidden
     settings:
       timezone_override: ''
       format_type: post_date
       separator: '-'
     third_party_settings: {  }
-  description:
-    label: hidden
-    type: text_default
-    weight: 1
+    weight: 0
     region: content
+  description:
+    type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   title:
     type: string
-    weight: 2
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

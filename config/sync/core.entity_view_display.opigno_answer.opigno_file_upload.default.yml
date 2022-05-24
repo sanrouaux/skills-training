@@ -15,11 +15,11 @@ bundle: opigno_file_upload
 mode: default
 content:
   opigno_file:
-    weight: -3
+    type: file_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: file_default
+    weight: -3
     region: content
 hidden:
   activity: true

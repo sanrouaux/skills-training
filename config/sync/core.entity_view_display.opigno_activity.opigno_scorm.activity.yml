@@ -16,11 +16,11 @@ bundle: opigno_scorm
 mode: activity
 content:
   opigno_scorm_package:
-    weight: 0
+    type: opigno_scorm_field_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: opigno_scorm_field_formatter
+    weight: 0
     region: content
 hidden:
   entity_print_view_epub: true

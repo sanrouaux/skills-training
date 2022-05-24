@@ -22,7 +22,9 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_external_video:
+    type: video_embed
     weight: 3
+    region: content
     settings:
       allowed_providers:
         youtube: youtube
@@ -34,19 +36,17 @@ content:
       file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
       uri_scheme: public
     third_party_settings: {  }
-    type: video_embed
-    region: content
   field_video:
+    type: video_upload
     weight: 4
+    region: content
     settings:
-      file_extensions: 'mp4 ogv webm'
+      progress_indicator: throbber
       file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      file_extensions: 'mp4 ogv webm'
       max_filesize: ''
       uri_scheme: public
-      progress_indicator: throbber
     third_party_settings: {  }
-    type: video_upload
-    region: content
   name:
     type: string_textfield
     weight: 0
@@ -58,10 +58,10 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 1
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-    region: content
     third_party_settings: {  }
 hidden: {  }

@@ -23,29 +23,29 @@ bundle: opigno_course
 mode: default
 content:
   field_course_description:
-    weight: 1
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_course_media_image:
     type: media_thumbnail
-    weight: 2
     label: hidden
     settings:
-      image_style: catalog_thumbnail
       image_link: ''
+      image_style: catalog_thumbnail
     third_party_settings: {  }
+    weight: 2
     region: content
   label:
-    label: hidden
     type: string
-    weight: 0
-    region: content
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   badge_active: true
   badge_criteria: true
