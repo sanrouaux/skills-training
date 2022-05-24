@@ -1,6 +1,8 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
   better_exposed_filters: 0
   block: 0
   block_content: 0
