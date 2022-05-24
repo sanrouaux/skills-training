@@ -9,6 +9,7 @@ dependencies:
     - group.type.learning_path
     - taxonomy.vocabulary.duration
     - taxonomy.vocabulary.learning_path_category
+    - user.role.authenticated
   module:
     - better_exposed_filters
     - group
@@ -16,6 +17,7 @@ dependencies:
     - opigno_learning_path
     - taxonomy
     - text
+    - user
     - views_infinite_scroll
 _core:
   default_config_hash: aHSVMNdifP0R54zedSug8pp-yDggcYLC6kAJcChmfWw
@@ -383,8 +385,10 @@ display:
                 select_all_none_nested: false
                 display_inline: false
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -840,6 +844,7 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user
+        - user.roles
       tags:
         - 'config:core.entity_view_display.group.learning_path.catalog_item'
         - 'config:core.entity_view_display.group.learning_path.default'
@@ -870,6 +875,7 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user
+        - user.roles
       tags:
         - 'config:core.entity_view_display.group.learning_path.catalog_item'
         - 'config:core.entity_view_display.group.learning_path.default'
