@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - user.role.authenticated
+    - user.role.administrator
   module:
     - calendar
     - datetime
@@ -228,7 +228,7 @@ display:
         type: role
         options:
           role:
-            authenticated: authenticated
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -348,10 +348,10 @@ display:
       tags:
         - 'config:core.entity_view_display.opigno_calendar_event.ilt_calendar_event.default'
         - 'config:core.entity_view_display.opigno_calendar_event.ilt_calendar_event.embedded_display'
+        - 'config:core.entity_view_display.opigno_calendar_event.meeting_calendar_event.default'
         - 'config:core.entity_view_display.opigno_calendar_event.meeting_calendar_event.embedded_display'
         - 'config:core.entity_view_display.opigno_calendar_event.opigno_calendar_event.default'
         - 'config:core.entity_view_display.opigno_calendar_event.opigno_calendar_event.embedded_display'
-        - 'config:core.entity_view_display.opigno_calendar_event.meeting_calendar_event.default'
   month_block:
     id: month_block
     display_title: 'Month block'
