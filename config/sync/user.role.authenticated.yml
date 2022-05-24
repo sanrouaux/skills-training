@@ -18,7 +18,6 @@ dependencies:
     - opigno_ilt
     - opigno_module
     - opigno_moxtra
-    - private_message
     - shortcut
     - system
     - userprotect
@@ -62,7 +61,6 @@ permissions:
   - 'skip comment approval'
   - 'take modules'
   - 'update own opigno calendar event'
-  - 'use private messaging system'
   - 'use text format basic_html'
   - userprotect.account.edit
   - userprotect.mail.edit
