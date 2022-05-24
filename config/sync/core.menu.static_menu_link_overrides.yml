@@ -43,3 +43,15 @@ definitions:
     weight: -36
     expanded: true
     enabled: true
+  opigno_lms__catalogue:
+    enabled: false
+    menu_name: main
+    parent: ''
+    expanded: false
+    weight: -9
+  opigno_lms__calendar:
+    enabled: false
+    menu_name: main
+    parent: ''
+    weight: -7
+    expanded: false
