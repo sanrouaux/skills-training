@@ -1,0 +1,31 @@
+uuid: 3545070a-d0e5-4fc6-a326-4f0472c8896c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opigno_training_catalog
+  module:
+    - system
+    - views
+  theme:
+    - skills_training
+_core:
+  default_config_hash: oTJ60ukDuHNRK9tZH7K6X12QHZ_bgWjMOUANVpJyfqE
+id: skills_training_opigno_training_catalog_filter
+theme: skills_training
+region: sidebar_first
+weight: -1
+provider: null
+plugin: 'views_exposed_filter_block:opigno_training_catalog-training_catalogue'
+settings:
+  id: 'views_exposed_filter_block:opigno_training_catalog-training_catalogue'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /catalogue

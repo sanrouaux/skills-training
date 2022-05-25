@@ -1,0 +1,27 @@
+uuid: 9cebdab7-6d14-410e-a1ec-dc59c53d208a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - skills_training
+_core:
+  default_config_hash: jUhbsQMQ1TsVf-lixdJHuVfQMGdsgVbPqIyb0OlixZk
+id: skills_training_mainnavigation
+theme: skills_training
+region: menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

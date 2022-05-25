@@ -1,0 +1,28 @@
+uuid: a5541998-ee27-4106-96fe-dfe7e7c9c764
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skills_training
+_core:
+  default_config_hash: 7I8QELzS-4BySQtRt0UiNLi14p4E03VW_b6nWIFJ37w
+id: skills_training_tabs
+theme: skills_training
+region: content
+weight: -11
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/group/*\r\n/user/*/edit\r\n/user/*\r\n/opigno/calendar\r\n/opigno/calendar/*"

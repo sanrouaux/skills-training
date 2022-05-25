@@ -1,0 +1,32 @@
+uuid: d54a9087-e338-4db7-b0d8-208bfb70b832
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - system
+    - views
+  theme:
+    - skills_training
+_core:
+  default_config_hash: BVJe5iqKqzDsfBTZ4QSxQdcFTr1fHnHbhwLS25-8wIo
+id: skills_training_dashboard_views_block_content_recent_block_1
+theme: skills_training
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:content_recent-block_1'
+settings:
+  id: 'views_block:content_recent-block_1'
+  label: 'Dashboard: Recent content'
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

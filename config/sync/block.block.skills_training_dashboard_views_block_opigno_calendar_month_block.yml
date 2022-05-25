@@ -1,0 +1,30 @@
+uuid: ed92dfe9-6fc6-4fd1-a270-4491e98be83a
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.opigno_calendar
+  module:
+    - system
+    - views
+  theme:
+    - skills_training
+id: skills_training_dashboard_views_block_opigno_calendar_month_block
+theme: skills_training
+region: help
+weight: 0
+provider: null
+plugin: 'views_block:opigno_calendar-month_block'
+settings:
+  id: 'views_block:opigno_calendar-month_block'
+  label: 'Dashboard: Opigno calendar block'
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

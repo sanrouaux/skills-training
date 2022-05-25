@@ -1,0 +1,30 @@
+uuid: 33d3481d-3a40-4787-9006-94fc82d1370d
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.opigno_group_members
+  module:
+    - system
+    - views
+  theme:
+    - skills_training
+id: skills_training_dashboard_views_block_opigno_group_members_block_pending
+theme: skills_training
+region: help
+weight: 0
+provider: null
+plugin: 'views_block:opigno_group_members-block_pending'
+settings:
+  id: 'views_block:opigno_group_members-block_pending'
+  label: 'Dashboard: Opigno Group Members: Pending Memberships'
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

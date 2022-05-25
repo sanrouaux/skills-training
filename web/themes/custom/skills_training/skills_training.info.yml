@@ -1,0 +1,17 @@
+name: 'Skills training'
+type: theme
+description: 'Custom theme based on Aristotle'
+base theme: aristotle
+core_version_requirement: ^9
+logo: logo.svg
+
+regions:
+  help: 'Help'
+  branding: 'Branding'
+  menu: 'Menu'
+  admin_opigno: 'Admin opigno menu'
+  status_messages: 'Status messages'
+  top: 'Top'
+  sidebar_first: 'Sidebar first'
+  content: 'Content'
+  footer: 'Footer'

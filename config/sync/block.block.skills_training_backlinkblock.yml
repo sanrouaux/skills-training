@@ -1,0 +1,29 @@
+uuid: 59579c83-9b20-4b4d-b56a-7a48a4c16287
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_learning_path
+    - system
+  theme:
+    - skills_training
+_core:
+  default_config_hash: w4CGZkmekgbWkoYurt90eX66XGWYQtLaF3oqBsKP6pU
+id: skills_training_backlinkblock
+theme: skills_training
+region: top
+weight: 0
+provider: null
+plugin: opigno_learning_path_back_link_block
+settings:
+  id: opigno_learning_path_back_link_block
+  label: BackLinkBlock
+  label_display: '0'
+  provider: opigno_learning_path
+  js_button: "user.login\r\nuser.register\r\nuser.pass\r\nopigno_module.group.answer_form\r\nentity.group.canonical\r\nforum.page\r\nentity.node.canonical\r\nview.opigno_training_catalog.training_catalogue\r\ntft.group\r\ntft.directory\r\nforum.index\r\nforum.page\r\nprivate_message.private_message_page\r\nentity.private_message_thread.canonical\r\nentity.private_message_thread.delete_form\r\nentity.private_message_thread.canonical\r\nentity.private_message_thread.delete_form\r\nprivate_message.private_message_page\r\nopigno_module.module_result"
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/user/password\r\n/user/register\r\n/user/login"

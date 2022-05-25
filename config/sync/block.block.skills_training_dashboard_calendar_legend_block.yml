@@ -1,0 +1,29 @@
+uuid: 730f7265-7945-4a41-a185-c5ac180e1290
+langcode: en
+status: true
+dependencies:
+  module:
+    - calendar
+    - system
+  theme:
+    - skills_training
+_core:
+  default_config_hash: Iv0CTAaAZTyDJr1yC3pJxMQe4hKiwLAHd5-NzKWgSkQ
+id: skills_training_dashboard_calendar_legend_block
+theme: skills_training
+region: content
+weight: -3
+provider: null
+plugin: calendar_legend_block
+settings:
+  id: calendar_legend_block
+  label: 'Dashboard: Calendar legend'
+  label_display: visible
+  provider: calendar
+  calendar_legend_view_settings_view: 'opigno_calendar:month_block'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

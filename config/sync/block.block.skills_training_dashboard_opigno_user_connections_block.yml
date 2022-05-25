@@ -1,0 +1,26 @@
+uuid: b1a3ddd7-895c-4b99-91a6-38eb177c5eed
+langcode: en
+status: false
+dependencies:
+  module:
+    - opigno_social
+    - system
+  theme:
+    - skills_training
+id: skills_training_dashboard_opigno_user_connections_block
+theme: skills_training
+region: help
+weight: 0
+provider: null
+plugin: opigno_user_connections_block
+settings:
+  id: opigno_user_connections_block
+  label: 'Dashboard: User connections'
+  label_display: ''
+  provider: opigno_social
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

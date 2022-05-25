@@ -1,0 +1,22 @@
+uuid: d9965ea0-25ed-43cb-ad01-4ef762669db8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skills_training
+_core:
+  default_config_hash: Q-Q-n5XRtF4UHMFpo-WR6WPmn6GgKAaGVIp0I4jPCJk
+id: skills_training_messages
+theme: skills_training
+region: status_messages
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

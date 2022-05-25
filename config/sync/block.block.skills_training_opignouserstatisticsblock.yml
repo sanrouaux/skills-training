@@ -1,0 +1,36 @@
+uuid: 43aeb1ba-e3ef-4276-9b0f-4e379125b4c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_dashboard
+    - system
+    - user
+  theme:
+    - skills_training
+_core:
+  default_config_hash: oVfJ_TdqsWGb4SnWiE3yGwUwM65yrRqPzOoCA3WLAw0
+id: skills_training_opignouserstatisticsblock
+theme: skills_training
+region: content
+weight: 0
+provider: null
+plugin: opigno_user_stats_block
+settings:
+  id: opigno_user_stats_block
+  label: 'Opigno User statistics block'
+  label_display: '0'
+  provider: opigno_dashboard
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

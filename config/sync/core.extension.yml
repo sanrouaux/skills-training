@@ -144,4 +144,5 @@ module:
 theme:
   seven: 0
   aristotle: 0
+  skills_training: 0
 profile: opigno_lms

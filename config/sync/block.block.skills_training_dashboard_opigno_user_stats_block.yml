@@ -1,0 +1,26 @@
+uuid: b1eef2fe-59ac-44c7-8efd-de68169b3090
+langcode: en
+status: false
+dependencies:
+  module:
+    - opigno_dashboard
+    - system
+  theme:
+    - skills_training
+id: skills_training_dashboard_opigno_user_stats_block
+theme: skills_training
+region: help
+weight: 0
+provider: null
+plugin: opigno_user_stats_block
+settings:
+  id: opigno_user_stats_block
+  label: 'Dashboard: User statistics'
+  label_display: ''
+  provider: opigno_dashboard
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

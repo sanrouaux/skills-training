@@ -1,0 +1,33 @@
+uuid: 6a8aa696-f535-4722-a145-9368ba15c260
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.private_message
+  module:
+    - system
+    - views
+  theme:
+    - skills_training
+_core:
+  default_config_hash: dmtlrnpx59gVxUq-PZRq_9w8L4XCZS6Kjk7L8uobS2U
+id: skills_training_views_block__private_message_block_all
+theme: skills_training
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:private_message-block_all'
+settings:
+  id: 'views_block:private_message-block_all'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/private-messages\r\n/private-messages/*\r\n/private-message/*"

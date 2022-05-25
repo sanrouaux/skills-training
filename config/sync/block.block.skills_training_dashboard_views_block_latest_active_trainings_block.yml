@@ -1,0 +1,30 @@
+uuid: fb27b24f-1b94-409d-beba-57b71fdaf01f
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.latest_active_trainings
+  module:
+    - system
+    - views
+  theme:
+    - skills_training
+id: skills_training_dashboard_views_block_latest_active_trainings_block
+theme: skills_training
+region: help
+weight: 0
+provider: null
+plugin: 'views_block:latest_active_trainings-block'
+settings:
+  id: 'views_block:latest_active_trainings-block'
+  label: 'Dashboard: Latest active trainings'
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

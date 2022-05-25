@@ -1,0 +1,26 @@
+uuid: d9847fee-e10d-4bb7-9058-4c9348babfa7
+langcode: en
+status: false
+dependencies:
+  module:
+    - opigno_social
+    - system
+  theme:
+    - skills_training
+id: skills_training_dashboard_opigno_social_wall_block
+theme: skills_training
+region: help
+weight: 0
+provider: null
+plugin: opigno_social_wall_block
+settings:
+  id: opigno_social_wall_block
+  label: 'Dashboard: Social wall'
+  label_display: ''
+  provider: opigno_social
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

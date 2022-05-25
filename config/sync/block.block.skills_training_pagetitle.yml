@@ -1,0 +1,27 @@
+uuid: 14a7fcc7-ce41-4ad7-ae50-774b01d60df3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skills_training
+_core:
+  default_config_hash: XpaW8xVmJZ3p4lsL6R6fd475QKJYrGhtUMYv4edlmhI
+id: skills_training_pagetitle
+theme: skills_training
+region: top
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/user/password\r\n/user/register\r\n/user/login"

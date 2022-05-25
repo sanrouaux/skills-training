@@ -1,0 +1,32 @@
+uuid: f9991a79-dfea-4f8f-a5b6-325f400f29cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opigno_calendar
+  module:
+    - system
+    - views
+  theme:
+    - skills_training
+_core:
+  default_config_hash: H9CWqIVIDfU7x4LTL6m0EcSrRQ68hCFB6mEQJj_Lw2U
+id: skills_training_views_block__opigno_calendar_month_block
+theme: skills_training
+region: content
+weight: 3
+provider: null
+plugin: 'views_block:opigno_calendar-month_block'
+settings:
+  id: 'views_block:opigno_calendar-month_block'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '*'

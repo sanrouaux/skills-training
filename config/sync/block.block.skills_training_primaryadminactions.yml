@@ -1,0 +1,27 @@
+uuid: 501a0e60-6b60-47f8-901c-36fb1079479d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skills_training
+_core:
+  default_config_hash: 5dMydvqYU9zH6jKww4861YTISyhovkEpa_pijz7WD40
+id: skills_training_primaryadminactions
+theme: skills_training
+region: content
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: /catalogue

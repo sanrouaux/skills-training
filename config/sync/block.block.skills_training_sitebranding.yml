@@ -1,0 +1,25 @@
+uuid: 8ce27a25-6896-4075-9f4d-7f568c195bd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skills_training
+_core:
+  default_config_hash: CUE7G8l5ad2MJrKjY5EruYwWXwTgQ_wrfToc1AgQwzI
+id: skills_training_sitebranding
+theme: skills_training
+region: branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
