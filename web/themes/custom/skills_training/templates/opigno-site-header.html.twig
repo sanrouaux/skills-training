@@ -1,0 +1,163 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the site header block.
+ *
+ * Available variables:
+ * - logo: the site logo;
+ * - menu: the main menu;
+ * - is_user_page: if the current page is a user page or not;
+ * - user_name: the user name;
+ * - user_url: the url to the user profile page;
+ * - user_picture: the rendered user profile picture;
+ * - notifications_count: the amount of unread notifications + ILTs + LMs;
+ * - notifications: rendered notifications dropdown block;
+ * - dropdown_menu: the user dropdown menu.
+ */
+#}
+<header class="page-header" role="banner">
+  <div class="container">
+    <div class="row align-items-center">
+      {% if not is_anonymous %}
+      <div class="col-lg-9 col-xxl-8 col-left">
+      {% else %}
+      <div class="col-lg-12 col-xxl-12 col-left">
+      {% endif %}
+        {# Logo. #}
+        {% if logo is not empty %}
+          <div class="region region-branding">
+            <div class="block-system-branding-block">
+              <a class="home-link" href="{{ path('<front>') }}">
+                <img class="logo" src="{{ logo }}" alt="{{ 'Home'|t }}">
+              </a>
+            </div>
+          </div>
+        {% endif %}
+
+        <div class="region-main-menu">
+          <nav>{{ menu }}</nav>
+        </div>
+
+        {# Mobile menu. #}
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        {# Mobile header. #}
+        <div class="mobile-header-wrapper">
+          <div class="mobile-header">
+            <nav>{{ menu }}</nav>
+              {# Notifications block. #}
+            <div class="block-notifications">
+              <div class="block-notifications__item block-notifications__item--notifications">
+                <div class="dropdown">
+                  <a href="{{ path('view.opigno_notifications.page_all') }}">
+                    <i class="fi fi-rr-bell">
+                      {% set classes = notifications_count != 0 ? 'marker' : 'marker hidden' %}
+                      <span class="{{ classes }}"></span>
+                    </i>
+                  </a>
+                </div>
+              </div>
+
+              {% block user_menu %}
+                {# Messages link. #}
+                {# <div class="block-notifications__item block-notifications__item--messages">
+                  <div class="dropdown">
+                    <a href="{{ path('private_message.private_message_page') }}">
+                      <i class="fi fi-rr-envelope">
+                        {% set classes = messages_count != 0 ? 'marker' : 'marker hidden' %}
+                        <span class="{{ classes }}"></span>
+                      </i>
+                    </a>
+                  </div>
+                </div> #}
+
+                {# User dropdown menu. #}
+                <div class="block-notifications__item block-notifications__item--user-menu">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fi fi-rr-angle-small-down"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <div class="user-menu-block">
+                        <div class="user-name">
+                          {{ dropdown_menu.name }}
+                          <span>{{ dropdown_menu.role }}</span>
+                        </div>
+
+                        {# Links section. #}
+                        {% block dropdown_menu %}
+                          <ul class="user-menu-list">
+                            {% for key, link in dropdown_menu.links %}
+                              {% if not link.external %}
+                                <li class="user-menu-item {{ key }}">
+                                  <a href="{{ link.path }}" class="user-menu-item-text" target="{{ link.external ? '_blank' : '_self' }}">
+                                    <i class="fi {{ link.icon_class }}"></i>
+                                    {{ link.title }}
+                                  </a>
+                                </li>
+                              {% endif %}
+
+                              {# Add "About" link for admin. #}
+                              {% if loop.first and dropdown_menu.is_admin %}
+                                <li class="user-menu-item">
+                                  <a href="#" class="user-menu-item-text" data-toggle="modal" data-target="#aboutModal">
+                                    <i class="fi fi-rr-info"></i>
+                                    {{ 'About'|t }}
+                                  </a>
+                                </li>
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        {% endblock %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endblock %}
+            </div>
+
+            {% block profile %}
+              <div class="block-profile">
+                <a class="block-profile__link {{ is_user_page ? 'active' }}" href="{{ user_url }}">
+                  <span class="profile-name">{{ user_name }}</span>
+                  <span class="profile-pic">{{ user_picture }}</span>
+                </a>
+              </div>
+            {% endblock %}
+            {{ block('dropdown_menu') }}
+          </div>
+        </div>
+      </div>
+
+      {% if not is_anonymous %}
+      <div class="col-lg-3 col-xxl-4 col-right">
+        {{ block('profile') }}
+
+        <div class="block-notifications">
+          <div class="block-notifications__item block-notifications__item--notifications">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                <i class="fi fi-rr-bell">
+                  {% set classes = notifications_count != 0 ? 'marker' : 'marker hidden' %}
+                  <span class="{{ classes }}"></span>
+                </i>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right {{ notifications_count == 0 ? 'hidden' }}">
+                {{ notifications }}
+              </div>
+            </div>
+          </div>
+          {{ block('user_menu') }}
+        </div>
+
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</header>
