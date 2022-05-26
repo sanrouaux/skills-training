@@ -1,5 +1,7 @@
+label: 'Catálogo de entrenamientos de Opigno'
 display:
   default:
+    display_title: Máster
     display_options:
       exposed_form:
         options:
@@ -48,3 +50,6 @@ display:
         label:
           expose:
             label: Título
+      title: 'Catálogo de entrenamientos'
+  training_catalogue:
+    display_title: 'Catálogo de entrenamientos'

@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Máster
     display_options:
       exposed_form:
         options:
@@ -16,6 +17,7 @@ display:
       use_more_text: más
   month_block:
     display_options:
+      title: Calendario
       arguments:
         date_daterange_value_year_month:
           exception:
@@ -41,10 +43,13 @@ display:
     display_options:
       menu:
         title: Mes
+      tab_options:
+        title: Calendario
       arguments:
         date_daterange_value_year_month:
           exception:
             title: Todo(s)
+      title: Calendario
       use_more_text: más
   page_week:
     display_options:

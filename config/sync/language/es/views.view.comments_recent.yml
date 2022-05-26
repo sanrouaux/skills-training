@@ -2,6 +2,7 @@ label: 'Comentarios recientes'
 description: 'Comentarios recientes.'
 display:
   default:
+    display_title: Máster
     display_options:
       title: 'Comentarios recientes'
       empty:

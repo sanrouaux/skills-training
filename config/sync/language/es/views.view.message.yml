@@ -1,6 +1,7 @@
 label: Mensaje
 display:
   default:
+    display_title: Máster
     display_options:
       exposed_form:
         options:

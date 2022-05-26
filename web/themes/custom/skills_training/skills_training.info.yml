@@ -1,9 +1,8 @@
 name: 'Skills training'
 type: theme
 description: 'Custom theme based on Aristotle'
-base theme: aristotle
 core_version_requirement: ^9
-logo: logo.svg
+base theme: aristotle
 
 regions:
   help: 'Help'

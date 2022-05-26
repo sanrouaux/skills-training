@@ -1,0 +1,7 @@
+content:
+  field_first_name:
+    settings:
+      placeholder: Nombre
+  field_last_name:
+    settings:
+      placeholder: Apellidos
