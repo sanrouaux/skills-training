@@ -1,0 +1,22 @@
+uuid: 7cb98952-e0b5-4504-a5e1-c746a2a97f88
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_scorm
+id: opigno_activity.opigno_scorm.auto_skills
+field_name: auto_skills
+entity_type: opigno_activity
+bundle: opigno_scorm
+label: 'Use activity in auto skills management'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

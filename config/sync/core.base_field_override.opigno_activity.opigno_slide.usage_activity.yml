@@ -1,0 +1,22 @@
+uuid: f173ac0e-2dac-4ffe-94d0-116c8791b064
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_slide
+  module:
+    - options
+id: opigno_activity.opigno_slide.usage_activity
+field_name: usage_activity
+entity_type: opigno_activity
+bundle: opigno_slide
+label: 'Usage of activity'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: local
+default_value_callback: ''
+settings: {  }
+field_type: list_string

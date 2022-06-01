@@ -1,0 +1,22 @@
+uuid: 029131bf-d094-4b7e-ba99-4804d132c715
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.pdf_file
+id: media.pdf_file.status
+field_name: status
+entity_type: media
+bundle: pdf_file
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

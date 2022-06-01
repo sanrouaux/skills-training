@@ -1,0 +1,20 @@
+uuid: 72a9b7ca-1402-4b91-9c58-46c641f54ca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.duration
+  module:
+    - path
+id: taxonomy_term.duration.path
+field_name: path
+entity_type: taxonomy_term
+bundle: duration
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

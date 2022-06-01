@@ -1,0 +1,20 @@
+uuid: 9663398d-f450-4711-87b8-df7c3ccf0a84
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+  module:
+    - path
+id: group.opigno_course.path
+field_name: path
+entity_type: group
+bundle: opigno_course
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

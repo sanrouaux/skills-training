@@ -1,0 +1,18 @@
+uuid: aa34a029-2666-433b-9ecd-27e08b229113
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.skills
+id: taxonomy_term.skills.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: skills
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

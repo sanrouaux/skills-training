@@ -1,0 +1,22 @@
+uuid: 94cd1285-6934-4c77-9d02-622210a6066b
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.allow_resume
+field_name: allow_resume
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Allow resume'
+description: 'Allow users to leave this Module incomplete and then resume it from where they left off.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

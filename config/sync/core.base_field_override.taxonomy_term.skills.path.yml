@@ -1,0 +1,20 @@
+uuid: 0fb4af59-3e94-4f6e-8021-3aba73b732a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.skills
+  module:
+    - path
+id: taxonomy_term.skills.path
+field_name: path
+entity_type: taxonomy_term
+bundle: skills
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

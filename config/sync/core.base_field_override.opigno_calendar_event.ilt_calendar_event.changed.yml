@@ -1,0 +1,18 @@
+uuid: f9b9805b-eaa3-41da-92e5-54bb3ee4d355
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_calendar_event.type.ilt_calendar_event
+id: opigno_calendar_event.ilt_calendar_event.changed
+field_name: changed
+entity_type: opigno_calendar_event
+bundle: ilt_calendar_event
+label: Changed
+description: 'The time that the calendar event was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: 55873b68-be69-4137-bcd9-37f356a860b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.opigno_course-group_membership
+id: group_content.opigno_course-group_membership.changed
+field_name: changed
+entity_type: group_content
+bundle: opigno_course-group_membership
+label: 'Changed on'
+description: 'The time that the group content was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

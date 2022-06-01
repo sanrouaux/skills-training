@@ -1,0 +1,22 @@
+uuid: 4ccacff7-24fe-40b4-bf2f-ca7c470bf1a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_file_upload
+  module:
+    - options
+id: opigno_activity.opigno_file_upload.usage_activity
+field_name: usage_activity
+entity_type: opigno_activity
+bundle: opigno_file_upload
+label: 'Usage of activity'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: local
+default_value_callback: ''
+settings: {  }
+field_type: list_string

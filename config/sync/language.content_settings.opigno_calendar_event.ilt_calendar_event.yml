@@ -1,0 +1,18 @@
+uuid: 49043a62-85cf-4d51-b998-193adf3fad44
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_calendar_event.type.ilt_calendar_event
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: opigno_calendar_event.ilt_calendar_event
+target_entity_type_id: opigno_calendar_event
+target_bundle: ilt_calendar_event
+default_langcode: site_default
+language_alterable: false

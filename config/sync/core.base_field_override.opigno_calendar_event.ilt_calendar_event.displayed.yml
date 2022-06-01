@@ -1,0 +1,22 @@
+uuid: 493f62e1-56a9-4e37-a82d-7d371f308eb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_calendar_event.type.ilt_calendar_event
+id: opigno_calendar_event.ilt_calendar_event.displayed
+field_name: displayed
+entity_type: opigno_calendar_event
+bundle: ilt_calendar_event
+label: 'Show on calendar'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

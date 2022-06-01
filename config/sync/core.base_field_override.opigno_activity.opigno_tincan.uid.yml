@@ -1,0 +1,20 @@
+uuid: e9b10f29-7893-4371-9fdc-e018e8678ac8
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_tincan
+id: opigno_activity.opigno_tincan.uid
+field_name: uid
+entity_type: opigno_activity
+bundle: opigno_tincan
+label: 'Authored by'
+description: 'The user ID of author of the Activity entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

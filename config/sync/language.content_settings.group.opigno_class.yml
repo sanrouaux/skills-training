@@ -1,0 +1,18 @@
+uuid: 90c19476-d25f-44f4-aae2-604ff7f8d211
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_class
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group.opigno_class
+target_entity_type_id: group
+target_bundle: opigno_class
+default_langcode: site_default
+language_alterable: false

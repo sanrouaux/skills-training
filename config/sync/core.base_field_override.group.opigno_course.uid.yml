@@ -1,0 +1,20 @@
+uuid: 58d658c7-5a7a-4952-a818-279b8e4fd2cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+id: group.opigno_course.uid
+field_name: uid
+entity_type: group
+bundle: opigno_course
+label: 'Group creator'
+description: 'The username of the group creator.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\group\Entity\Group::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

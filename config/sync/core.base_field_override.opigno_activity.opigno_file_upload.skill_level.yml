@@ -1,0 +1,22 @@
+uuid: be194b24-638b-4f47-8d88-b8f2e0a1538e
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_file_upload
+  module:
+    - options
+id: opigno_activity.opigno_file_upload.skill_level
+field_name: skill_level
+entity_type: opigno_activity
+bundle: opigno_file_upload
+label: 'Level of skill'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: local
+default_value_callback: ''
+settings: {  }
+field_type: list_string

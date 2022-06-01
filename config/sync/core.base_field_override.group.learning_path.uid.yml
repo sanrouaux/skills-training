@@ -1,0 +1,20 @@
+uuid: 62103e1d-688b-441a-8bed-5d8c4c61349d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+id: group.learning_path.uid
+field_name: uid
+entity_type: group
+bundle: learning_path
+label: 'Group creator'
+description: 'The username of the group creator.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\group\Entity\Group::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

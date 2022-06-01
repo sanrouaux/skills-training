@@ -1,0 +1,18 @@
+uuid: 445c32c0-0afc-4c18-bb7e-658de2651242
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.duration
+id: taxonomy_term.duration.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: duration
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

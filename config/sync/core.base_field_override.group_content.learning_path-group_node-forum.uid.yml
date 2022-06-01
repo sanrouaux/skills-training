@@ -1,0 +1,20 @@
+uuid: 77efe9e0-cb73-449b-843c-677d8f44b700
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.learning_path-group_node-forum
+id: group_content.learning_path-group_node-forum.uid
+field_name: uid
+entity_type: group_content
+bundle: learning_path-group_node-forum
+label: 'Group content creator'
+description: 'The username of the group content creator.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\group\Entity\GroupContent::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

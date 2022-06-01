@@ -1,0 +1,18 @@
+uuid: 86a1efd9-97b3-4bec-a422-60890a7fdab6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tft_tree
+id: taxonomy_term.tft_tree.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tft_tree
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

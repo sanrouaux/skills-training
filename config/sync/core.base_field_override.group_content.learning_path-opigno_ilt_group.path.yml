@@ -1,0 +1,20 @@
+uuid: c2d38648-b9e2-4aab-b0bb-53e72b4426cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.learning_path-opigno_ilt_group
+  module:
+    - path
+id: group_content.learning_path-opigno_ilt_group.path
+field_name: path
+entity_type: group_content
+bundle: learning_path-opigno_ilt_group
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

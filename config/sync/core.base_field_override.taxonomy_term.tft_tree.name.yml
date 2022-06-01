@@ -1,0 +1,18 @@
+uuid: 3abc4943-4dae-456b-a946-54e50eae8e11
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tft_tree
+id: taxonomy_term.tft_tree.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tft_tree
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

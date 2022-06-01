@@ -1,0 +1,18 @@
+uuid: 1ea637ef-9b13-4ce0-bacc-34e1af9c61fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_answer_type.opigno_file_upload
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: opigno_answer.opigno_file_upload
+target_entity_type_id: opigno_answer
+target_bundle: opigno_file_upload
+default_langcode: site_default
+language_alterable: false

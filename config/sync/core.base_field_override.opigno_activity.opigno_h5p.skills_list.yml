@@ -1,0 +1,20 @@
+uuid: 5bd91a10-7ff5-4618-9643-959db19abc1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_h5p
+id: opigno_activity.opigno_h5p.skills_list
+field_name: skills_list
+entity_type: opigno_activity
+bundle: opigno_h5p
+label: Skill
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

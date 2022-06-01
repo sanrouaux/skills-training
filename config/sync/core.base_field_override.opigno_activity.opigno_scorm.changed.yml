@@ -1,0 +1,18 @@
+uuid: 2479aea9-b87b-40a3-88fc-4d242881ba59
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_scorm
+id: opigno_activity.opigno_scorm.changed
+field_name: changed
+entity_type: opigno_activity
+bundle: opigno_scorm
+label: Changed
+description: 'The time that the Module was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

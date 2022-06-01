@@ -1,0 +1,18 @@
+uuid: bda0aee8-80b3-4c84-a848-e6a6febb1d8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_long_answer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: opigno_activity.opigno_long_answer
+target_entity_type_id: opigno_activity
+target_bundle: opigno_long_answer
+default_langcode: site_default
+language_alterable: false

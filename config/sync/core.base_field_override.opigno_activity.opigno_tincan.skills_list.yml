@@ -1,0 +1,20 @@
+uuid: 160ee76b-49f6-447d-bec5-2dd55ce23709
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_tincan
+id: opigno_activity.opigno_tincan.skills_list
+field_name: skills_list
+entity_type: opigno_activity
+bundle: opigno_tincan
+label: Skill
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

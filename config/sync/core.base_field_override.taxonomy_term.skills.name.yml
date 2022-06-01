@@ -1,0 +1,18 @@
+uuid: e2f8625a-ddf7-48c8-97a2-f53a58c2ed17
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.skills
+id: taxonomy_term.skills.name
+field_name: name
+entity_type: taxonomy_term
+bundle: skills
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

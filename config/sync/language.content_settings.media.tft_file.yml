@@ -1,0 +1,18 @@
+uuid: c45c6fbc-5907-40ce-bbca-f0b1ae2bc4e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.tft_file
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.tft_file
+target_entity_type_id: media
+target_bundle: tft_file
+default_langcode: site_default
+language_alterable: false

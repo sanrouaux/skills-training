@@ -1,0 +1,11 @@
+uuid: 7897d341-5499-494b-b581-9f95a7bccf18
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_answer_type.opigno_slide
+id: opigno_answer.opigno_slide
+target_entity_type_id: opigno_answer
+target_bundle: opigno_slide
+default_langcode: site_default
+language_alterable: false

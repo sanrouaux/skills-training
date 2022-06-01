@@ -1,0 +1,18 @@
+uuid: b47f1abf-6153-4f18-ba80-7bda7b51a27c
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.pdf_file
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.pdf_file
+target_entity_type_id: media
+target_bundle: pdf_file
+default_langcode: site_default
+language_alterable: false

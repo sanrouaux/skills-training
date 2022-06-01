@@ -1,0 +1,18 @@
+uuid: 22a4220f-dd79-417b-96f7-4c73414eacfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+id: group.learning_path.created
+field_name: created
+entity_type: group
+bundle: learning_path
+label: 'Created on'
+description: 'The time that the group was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

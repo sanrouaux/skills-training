@@ -1,0 +1,20 @@
+uuid: 2a48b76b-749a-4cc3-98cd-d93a6f4e6be2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.learning_path-group_node-forum
+  module:
+    - path
+id: group_content.learning_path-group_node-forum.path
+field_name: path
+entity_type: group_content
+bundle: learning_path-group_node-forum
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

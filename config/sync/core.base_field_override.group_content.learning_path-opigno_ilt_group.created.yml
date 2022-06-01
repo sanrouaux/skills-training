@@ -1,0 +1,18 @@
+uuid: dcaaa4d1-dfab-40f7-b360-af3ab778f9ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.learning_path-opigno_ilt_group
+id: group_content.learning_path-opigno_ilt_group.created
+field_name: created
+entity_type: group_content
+bundle: learning_path-opigno_ilt_group
+label: 'Created on'
+description: 'The time that the group content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

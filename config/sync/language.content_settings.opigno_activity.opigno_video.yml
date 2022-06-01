@@ -1,0 +1,18 @@
+uuid: b151f185-4e43-4183-a140-9ab7c9e446cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_video
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: opigno_activity.opigno_video
+target_entity_type_id: opigno_activity
+target_bundle: opigno_video
+default_langcode: site_default
+language_alterable: false

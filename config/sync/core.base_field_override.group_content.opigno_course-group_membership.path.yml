@@ -1,0 +1,20 @@
+uuid: 3090a370-8fbd-4b36-96e1-e6136d5cafd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.opigno_course-group_membership
+  module:
+    - path
+id: group_content.opigno_course-group_membership.path
+field_name: path
+entity_type: group_content
+bundle: opigno_course-group_membership
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

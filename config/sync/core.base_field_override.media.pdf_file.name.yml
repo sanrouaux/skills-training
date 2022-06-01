@@ -1,0 +1,20 @@
+uuid: be24dd2d-4552-4f06-8d34-bc16d1f7de16
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.pdf_file
+id: media.pdf_file.name
+field_name: name
+entity_type: media
+bundle: pdf_file
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

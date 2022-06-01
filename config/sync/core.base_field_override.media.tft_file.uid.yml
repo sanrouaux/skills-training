@@ -1,0 +1,20 @@
+uuid: e1aae513-0093-42ff-b9a6-5ce8c1b30640
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.tft_file
+id: media.tft_file.uid
+field_name: uid
+entity_type: media
+bundle: tft_file
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

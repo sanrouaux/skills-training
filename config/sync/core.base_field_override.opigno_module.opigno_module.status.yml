@@ -1,0 +1,22 @@
+uuid: e228ef47-4ace-4df2-aa0e-735617836fb1
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.status
+field_name: status
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Publishing status'
+description: 'A boolean indicating whether the Module is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

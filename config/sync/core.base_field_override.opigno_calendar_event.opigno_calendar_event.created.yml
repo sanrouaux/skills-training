@@ -1,0 +1,18 @@
+uuid: 149fdb99-bf97-4075-ba59-b67ee12a48dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_calendar_event.type.opigno_calendar_event
+id: opigno_calendar_event.opigno_calendar_event.created
+field_name: created
+entity_type: opigno_calendar_event
+bundle: opigno_calendar_event
+label: 'Authored on'
+description: 'The time that the calendar event was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

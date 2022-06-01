@@ -1,0 +1,20 @@
+uuid: 888397ee-0dd2-4b57-b70f-352ca28ae28d
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.pdf_file
+  module:
+    - path
+id: media.pdf_file.path
+field_name: path
+entity_type: media
+bundle: pdf_file
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

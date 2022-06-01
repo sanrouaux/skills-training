@@ -1,0 +1,20 @@
+uuid: 3676a417-4aac-45f9-b2e5-f2868aaa1feb
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_scorm
+id: opigno_activity.opigno_scorm.name
+field_name: name
+entity_type: opigno_activity
+bundle: opigno_scorm
+label: Name
+description: 'The name of the Activity entity plus.'
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

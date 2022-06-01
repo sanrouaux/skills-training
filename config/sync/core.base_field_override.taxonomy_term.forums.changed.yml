@@ -1,0 +1,18 @@
+uuid: 63fb7d27-c45f-4fd7-b71e-71168a9c564d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forums
+id: taxonomy_term.forums.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: forums
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

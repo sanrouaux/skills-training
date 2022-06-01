@@ -1,0 +1,18 @@
+uuid: 98f090c6-9ee9-4c18-ae81-daaa4c31dbc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_slide
+id: opigno_activity.opigno_slide.changed
+field_name: changed
+entity_type: opigno_activity
+bundle: opigno_slide
+label: Changed
+description: 'The time that the Module was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,22 @@
+uuid: 12a73715-65f4-4711-87ba-7e4ba040bcf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.module_global
+field_name: module_global
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Use all suitable activities from Opigno system'
+description: 'If checked then Opigno system will load all suitable activities from other trainings and not assigned activities.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

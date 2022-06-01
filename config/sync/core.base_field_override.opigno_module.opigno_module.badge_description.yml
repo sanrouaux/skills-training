@@ -1,0 +1,20 @@
+uuid: 1f4a737d-da32-4b1c-b7a2-0d64000bbd7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.badge_description
+field_name: badge_description
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Badge description'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string_long

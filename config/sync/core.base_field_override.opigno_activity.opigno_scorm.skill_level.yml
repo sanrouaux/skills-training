@@ -1,0 +1,22 @@
+uuid: 9dc03eca-79a0-4eaa-8a44-562941a919df
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_scorm
+  module:
+    - options
+id: opigno_activity.opigno_scorm.skill_level
+field_name: skill_level
+entity_type: opigno_activity
+bundle: opigno_scorm
+label: 'Level of skill'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: local
+default_value_callback: ''
+settings: {  }
+field_type: list_string

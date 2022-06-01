@@ -1,0 +1,20 @@
+uuid: b00d77c9-11ba-4539-8524-986fbc3aae0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tft_tree
+  module:
+    - text
+id: taxonomy_term.tft_tree.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tft_tree
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

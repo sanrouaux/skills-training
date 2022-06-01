@@ -1,0 +1,20 @@
+uuid: 3f419388-8051-4aa6-8a1b-2f9d9f1235aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_file_upload
+id: opigno_activity.opigno_file_upload.uid
+field_name: uid
+entity_type: opigno_activity
+bundle: opigno_file_upload
+label: 'Authored by'
+description: 'The user ID of author of the Activity entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

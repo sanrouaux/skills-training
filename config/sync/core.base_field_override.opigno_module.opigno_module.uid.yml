@@ -1,0 +1,20 @@
+uuid: 0e0edb4e-d2de-4226-9989-582ce760e212
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.uid
+field_name: uid
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Authored by'
+description: 'The user ID of author of the Module entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

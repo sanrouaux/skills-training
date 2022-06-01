@@ -1,0 +1,11 @@
+uuid: 3110d814-cff6-4b2b-9c98-eca94520fac2
+langcode: en
+status: true
+dependencies:
+  config:
+    - message.template.private_message_notification
+id: message.private_message_notification
+target_entity_type_id: message
+target_bundle: private_message_notification
+default_langcode: site_default
+language_alterable: false

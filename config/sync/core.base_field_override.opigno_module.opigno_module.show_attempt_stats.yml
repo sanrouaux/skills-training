@@ -1,0 +1,22 @@
+uuid: 7ef76f8f-bad0-4b0e-9d35-8827619101c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.show_attempt_stats
+field_name: show_attempt_stats
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Display allowed number of attempts'
+description: 'Display the allowed number of attempts on the starting page for this Module.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

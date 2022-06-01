@@ -1,0 +1,18 @@
+uuid: 3b21b0d3-93c0-4f1e-9069-8e5e3ba3038f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.forum
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.forum
+target_entity_type_id: node
+target_bundle: forum
+default_langcode: site_default
+language_alterable: false

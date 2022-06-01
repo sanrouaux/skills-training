@@ -1,0 +1,22 @@
+uuid: f4e3d4a3-9c98-4692-81c7-61cd47ba7a4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.hide_results
+field_name: hide_results
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Do not display results at the end of the module'
+description: 'If you check this option, the correct answers won’t be displayed to the users at the end of the module.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

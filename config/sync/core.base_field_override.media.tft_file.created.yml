@@ -1,0 +1,18 @@
+uuid: cc830c57-0094-4af7-9550-ef1d034131f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.tft_file
+id: media.tft_file.created
+field_name: created
+entity_type: media
+bundle: tft_file
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

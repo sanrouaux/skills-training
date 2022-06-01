@@ -1,0 +1,22 @@
+uuid: c1d4d93b-7536-4dcd-89b5-73278bbcc395
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_h5p
+  module:
+    - options
+id: opigno_activity.opigno_h5p.skill_level
+field_name: skill_level
+entity_type: opigno_activity
+bundle: opigno_h5p
+label: 'Level of skill'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: local
+default_value_callback: ''
+settings: {  }
+field_type: list_string

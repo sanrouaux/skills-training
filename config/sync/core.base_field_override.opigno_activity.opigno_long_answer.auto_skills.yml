@@ -1,0 +1,22 @@
+uuid: 8e07e219-226c-40ac-9c0c-143a7bf73705
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_long_answer
+id: opigno_activity.opigno_long_answer.auto_skills
+field_name: auto_skills
+entity_type: opigno_activity
+bundle: opigno_long_answer
+label: 'Use activity in auto skills management'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

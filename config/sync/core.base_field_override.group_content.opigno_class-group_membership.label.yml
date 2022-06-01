@@ -1,0 +1,18 @@
+uuid: 8e80f846-2611-4de6-9b89-eeb47daf033a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.opigno_class-group_membership
+id: group_content.opigno_class-group_membership.label
+field_name: label
+entity_type: group_content
+bundle: opigno_class-group_membership
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

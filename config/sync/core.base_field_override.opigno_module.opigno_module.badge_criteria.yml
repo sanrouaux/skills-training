@@ -1,0 +1,21 @@
+uuid: 19b6176a-c225-464f-8c25-97cfe34c1e10
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+    - options
+id: opigno_module.opigno_module.badge_criteria
+field_name: badge_criteria
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Badge criteria'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: finished
+default_value_callback: ''
+settings: {  }
+field_type: list_string

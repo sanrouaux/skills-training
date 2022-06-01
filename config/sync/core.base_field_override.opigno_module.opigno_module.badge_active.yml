@@ -1,0 +1,22 @@
+uuid: dedce198-0b6d-44f9-a2a4-2bac7eac8044
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.badge_active
+field_name: badge_active
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Activate badge system for this module'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

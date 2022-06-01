@@ -1,0 +1,18 @@
+uuid: 23fca5ff-6c60-45c4-b0c1-9de04edf638c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.learning_path-group_node-forum
+id: group_content.learning_path-group_node-forum.changed
+field_name: changed
+entity_type: group_content
+bundle: learning_path-group_node-forum
+label: 'Changed on'
+description: 'The time that the group content was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

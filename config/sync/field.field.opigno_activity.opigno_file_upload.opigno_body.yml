@@ -16,7 +16,7 @@ bundle: opigno_file_upload
 label: Question
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,18 @@
+uuid: fe06de36-e9f3-4711-a21a-813ebda0c4df
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.learning_path_category
+id: taxonomy_term.learning_path_category.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: learning_path_category
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

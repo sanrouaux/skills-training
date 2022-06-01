@@ -1,0 +1,11 @@
+uuid: e5c11792-ec20-4a3a-b5bd-035f2740bca7
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_answer_type.opigno_scorm
+id: opigno_answer.opigno_scorm
+target_entity_type_id: opigno_answer
+target_bundle: opigno_scorm
+default_langcode: site_default
+language_alterable: false

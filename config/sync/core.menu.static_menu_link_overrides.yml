@@ -2,11 +2,11 @@ _core:
   default_config_hash: IB1aZQWGsknFTypr-FjwUwPqUp0BUhHtG1bWbGU3N3c
 definitions:
   contact__site_page:
+    enabled: false
     menu_name: footer
     parent: ''
-    weight: 0
     expanded: false
-    enabled: true
+    weight: 0
   standard__front_page:
     menu_name: main
     parent: ''
@@ -44,14 +44,14 @@ definitions:
     expanded: true
     enabled: true
   opigno_lms__catalogue:
-    enabled: false
     menu_name: main
     parent: ''
-    expanded: false
     weight: -9
-  opigno_lms__calendar:
+    expanded: false
     enabled: false
+  opigno_lms__calendar:
     menu_name: main
     parent: ''
     weight: -7
     expanded: false
+    enabled: false

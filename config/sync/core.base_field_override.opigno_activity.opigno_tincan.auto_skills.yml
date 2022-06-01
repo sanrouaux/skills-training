@@ -1,0 +1,22 @@
+uuid: 3b7434e9-12a6-4c22-b16f-9ab7321a7b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_tincan
+id: opigno_activity.opigno_tincan.auto_skills
+field_name: auto_skills
+entity_type: opigno_activity
+bundle: opigno_tincan
+label: 'Use activity in auto skills management'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

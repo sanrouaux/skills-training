@@ -1,0 +1,20 @@
+uuid: cf805580-0b75-4f70-befb-ca073692e1b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.learning_path_category
+  module:
+    - path
+id: taxonomy_term.learning_path_category.path
+field_name: path
+entity_type: taxonomy_term
+bundle: learning_path_category
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

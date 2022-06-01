@@ -1,0 +1,18 @@
+uuid: 05385648-d8cc-44b3-83f2-926e9c34391d
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_h5p
+id: opigno_activity.opigno_h5p.created
+field_name: created
+entity_type: opigno_activity
+bundle: opigno_h5p
+label: 'Authored on'
+description: 'The time that the Module was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

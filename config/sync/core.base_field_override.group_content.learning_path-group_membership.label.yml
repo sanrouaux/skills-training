@@ -1,0 +1,18 @@
+uuid: 1776d388-cfa0-4388-9876-fd2f75444fb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.learning_path-group_membership
+id: group_content.learning_path-group_membership.label
+field_name: label
+entity_type: group_content
+bundle: learning_path-group_membership
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

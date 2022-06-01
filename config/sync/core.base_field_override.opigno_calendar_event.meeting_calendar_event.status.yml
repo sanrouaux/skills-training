@@ -1,0 +1,22 @@
+uuid: e84c34b7-1f0e-4e94-ab3a-b6a60fa57271
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_calendar_event.type.meeting_calendar_event
+id: opigno_calendar_event.meeting_calendar_event.status
+field_name: status
+entity_type: opigno_calendar_event
+bundle: meeting_calendar_event
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

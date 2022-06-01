@@ -1,0 +1,22 @@
+uuid: bb1dbb03-6b34-4170-a718-bebab16e99c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_tincan
+  module:
+    - options
+id: opigno_activity.opigno_tincan.usage_activity
+field_name: usage_activity
+entity_type: opigno_activity
+bundle: opigno_tincan
+label: 'Usage of activity'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: local
+default_value_callback: ''
+settings: {  }
+field_type: list_string

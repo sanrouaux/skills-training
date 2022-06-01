@@ -1,0 +1,20 @@
+uuid: caa2472a-a0af-45e6-b268-2eef5d2bf8b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_calendar_event.type.meeting_calendar_event
+  module:
+    - text
+id: opigno_calendar_event.meeting_calendar_event.description
+field_name: description
+entity_type: opigno_calendar_event
+bundle: meeting_calendar_event
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 7d1c5b6f-39cc-4d80-87d8-2496c00cc885
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_video
+id: opigno_activity.opigno_video.auto_skills
+field_name: auto_skills
+entity_type: opigno_activity
+bundle: opigno_video
+label: 'Use activity in auto skills management'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

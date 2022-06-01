@@ -1,0 +1,22 @@
+uuid: dda798df-c6b0-4a14-b1c9-5d25a4f6c606
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_tincan
+id: opigno_activity.opigno_tincan.status
+field_name: status
+entity_type: opigno_activity
+bundle: opigno_tincan
+label: 'Publishing status'
+description: 'A boolean indicating whether the Activity is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 16068825-f7d3-46b8-ae73-aecf1ecd7421
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.backwards_navigation
+field_name: backwards_navigation
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Backwards navigation'
+description: 'Allow users to go back and revisit activities already answered.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

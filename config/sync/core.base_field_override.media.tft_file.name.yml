@@ -1,0 +1,20 @@
+uuid: cfaf3173-1e79-4520-942c-5593ca9e69c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.tft_file
+id: media.tft_file.name
+field_name: name
+entity_type: media
+bundle: tft_file
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

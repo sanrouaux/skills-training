@@ -1,0 +1,11 @@
+uuid: df891d91-8c66-4f60-ba53-b2b65af8c83c
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_answer_type.opigno_video
+id: opigno_answer.opigno_video
+target_entity_type_id: opigno_answer
+target_bundle: opigno_video
+default_langcode: site_default
+language_alterable: false

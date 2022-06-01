@@ -1,0 +1,18 @@
+uuid: 138c1436-626c-42f1-aa09-f2c03f520f3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_class
+id: group.opigno_class.created
+field_name: created
+entity_type: group
+bundle: opigno_class
+label: 'Created on'
+description: 'The time that the group was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

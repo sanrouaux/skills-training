@@ -1,0 +1,20 @@
+uuid: ad3f91c2-94cd-42fa-9754-5dbed0b55f1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_file_upload
+id: opigno_activity.opigno_file_upload.name
+field_name: name
+entity_type: opigno_activity
+bundle: opigno_file_upload
+label: Name
+description: 'The name of the Activity entity plus.'
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

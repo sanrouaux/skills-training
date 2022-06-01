@@ -1,0 +1,18 @@
+uuid: c20fc3c9-3d8a-4e55-96a9-b3b0629b41c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group.opigno_course
+target_entity_type_id: group
+target_bundle: opigno_course
+default_langcode: site_default
+language_alterable: false

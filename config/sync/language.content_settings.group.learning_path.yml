@@ -1,0 +1,18 @@
+uuid: ba450df6-e358-408e-bca5-3ea6ac7b99af
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group.learning_path
+target_entity_type_id: group
+target_bundle: learning_path
+default_langcode: site_default
+language_alterable: false

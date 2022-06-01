@@ -1,0 +1,22 @@
+uuid: 3caead5b-502d-4b2c-b008-d9ff3fc749f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_video
+  module:
+    - options
+id: opigno_activity.opigno_video.skill_level
+field_name: skill_level
+entity_type: opigno_activity
+bundle: opigno_video
+label: 'Level of skill'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: local
+default_value_callback: ''
+settings: {  }
+field_type: list_string

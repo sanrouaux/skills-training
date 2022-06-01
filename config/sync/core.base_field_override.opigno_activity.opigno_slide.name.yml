@@ -1,0 +1,20 @@
+uuid: e9ee9fa6-c16a-43d9-a254-ddd07cd2d06a
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_slide
+id: opigno_activity.opigno_slide.name
+field_name: name
+entity_type: opigno_activity
+bundle: opigno_slide
+label: Name
+description: 'The name of the Activity entity plus.'
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

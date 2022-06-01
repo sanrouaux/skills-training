@@ -1,0 +1,18 @@
+uuid: 9bd312dc-9195-4bb8-92fa-d9aeb6070160
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.learning_path-group_node-forum
+id: group_content.learning_path-group_node-forum.label
+field_name: label
+entity_type: group_content
+bundle: learning_path-group_node-forum
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

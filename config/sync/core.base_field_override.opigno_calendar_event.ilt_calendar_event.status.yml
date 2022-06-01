@@ -1,0 +1,22 @@
+uuid: f4f35b2b-a87d-4c34-9d12-6c5867a43afc
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_calendar_event.type.ilt_calendar_event
+id: opigno_calendar_event.ilt_calendar_event.status
+field_name: status
+entity_type: opigno_calendar_event
+bundle: ilt_calendar_event
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

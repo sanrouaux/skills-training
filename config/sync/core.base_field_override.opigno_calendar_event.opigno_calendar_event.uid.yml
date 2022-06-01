@@ -1,0 +1,20 @@
+uuid: cf4d1e35-f7eb-43a8-adde-fa34ca22be2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_calendar_event.type.opigno_calendar_event
+id: opigno_calendar_event.opigno_calendar_event.uid
+field_name: uid
+entity_type: opigno_calendar_event
+bundle: opigno_calendar_event
+label: 'Authored by'
+description: 'The username of the calendar event author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\opigno_calendar_event\Entity\CalendarEvent::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

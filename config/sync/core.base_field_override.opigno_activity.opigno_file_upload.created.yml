@@ -1,0 +1,18 @@
+uuid: b8f0a857-68e8-4ca6-92f6-1f924d4c220b
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_file_upload
+id: opigno_activity.opigno_file_upload.created
+field_name: created
+entity_type: opigno_activity
+bundle: opigno_file_upload
+label: 'Authored on'
+description: 'The time that the Module was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

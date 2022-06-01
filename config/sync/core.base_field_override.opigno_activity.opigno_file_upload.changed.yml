@@ -1,0 +1,18 @@
+uuid: 86571719-ab82-4d75-bcf9-a78b0f5b8795
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_file_upload
+id: opigno_activity.opigno_file_upload.changed
+field_name: changed
+entity_type: opigno_activity
+bundle: opigno_file_upload
+label: Changed
+description: 'The time that the Module was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

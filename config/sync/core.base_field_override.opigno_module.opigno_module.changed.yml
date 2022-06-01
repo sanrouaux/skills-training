@@ -1,0 +1,18 @@
+uuid: 281b9b08-f9c5-409c-8f8b-65733b3fb96b
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.changed
+field_name: changed
+entity_type: opigno_module
+bundle: opigno_module
+label: Changed
+description: 'The time that the Module was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

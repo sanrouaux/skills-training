@@ -1,0 +1,11 @@
+uuid: 8a1cb34c-234b-4d28-9d5a-5e3f247ed3be
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_answer_type.opigno_tincan
+id: opigno_answer.opigno_tincan
+target_entity_type_id: opigno_answer
+target_bundle: opigno_tincan
+default_langcode: site_default
+language_alterable: false

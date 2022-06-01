@@ -1,0 +1,22 @@
+uuid: 0f951b43-e5f8-4022-a5e5-4c45e06f1902
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_module
+id: opigno_module.opigno_module.skills_active
+field_name: skills_active
+entity_type: opigno_module
+bundle: opigno_module
+label: 'Activate skills system for this module'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

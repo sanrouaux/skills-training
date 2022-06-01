@@ -1,0 +1,22 @@
+uuid: 8a5437a2-c7fa-41d0-a519-2ea5f1b51aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - opigno_module.opigno_activity_type.opigno_slide
+  module:
+    - options
+id: opigno_activity.opigno_slide.skill_level
+field_name: skill_level
+entity_type: opigno_activity
+bundle: opigno_slide
+label: 'Level of skill'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: local
+default_value_callback: ''
+settings: {  }
+field_type: list_string
