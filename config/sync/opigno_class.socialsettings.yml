@@ -1,4 +1,5 @@
 _core:
   default_config_hash: z36Ja0w_ztcXesjwKhvqpMmU79dydooMNnegECwNPjU
 opigno_class: null
-enable_social_features: true
+enable_social_features: 0
+social: 0
