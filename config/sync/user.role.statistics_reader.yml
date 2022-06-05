@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - opigno_dashboard
     - opigno_module
     - opigno_statistics
 _core:
@@ -13,7 +12,6 @@ label: 'Statistics manager'
 weight: -7
 is_admin: null
 permissions:
-  - 'opigno dashboard layout access'
   - 'view any group statistics'
   - 'view any user statistics'
   - 'view global statistics'

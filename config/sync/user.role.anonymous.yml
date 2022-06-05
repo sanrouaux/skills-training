@@ -9,7 +9,6 @@ dependencies:
     - contact
     - filter
     - media
-    - opigno_dashboard
     - opigno_module
     - system
 _core:
@@ -22,7 +21,6 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
-  - 'opigno dashboard layout access'
   - 'restful post color_rest_resource'
   - 'search content'
   - 'take modules'

@@ -10,7 +10,6 @@ dependencies:
     - group
     - media
     - opigno_calendar_event
-    - opigno_dashboard
     - opigno_ilt
     - opigno_learning_path
     - opigno_messaging
@@ -43,7 +42,6 @@ permissions:
   - 'manage group members in any group'
   - 'message all groups'
   - 'message anyone regardless of groups'
-  - 'opigno dashboard layout access'
   - 'role-assign users by role'
   - 'score ilt entities'
   - 'score meeting'

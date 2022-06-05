@@ -14,7 +14,6 @@ dependencies:
     - media
     - node
     - opigno_calendar_event
-    - opigno_dashboard
     - opigno_ilt
     - opigno_module
     - opigno_moxtra
@@ -43,7 +42,6 @@ permissions:
   - 'dropzone upload files'
   - 'edit own forum content'
   - 'manage own commerce_payment_method'
-  - 'opigno dashboard layout access'
   - 'post comments'
   - 'restful get achievements_resource'
   - 'restful get opigno_calendar_events_resource'
