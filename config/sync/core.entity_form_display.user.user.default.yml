@@ -24,11 +24,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  contact:
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_first_name:
     type: string_textfield
     weight: 0
@@ -45,31 +40,19 @@ content:
       size: 60
       placeholder: 'Last name'
     third_party_settings: {  }
-  field_private_profile:
-    type: boolean_checkbox
-    weight: 8
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   language:
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  private_messages:
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   timezone:
-    weight: 7
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   user_picture:
     type: image_image
-    weight: 4
+    weight: 3
     region: content
     settings:
       progress_indicator: throbber
@@ -77,5 +60,8 @@ content:
     third_party_settings: {  }
 hidden:
   commerce_remote_id: true
+  contact: true
   field_created_by: true
+  field_private_profile: true
   langcode: true
+  private_messages: true

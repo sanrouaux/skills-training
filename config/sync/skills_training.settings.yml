@@ -5,8 +5,8 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: themes/contrib/aristotle/assets/Logo-Opigno-white.svg
-logo_path_anonymous: 'public://logo-transparent-png_0.png'
+  path: 'public://logo-transparent-white.png'
+logo_path_anonymous: 'public://logo-transparent-dark.png'
 favicon:
   use_default: 1
 aristotle_use_header_background: 0
