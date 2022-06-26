@@ -8,7 +8,9 @@ logo:
   path: 'public://logo-transparent-white.png'
 logo_path_anonymous: 'public://logo-transparent-dark.png'
 favicon:
-  use_default: 1
+  use_default: 0
+  path: 'public://favicon.png'
+  mimetype: image/png
 aristotle_use_header_background: 0
 aristotle_header_image_path: ''
 aristotle_header_image_upload: {  }
