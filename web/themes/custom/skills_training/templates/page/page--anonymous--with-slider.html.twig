@@ -1,0 +1,88 @@
+<main class="page-main page-main-login" role="main">
+  {{ page.help }}
+
+  <div class="login-container">
+    {{ page.top }}
+
+    <div class="left-col">
+      {{ page.content }}
+
+      {% if opigno_demo %}
+        {{ opigno_demo.demo_users }}
+      {% endif %}
+    </div>
+
+    <div class="right-col">
+      <div id="user-sidebar">
+        {{ page.menu }}
+
+        {% block content %}
+        <div class="form-wrapper user-login" data-target="{{ path('user.login') }}"
+          {% if route_name == 'user.pass' or route_name == 'user.register' %}style="display: none;"{% endif %}>
+          <h1>{{ 'SIGN IN'|t }}</h1>
+          {{ login_form }}
+
+          <div class="status_messages">
+            {{ page.status_messages }}
+          </div>
+
+          {% if opigno_demo != TRUE %}
+            <div class="switch-link switch-link-bottom text-center">
+              {% if register != 'admin_only' %}
+                <div><a href="{{ path('user.register') }}">{{ 'Create new account'|t }}</a></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="form-wrapper user-password" data-target="{{ path('user.pass') }}"
+          {% if route_name != 'user.pass' %}style="display: none;"{% endif %}>
+
+          <h1>{{ 'REQUEST NEW PASSWORD'|t }}</h1>
+
+          <div class="subtitle">{{ 'Enter your email address below and we\'ll'|t }}
+            <br>
+            {{ 'send you password reset instructions.'|t }}
+          </div>
+
+          {{ password_form }}
+
+          <div class="status_messages">
+            {{ page.status_messages }}
+          </div>
+
+          <div class="switch-link switch-link-bottom text-center">
+            <div><a href="{{ path('user.login') }}">{{ 'Login'|t }}</a></div>
+
+            {% if register != 'admin_only' %}
+              <div><a href="{{ path('user.register') }}">{{ 'Create new account'|t }}</a></div>
+            {% endif %}
+          </div>
+        </div>
+
+        {% if register != 'admin_only' %}
+          <div class="form-wrapper user-register" data-target="{{ path('user.register') }}"
+            {% if route_name != 'user.register' %}style="display: none;"{% endif %}>
+
+            <h1>{{ 'CREATE NEW ACCOUNT'|t }}</h1>
+
+            {{ register_form }}
+
+            <div class="status_messages">
+              {{ page.status_messages }}
+            </div>
+
+            <div class="switch-link switch-link-bottom text-center">
+              <div><a href="{{ path('user.login') }}">{{ 'Login'|t }}</a></div>
+            </div>
+          </div>
+        {% endif %}
+        {% endblock %}
+
+        <div id="footer">
+          {{ page.footer }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
