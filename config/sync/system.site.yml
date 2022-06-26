@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 561a3388-def3-47ef-94e1-de443f805d9a
 name: 'Entrenamiento en habilidades'
-mail: sanrouaux@gmail.com
+mail: skills.training.webapp@gmail.com
 slogan: ''
 page:
   403: ''
