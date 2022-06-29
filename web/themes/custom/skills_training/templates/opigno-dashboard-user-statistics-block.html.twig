@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the User statistics block.
+ *
+ * Available variables:
+ * - user_name: the user name;
+ * - uid: the user ID;
+ * - user_picture: the rendered user profile picture;
+ * - role: the user role;
+ * - stats: user trainings stats.
+ */
+#}
+
+<div class="content-box profile-info">
+  <div class="edit-link">
+    <a href="{{ path('entity.user.edit_form', { 'user': uid }) }}">
+      <i class="fi fi-rr-edit"></i>
+    </a>
+  </div>
+
+  <div class="profile-info__body">
+    <div class="profile-info__pic">{{ user_picture }}</div>
+    <a href="{{ path('entity.user.canonical', { 'user': uid }) }}">
+      <h2 class="profile-info__name">{{ user_name }}</h2>
+    </a>
+  </div>
+
+  <div class="profile-info__statistics">
+    <div class="filter">
+      <div class="filter__label">{{ 'Trends'|t }}</div>
+      <select name="filterRange" id="filterRange" class="form-select selectpicker">
+        <option value="7">{{ 'Last 7 days'|t }}</option>
+        <option value="30">{{ 'Last 30 days'|t }}</option>
+      </select>
+    </div>
+    {{ stats }}
+  </div>
+</div>
